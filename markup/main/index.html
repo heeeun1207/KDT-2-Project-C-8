@@ -1,63 +1,96 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>메인 페이지</title>
-  <link rel="stylesheet" href="style.css"> <!-- CSS 파일 링크 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* 헤더 스타일 */
+    /* 전체 페이지 */
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    /* 헤더 */
     header {
+      background-color: #f2f2f2; 
+      height: 15%;
       border-bottom: 1px solid #000;
-      padding: 20px;
     }
-
-    /* 메인 영역 스타일 */
+    /* 메인 */
     main {
-     
-    }
-
-    /* 섹션 스타일 */
-    section {
+      height: 55%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
       border-bottom: 1px solid #000; 
-      padding: 20px;
     }
-
-    /* 광고 배너 스타일 */
+    /*  섹션 */
+    .section {
+      border-right: 1px solid #000; 
+      border-bottom: 1px solid #000; 
+    }
     aside {
-    
+      background-color: #d9d9d9; 
+      height: 20%; 
+      justify-content: center;
+      align-items: center;
+    }
+    aside div {
+      width: 90%;
+      height: 90%; 
+      background-color: #ffffff; 
+      border: 1px solid #000; 
     }
 
     /* 푸터 스타일 */
     footer {
-      border-top: 1px solid #000; 
-      padding: 20px; 
+      background-color: #a2a2a2; 
+      height: 10%; 
+      justify-content: center;
+      align-items: center;
+    }
+
+    
+    footer div {
+      width: 90%; 
+      height: 90%; 
+      background-color: #ffffff; 
+      border: 1px solid #000; 
     }
   </style>
 </head>
+
 <body>
   <header>
     <!-- 헤더  -->
   </header>
 
   <main>
-    <section class="section1">
-      <!-- 섹션 1 -->
+    <section class="section">
+      <!-- 섹션1 -->
     </section>
-    <section class="section2">
-      <!-- 섹션 2 -->
+    <section class="section">
+      <!-- 섹션2 -->
     </section>
-    <section class="section3">
-      <!-- 섹션 3  -->
+    <section class="section">
+      <!-- 섹션3 -->
     </section>
-    <section class="section4">
-      <!-- 섹션 4 -->
+    <section class="section">
+      <!-- 섹션4 -->
     </section>
-    <aside>
-      <!-- 광고 배너 & 이벤트 -->
-    </aside>
   </main>
+  
+  <aside>
+    <div>
+    </div>
+  </aside>
 
   <footer>
-    <!-- 푸터 -->
+    <div>
+      <!-- 푸터 -->
+    </div>
   </footer>
 </body>
+
 </html>
+
+
