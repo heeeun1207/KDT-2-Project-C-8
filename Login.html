@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* 전체 페이지 */
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    /* 헤더 */
+    header {
+      background-color: #f2f2f2; 
+      height: 15%;
+      border-bottom: 1px solid #000;
+    }
+    /* 메인 */
+    main {
+      height: 45%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    main img {
+      max-width: 100vw;
+      max-height: 100%;
+    }
+    /* 섹션 */
+    .section {
+      width:100%;
+      height:30%;  
+      border: 1px solid #000;
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center; 
+      align-items: center; 
+      margin: 0 auto; 
+    }
+    
+    #LinkContainer {
+    width: 100%;
+    height: 100%; 
+    background-color: #ffffff; 
+    border: 1px solid #000; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+  }
+  
+    #LinkContainer a {
+      text-decoration: none; 
+      color: inherit; 
+    }
+    /* 푸터  */
+    footer {
+      background-color: #a2a2a2; 
+      height: 10%; 
+      justify-content: center;
+      align-items: center;
+      display: flex; 
+    }
+    footer div {
+      width: 90%; 
+      height: 90%; 
+      background-color: #ffffff; 
+      border: 1px solid #000; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+    }
+    /* 로그인 섹션 */
+    #Login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+#IdSection, #PasswordSection {
+  width: 90%;
+  height: 30%;
+  background-color: #ffffff;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  margin-top:  20px;
+}
+    
+  </style>
+</head>
+<body>
+  <header>
+  </header>
+  <main>
+    <img src="profile_image.jpg" alt="프로필 이미지">
+  </main>
+  <section class="section">
+    <div id="Login">
+      <div id="IdSection">
+        <!-- 아이디 내용 -->
+      </div>
+      <div id="PasswordSection">
+        <!-- 비밀번호 내용 -->
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div id="LinkContainer">
+      <a href="#">회원가입 하러가기</a>
+      <a href="#">아이디 / 비밀번호 찾기</a>
+    </div>
+  </section>
+  <footer>
+    <div>
+  </footer>
+</body>
+</html>
