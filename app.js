@@ -43,12 +43,22 @@ const server = http.createServer((req, res) => {
         res.end(data);
       }
     });
+  } else if (req.url === '/eventprac.html' && req.method === 'GET') {
+    fs.readFile('sub/eventprac.html', (err, data) => {
+      if (err) {
+        res.writeHead(500, { 'Content-Type': 'text/html; charset=utf-8' });
+        res.end('Error');
+      } else {
+        res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+        res.end(data);
+      }
+    });
   } else {
     res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
     res.end('Not Found');
   }
 });
 
-server.listen(3000, () => {
-  console.log('Server3000');
+server.listen(3050, () => {
+  console.log('Server3050');
 });
