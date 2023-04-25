@@ -2,37 +2,34 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const handleResponse = (req, res, filePath, contentType) => {
-  const fullPath = path.join(__dirname, filePath); 
+const routes = {
+  '/': { file: 'index.html', type: 'text/html; charset=utf-8' },
+  '/profile.png': { file: 'sub/profile.png', type: 'image/png' },
+  '/login.html': { file: 'sub/login.html', type: 'text/html; charset=utf-8' },
+  '/testpage.html': { file: 'sub/testpage.html', type: 'text/html; charset=utf-8' },
+  '/eventprac.html': { file: 'sub/eventprac.html', type: 'text/html; charset=utf-8' },
+  '/ecoLife.html': { file: 'sub/ecoLifePage/ecoLife.html', type: 'text/html; charset=utf-8' },
+  '/ecoscript.js': { file: 'sub/ecoLifePage/ecoscript.js', type: 'text/javascript; charset=utf-8' },
+  '/ecostyle.css': { file: 'sub/ecoLifePage/ecostyle.css', type: 'text/css; charset=utf-8' },
+};
+
+const handleResponse = (req, res, route) => {
+  const fullPath = path.join(__dirname, route.file);
   fs.readFile(fullPath, (err, data) => {
     if (err) {
       res.writeHead(500, { 'Content-Type': 'text/html; charset=utf-8' });
       res.end('Error');
     } else {
-      res.writeHead(200, { 'Content-Type': contentType });
+      res.writeHead(200, { 'Content-Type': route.type });
       res.end(data);
     }
   });
 };
 
 const server = http.createServer((req, res) => {
-  if (req.url === '/' && req.method === 'GET') {
-    handleResponse(req, res, 'index.html', 'text/html; charset=utf-8');
-  }else if (req.url === '/profile.png' && req.method === 'GET') {
-    handleResponse(req, res, 'sub/profile.png', 'image/png');
-    //에러 -> 파일 경로 ,존재 , 권한 확인 
-  } else if (req.url === '/login.html' && req.method === 'GET') {
-    handleResponse(req, res, 'sub/login.html', 'text/html; charset=utf-8');
-  } else if (req.url === '/testpage.html' && req.method === 'GET') {
-    handleResponse(req, res, 'sub/testpage.html', 'text/html; charset=utf-8');
-  } else if (req.url === '/eventprac.html' && req.method === 'GET') {
-    handleResponse(req, res, 'sub/eventprac.html', 'text/html; charset=utf-8');
-  } else if (req.url === '/ecoLife.html' && req.method === 'GET') {
-    handleResponse(req, res, 'sub/ecoLifePage/ecoLife.html', 'text/html; charset=utf-8');
-  } else if (req.url === '/ecoscript.js' && req.method === 'GET') {
-    handleResponse(req, res, 'sub/ecoLifePage/ecoscript.js', 'text/javascript; charset=utf-8');
-  } else if (req.url === '/ecostyle.css' && req.method === 'GET') {
-    handleResponse(req, res, 'sub/ecoLifePage/ecostyle.css', 'text/css; charset=utf-8');
+  const route = routes[req.url];
+  if (route && req.method === 'GET') {
+    handleResponse(req, res, route);
   } else {
     res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
     res.end('Not Found');
