@@ -1,9 +1,7 @@
-<<<<<<< HEAD
 const http = require('http');
 const fs = require('fs');
 
 const server = http.createServer((req, res) => {
-  // 요청 
   if (req.url === '/' && req.method === 'GET') {
     fs.readFile('index.html', (err, data) => {
       if (err) {
@@ -26,8 +24,17 @@ const server = http.createServer((req, res) => {
       }
     });
   } else if (req.url === '/login.html' && req.method === 'GET') {
-    // login.html 파일 읽어서 응답 전송
     fs.readFile('login.html', (err, data) => {
+      if (err) {
+        res.writeHead(500, { 'Content-Type': 'text/html; charset=utf-8' });
+        res.end('Error');
+      } else {
+        res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+        res.end(data);
+      }
+    });
+  } else if (req.url === '/testpage.html' && req.method === 'GET') {
+    fs.readFile('testpage.html', (err, data) => {
       if (err) {
         res.writeHead(500, { 'Content-Type': 'text/html; charset=utf-8' });
         res.end('Error');
@@ -41,9 +48,7 @@ const server = http.createServer((req, res) => {
     res.end('Not Found');
   }
 });
+
 server.listen(3000, () => {
-  console.log('ServerOK!');
+  console.log('Server3000');
 });
-=======
-//! 서버 만들기 
->>>>>>> heeeun1207/issue3
