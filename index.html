@@ -13,7 +13,21 @@
       background-color: #f2f2f2; 
       height: 15%;
       border-bottom: 1px solid #000;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0 20px;
     }
+
+    /* 프로필 이미지 */
+    .profile-image {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
     /* 메인 */
     main {
       height: 55%;
@@ -40,44 +54,47 @@
       text-align: center;
     }
     aside {
-  background-color: #d9d9d9; 
-  height: 20%; 
-  justify-content: center;
-  align-items: center;
-  display: flex; 
-}
-aside div {
-  width: 90%;
-  height: 90%; 
-  background-color: #ffffff; 
-  border: 1px solid #000; 
-  display: flex; 
-  justify-content: center;
-  align-items: center; 
-}
+      background-color: #d9d9d9; 
+      height: 20%; 
+      justify-content: center;
+      align-items: center;
+      display: flex; 
+    }
+    aside div {
+      width: 90%;
+      height: 90%; 
+      background-color: #ffffff; 
+      border: 1px solid #000; 
+      display: flex; 
+      justify-content: center;
+      align-items: center; 
+    }
 
-/* 푸터 스타일 */
-footer {
-  background-color: #a2a2a2; 
-  height: 10%; 
-  justify-content: center;
-  align-items: center;
-  display: flex; 
-}
-footer div {
-  width: 90%; 
-  height: 90%; 
-  background-color: #ffffff; 
-  border: 1px solid #000; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-}
-</style>
+    /* 푸터 스타일 */
+    footer {
+      background-color: #a2a2a2; 
+      height: 10%; 
+      justify-content: center;
+      align-items: center;
+      display: flex; 
+    }
+    footer div {
+      width: 90%; 
+      height: 90%; 
+      background-color: #ffffff; 
+      border: 1px solid #000; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+    }
+  </style>
 </head>
 <body>
   <header>
-    <!-- 헤더  -->
+    <!-- 헤더 -->
+    <div>
+      <img src="profile.png" alt="Profile Image" class="profile-image" onclick="location.href='login.html'">
+    </div>
   </header>
   <main>
     <section class="section">
@@ -104,4 +121,4 @@ footer div {
     </div>
   </footer>
 </body>
-</html>
+</html>  <header>
