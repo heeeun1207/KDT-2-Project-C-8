@@ -14,7 +14,7 @@ const server = http.createServer((req, res) => {
     });
   } else if (req.url === '/profile.png' && req.method === 'GET') {
     //로그인 이미지 눌러서 넘어가기
-    fs.readFile('profile.png', (err, data) => {
+    fs.readFile('sub/profile.png', (err, data) => {
       if (err) {
         res.writeHead(500, { 'Content-Type': 'text/html; charset=utf-8' });
         res.end('Error');
@@ -24,7 +24,7 @@ const server = http.createServer((req, res) => {
       }
     });
   } else if (req.url === '/login.html' && req.method === 'GET') {
-    fs.readFile('login.html', (err, data) => {
+    fs.readFile('sub/login.html', (err, data) => {
       if (err) {
         res.writeHead(500, { 'Content-Type': 'text/html; charset=utf-8' });
         res.end('Error');
@@ -34,7 +34,7 @@ const server = http.createServer((req, res) => {
       }
     });
   } else if (req.url === '/testpage.html' && req.method === 'GET') {
-    fs.readFile('testpage.html', (err, data) => {
+    fs.readFile('sub/testpage.html', (err, data) => {
       if (err) {
         res.writeHead(500, { 'Content-Type': 'text/html; charset=utf-8' });
         res.end('Error');
