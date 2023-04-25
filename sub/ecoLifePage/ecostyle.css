@@ -1,4 +1,6 @@
-/* style.css */
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +8,7 @@ body {
 }
 
 header {
-  height: 84px;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +35,7 @@ header {
 }
 
 main {
-  height: 676px;
+  height: 80vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -45,11 +47,12 @@ section {
   border: 1px solid black;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end; 
+  padding: 10px;
 }
 
 footer {
-  height: 84px;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,3 +73,4 @@ footer {
   color: black;
   text-decoration: none;
 }
+
