@@ -70,7 +70,26 @@
       height: 10vh;
       padding: 1vh 1vw;
       border: 1px solid black;
-    }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      }
+
+      .footer-link {
+      text-decoration: none;
+      color: inherit;
+      margin-left: 10px;
+      }
+      
+      footer a {
+      margin: 0 10px;
+      text-decoration: none;
+      }
+      
+      .footer-link, footer a {
+      color: black; 
+      }
+
   </style>
 </head>
 
@@ -90,7 +109,8 @@
     <img src="img/hamburger.png" alt="Thumb Down">
   </section>
   <footer>
-
+    <a href="#">FAQ</a>
+    <a href="#">소식</a>
   </footer>
   <script>
     const imageInput = document.querySelector('#image-input');
@@ -118,7 +138,6 @@
             height = maxHeight;
             width = height * aspectRatio;
           }
-  
           imagePreview.innerHTML = '';
           imagePreview.appendChild(image);
           image.style.width = `${width}px`;
@@ -127,7 +146,6 @@
           image.style.margin = 'auto';
         };
       };
-  
       reader.readAsDataURL(file);
     });
   </script>
