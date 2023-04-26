@@ -5,14 +5,20 @@
 
 <p>좋아요: <span id="counter">0</span></p>
 
-<img src="thumbup.png" alt="사진" id="image">
+
+<img src="./thumbup.png" alt="사진" id="image">
 
 <script>
 
 let counter = 0;
+let clicked = false;
+
 function incrementCounter() {
-  counter++; 
-  document.getElementById("counter").innerText = counter; // 누적값을 화면에 표시
+  if (!clicked) { // 이미 클릭한 경우 중복 클릭 방지
+    counter++; 
+    document.getElementById("counter").innerText = counter; 
+    clicked = true; 
+  }
 }
 document.getElementById("image").addEventListener("click", incrementCounter);
 </script>
