@@ -1,97 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!DOCTYPE html>
-    <title>My Dynamic Page</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-    
-      body {
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-      }
+  <title>My Dynamic Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
 
-      header {
-        height: 10vh;
-        padding: 1vh 1vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-  
-      .left-header {
-        background-image: url('hamburger.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 10vw;
-        height: 100%;
-        
-      }
-  
-      .right-header {
-        background-image: url('profile.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 10vw;
-        height: 100%;
-      }
+    body {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
 
-      main {
-        height: 70vh;
-        border:  1px solid black;
-      }
+    header {
+      height: 10vh;
+      padding: 1vh 1vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-      section {
-        height: 10vh;
-        padding: 1vh 1vw;
-        border: 1px solid black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+    .left-header {
+      background-image: url('hamburger.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 10vw;
+      height: 100%;
+    }
 
-      section img {
-        width: 50px;
-        height: 50px;
-        margin-right: 10px;
-      }
+    .right-header {
+      background-image: url('profile.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 10vw;
+      height: 100%;
+    }
 
-      footer {
-        height: 10vh;
-        padding: 1vh 1vw;
-        border:  1px solid black;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div class="left-header"></div>
+    main {
+      height: 70vh;
+      border: 1px solid black;
+    }
+
+    section {
+      height: 10vh;
+      padding: 1vh 1vw;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    section img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    footer {
+      height: 10vh;
+      padding: 1vh 1vw;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="left-header"></div>
     <p>동네지킴이 신고</p>
-      <div class="right-header"></div>
-    </header>
-    <main>
-      
-    </main>
-    <section>
-      <img src="thumbup.png" alt="Thumb Up">
-      <img src="thumbdown.png" alt="Thumb Down">
-      </div>
-</section>
-    <footer>
+    <div class="right-header"></div>
+  </header>
+  <main>
+    <form>
+      <input type="file" name="신고 사진" accept="image/*">
+    </form>
+  </main>
+  <section>
+    <img src="thumbup.png" alt="Thumb Up">
+    <img src="thumbdown.png" alt="Thumb Down">
+  </section>
+  <footer>
 
-    </footer>
-    <script>
+  </footer>
+  <script>
 
-    </script>
-  </body>
-  </html>
-  
+  </script>
+</body>
+
+</html>
