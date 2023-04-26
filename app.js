@@ -11,6 +11,9 @@ const routes = {
   '/ecoLife.html': { file: 'sub/ecoLifePage/ecoLife.html', type: 'text/html; charset=utf-8' },
   '/ecoscript.js': { file: 'sub/ecoLifePage/ecoscript.js', type: 'text/javascript; charset=utf-8' },
   '/ecostyle.css': { file: 'sub/ecoLifePage/ecostyle.css', type: 'text/css; charset=utf-8' },
+  '/tellerpage.html': { file: 'sub/tellerpage.html', type: 'text/html; charset=utf-8' },
+  '/thunbup.png': { file: 'sub/thumbup.png', type: 'image/png' },
+  '/thunbdown.png': { file: 'sub/thumbdown.png', type: 'image/png' },
 };
 
 const handleResponse = (req, res, route) => {
