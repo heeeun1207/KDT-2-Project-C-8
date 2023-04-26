@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p>누적값: <span id="counter">0</span></p>
+
+<img src="thumbup.png" alt="사진" id="image">
+
+<script>
+
+let counter = 0;
+function incrementCounter() {
+  counter++; 
+  document.getElementById("counter").innerText = counter; // 누적값을 화면에 표시
+}
+document.getElementById("image").addEventListener("click", incrementCounter);
+</script>
+
+</body>
+</html>
