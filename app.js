@@ -6,7 +6,7 @@ const routes = {
   '/': { file: 'index.html', type: 'text/html; charset=utf-8' },
   '/profile.png': { file: 'sub/profile.png', type: 'image/png' },
   '/login.html': { file: 'sub/login.html', type: 'text/html; charset=utf-8' },
-  '/testpage.html': { file: 'sub/testpage.html', type: 'text/html; charset=utf-8' },
+  '/testGuide.html': { file: 'sub/testpaper/testGuide.html', type: 'text/html; charset=utf-8' },
   '/eventprac.html': { file: 'sub/eventprac.html', type: 'text/html; charset=utf-8' },
   '/ecoLife.html': { file: 'sub/ecoLifePage/ecoLife.html', type: 'text/html; charset=utf-8' },
   '/ecoscript.js': { file: 'sub/ecoLifePage/ecoscript.js', type: 'text/javascript; charset=utf-8' },
