@@ -3,81 +3,81 @@
   <head>
     <title>테스트 시작 페이지 </title>
     <style>
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-      }
-      header {
-  height: 10%;
-  border: 1px solid black;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0 10px;
-}
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    height: 10%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px
+  }
 
 header img {
-  width: 20px;
-  height: 20px;
-  margin-left: 10px;
-  cursor: pointer;
-  display: none; /* 초기에는 보이지 않도록 처리 */
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: none; /* 초기에는 보이지 않게 */
 }
 
 .menu-button {
-  display: block; /* 메뉴 버튼만 보이도록 처리 */
+    display: block; /* 메뉴 버튼만 보이게 */
 }
 
-      main {
-  height: 70%;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  main {
+    height: 70%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .thumb-image {
-  height: 50%;
-  width: auto;
-  cursor: pointer;
-  margin-bottom: 20px;
+    height: 50%;
+    width: auto;
+    cursor: pointer;
+    margin-bottom: 20px;
 }
 
-      section {
-        height: 10%;
-        border: 1px solid black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  section {
+    height: 10%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  footer {
+    height: 10%;
+    border: 1px solid black;
       }
-      footer {
-        height: 10%;
-        border: 1px solid black;
-      }
-      button {
-      width: 80%;
-      height:100%;
-      background-color: #62b6e7;
-      color: #fff;
-      font-size: 18px;
-      border: none;
-      cursor: pointer;
-      margin-top: auto;
-    }
+  button {
+    width: 80%;
+    height:100%;
+    background-color: #62b6e7;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin-top: auto;
+}
     </style>
   </head>
   <body>
@@ -101,17 +101,11 @@ header img {
     </section>
     <footer></footer>
     <script>  
-  const thumbImages = document.querySelectorAll(".thumb-image");
-
-  thumbImages.forEach((image) => {
-  image.addEventListener("click", (e) => {
-    
+    const thumbImages = document.querySelectorAll(".thumb-image");
+    thumbImages.forEach((image) => {
+    image.addEventListener("click", (e) => {
     const altValue = e.target.getAttribute("alt");
-
-    
-    window.location.href = "다음페이지 URL";
-
-
+    window.location.href = "~~~url~~~";
     const menuButton = document.querySelector(".menu-button");
     const closeButton = document.querySelector(".close-button");
     menuButton.style.display = "block";
@@ -119,19 +113,19 @@ header img {
   });
 });
 
-  const menuButton = document.querySelector(".menu-button");
-  const closeButton = document.querySelector(".close-button");
+    const menuButton = document.querySelector(".menu-button");
+    const closeButton = document.querySelector(".close-button");
 
-  menuButton.addEventListener("click", () => {
-  
-  menuButton.style.display = "none";
-  closeButton.style.display = "block";
+    menuButton.addEventListener("click", () => {
+    
+    menuButton.style.display = "none";
+    closeButton.style.display = "block";
 });
 
-  closeButton.addEventListener("click", () => {
-  // 닫기 버튼은 숨기고 메뉴 버튼 노출
-  closeButton.style.display = "none";
-  menuButton.style.display = "block";
+    closeButton.addEventListener("click", () => {
+  
+    closeButton.style.display = "none";
+    menuButton.style.display = "block";
 });
 
     </script>
