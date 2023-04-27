@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> 테스트 시작 페지 </title>
+    <title>테스트 시작 페이지 </title>
     <style>
       * {
         box-sizing: border-box;
@@ -16,6 +16,16 @@
       header {
         height: 10%;
         border: 1px solid black;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 10px;
+      }
+      header img {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+        cursor: pointer;
       }
       main {
         height: 70%;
@@ -36,17 +46,23 @@
         border: 1px solid black;
       }
       button {
-        padding: 10px 20px;
-        font-size: 1rem;
-        border-radius: 5px;
-        background-color: #007aff;
-        color: white;
-        cursor: pointer;
-      }
+      width: 80%;
+      height:100%;
+      background-color: #62b6e7;
+      color: #fff;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      margin-top: auto;
+    }
     </style>
   </head>
   <body>
-    <header></header>
+    <header>
+      <a href="#">
+        <img src="x-symbol.png" alt="Close button">
+      </a>
+    </header>
     <main></main>
     <section>
       <button>점수 확인하러 가기</button>
