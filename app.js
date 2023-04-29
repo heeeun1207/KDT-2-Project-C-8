@@ -17,8 +17,8 @@ const routes = {
   '/ecostyle.css': { file: 'sub/ecoLifePage/ecostyle.css', type: 'text/css; charset=utf-8' },
   //신고하는 지킴이페이지 
   '/tellerpage.html': { file: 'sub/tellerpage/tellerpage.html', type: 'text/html; charset=utf-8' },
-  '/thunbup.png': { file: 'sub/img/thumbup.png', type: 'image/png' },
-  '/thunbdown.png': { file: 'sub/img/thumbdown.png', type: 'image/png' },
+  '/thumbup.png': { file: 'sub/img/thumbup.png', type: 'image/png' },
+  '/thumbdown.png': { file: 'sub/img/thumbdown.png', type: 'image/png' },
 };
 
 const handleResponse = (req, res) => {
