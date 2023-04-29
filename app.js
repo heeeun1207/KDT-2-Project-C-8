@@ -4,16 +4,21 @@ const path = require('path');
 
 const routes = {
   '/': { file: 'index.html', type: 'text/html; charset=utf-8' },
-  '/profile.png': { file: 'sub/profile.png', type: 'image/png' },
-  '/login.html': { file: 'sub/login.html', type: 'text/html; charset=utf-8' },
+  '/profile.png': { file: 'sub/img/profile.png', type: 'image/png' },
+  //로그인 화면 
+  '/login.html': { file: 'sub/Login/login.html', type: 'text/html; charset=utf-8' },
+  //지킴이 테스트 첫화면 (안내 페이지)
   '/testGuide.html': { file: 'sub/testpaper/testGuide.html', type: 'text/html; charset=utf-8' },
-  '/eventprac.html': { file: 'sub/eventprac.html', type: 'text/html; charset=utf-8' },
+  //이벤트 & 소식페이지 
+  '/eventprac.html': { file: 'sub/News/eventprac.html', type: 'text/html; charset=utf-8' },
+  //친환경 라이프페이지 
   '/ecoLife.html': { file: 'sub/ecoLifePage/ecoLife.html', type: 'text/html; charset=utf-8' },
   '/ecoscript.js': { file: 'sub/ecoLifePage/ecoscript.js', type: 'text/javascript; charset=utf-8' },
   '/ecostyle.css': { file: 'sub/ecoLifePage/ecostyle.css', type: 'text/css; charset=utf-8' },
-  '/tellerpage.html': { file: 'sub/tellerpage.html', type: 'text/html; charset=utf-8' },
-  '/thunbup.png': { file: 'sub/thumbup.png', type: 'image/png' },
-  '/thunbdown.png': { file: 'sub/thumbdown.png', type: 'image/png' },
+  //신고하는 지킴이페이지 
+  '/tellerpage.html': { file: 'sub/tellerpage/tellerpage.html', type: 'text/html; charset=utf-8' },
+  '/thunbup.png': { file: 'sub/img/thumbup.png', type: 'image/png' },
+  '/thunbdown.png': { file: 'sub/img/thumbdown.png', type: 'image/png' },
 };
 
 const handleResponse = (req, res) => {
