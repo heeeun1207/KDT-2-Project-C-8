@@ -22,6 +22,8 @@ const routes = {
   '/thumbdown.png': { file: 'sub/img/thumbdown.png', type: 'image/png' },
   //FAQ 페이지 
   '/FAQpage.html': { file: 'sub/FAQ/FAQpage.html', type: 'text/html; charset=utf-8' },
+  //공지사항 페이지 
+  '/Noticepage.html': { file: 'sub/Notice/Noticepage.html', type: 'text/html; charset=utf-8' },
 };
 
 const handleResponse = (req, res) => {
@@ -44,6 +46,6 @@ const handleResponse = (req, res) => {
   }
 };
 const server = http.createServer(handleResponse);
-server.listen(3000, () => {
+server.listen(3030, () => {
   console.log('Server3000');
 });
