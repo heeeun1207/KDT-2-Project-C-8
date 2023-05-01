@@ -20,6 +20,7 @@ const routes = {
   '/tellerpage.html': { file: 'sub/tellerpage/tellerpage.html', type: 'text/html; charset=utf-8' },
   '/thumbup.png': { file: 'sub/img/thumbup.png', type: 'image/png' },
   '/thumbdown.png': { file: 'sub/img/thumbdown.png', type: 'image/png' },
+  //FAQ 페이지 
   '/FAQpage.html': { file: 'sub/FAQ/FAQpage.html', type: 'text/html; charset=utf-8' },
 };
 
@@ -36,7 +37,7 @@ const handleResponse = (req, res) => {
         res.end(data);
       }
     });
-    
+
   } else {
     res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
     res.end('Not Found');
