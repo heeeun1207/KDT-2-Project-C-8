@@ -1,87 +1,101 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      width: 100vw;
-      height: 100vh;
-      border: 1px solid black;
-      display: flex;
-      flex-direction: column;
-    }
-
-    header {
-      height: 15%;
-      border-bottom: 1px solid black;
-      padding: 10px;
-    }
-
-    main {
-      height: 75%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 10px;
-    }
-
-    section {
-      width: 80%;
-      margin-bottom: 20px;
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-
-    button {
-      width: 100%;
-      height: 20%;
-      background-color: #007bff;
-      color: #fff;
-      font-size: 18px;
-      border: none;
-      cursor: pointer;
-      margin-top: auto;
-    }
-
-    footer {
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</body>
+  <head>
+    <title>테스트 페이지</title>
+    <style>
+      html, body {
+        height: 100%;
+      }
+    
+      header {
       height: 10%;
-      border-top: 1px solid black;
       display: flex;
-      justify-content: center;
       align-items: center;
-      padding: 10px;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
+      justify-content: space-between;
+      padding: 0 1rem;
+      border-bottom: 1px solid black;
+      }
+
+      header img {
+      width: 30px;
+      height: 30px;
+      }
+      main {
+        height: 80%;
+        border: 1px black solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      footer {
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+      border-top: 1px solid black;
+      }
+
+      footer a {
+      text-decoration: none;
+      color: inherit;
+      }
+
+      .question {
+        margin: 20px;
+      }
+      button {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
     <header>
-      <!--  내용 -->
+        <img src="hamburger.png" alt="햄버거 아이콘">
+        <img src="profile.png" alt="프로필 아이콘">
     </header>
     <main>
-      <section>
-        <!--  내용 (테스트 이미지) -->
-      </section>
-      <button>
-        문제 풀러가기
-      </button>
+      <div class="question">
+        <p>문제 1: 1 + 1 = 2 입니까?</p>
+        <button onclick="updateAnswer(true)">True</button>
+        <button onclick="updateAnswer(false)">False</button>
+      </div>
+      <div class="question">
+        <p>문제 2: 10 * 10 = 100 입니까?</p>
+        <button onclick="updateAnswer(true)">True</button>
+        <button onclick="updateAnswer(false)">False</button>
+      </div>
+      <div class="question">
+        <p>문제 3: 2 * 12 = 14  입니까?</p>
+        <button onclick="updateAnswer(true)">True</button>
+        <button onclick="updateAnswer(false)">False</button>
+      </div>
+      <p id="answer-count">정답: 0개</p>
     </main>
     <footer>
-      <!-- 내용 -->
+    <a href="#faq">FAQ</a>
+    <a href="#news">소식</a>
     </footer>
-  </div>
-</body>
+    <script>
+      let answerCount = 0;
+      function updateAnswer(answer) {
+        if (answer) {
+          answerCount++;
+        }
+        document.querySelector('#answer-count').textContent = `정답: ${answerCount}개`;
+      }
+      function updateAnswer(answer) {
+  if (answer) {
+    answerCount++;
+    }
+  document.querySelector('#answer-count').textContent = `정답: ${answerCount}개`;
+  }
+
+    </script>
+  </body>
 </html>
