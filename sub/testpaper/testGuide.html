@@ -1,96 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 문제지  </title>
+<html>
+  <head>
+    <title>테스트 시작 페이지 </title>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-      }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    height: 10%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px
+  }
 
-      body {
-        width: 390px;
-        height: 844px;
-        border: 1px solid black;
-      }
-      
-      header {
-      Height :10%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 1rem;
-      border-bottom: 1px solid black;
-<<<<<<< HEAD:sub/testpaper/testGuide.html
-      padding: 10px;
-    }
+header img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: none; /* 초기에는 보이지 않게 */
+}
 
-    main {
-      height: 75%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 10px;
-    }
+.menu-button {
+    display: block; /* 메뉴 버튼만 보이게 */
+}
 
-    section {
-      width: 80%;
-      margin-bottom: 20px;
-    }
+  main {
+    height: 70%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    img {
-      width: 100%;
-      height: auto;
-    }
+.image-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
 
-    button {
-      width: 100%;
-      height: 20%;
-      background-color: #62b6e7;
-      color: #fff;
-      font-size: 18px;
-      border: none;
-      cursor: pointer;
-      margin-top: auto;
-    }
+.thumb-image {
+    height: 50%;
+    width: auto;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
 
-    
-  footer {
-=======
-      }
-      header img {
-      width: 30px;
-      height: 30px;
-      }
+  section {
+    height: 10%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   
-      main {
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-      }
-  
-      .question {
-        margin-bottom: 10px;
-      }
-  
-      .question label {
-        display: block;
-        margin-bottom: 5px;
-      }
-  
-      .question input[type="radio"] {
-        margin-right: 5px;
-      }
-      footer {
->>>>>>> heeeun1207/issue3:sub/testpage.html
+footer {
       height: 10%;
       display: flex;
       align-items: center;
@@ -98,148 +73,74 @@
       padding: 0 1rem;
       border-top: 1px solid black;
       }
-<<<<<<< HEAD:sub/testpaper/testGuide.html
 
-=======
->>>>>>> heeeun1207/issue3:sub/testpage.html
       footer a {
       text-decoration: none;
       color: inherit;
       }
-<<<<<<< HEAD:sub/testpaper/testGuide.html
-
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header>
-      
-=======
+  button {
+    width: 80%;
+    height:100%;
+    background-color: #62b6e7;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin-top: auto;
+}
     </style>
   </head>
   <body>
     <header>
-      <img src="hamburger.png" alt="햄버거 아이콘">
-      <img src="profile.png" alt="프로필 아이콘">
->>>>>>> heeeun1207/issue3:sub/testpage.html
+      <a href="#">
+        <img src="hamburger.png" alt="Close button" class="close-button" />
+      </a>
+      <a href="#">
+        <img src="x-symbol.png"g" alt="Menu button" class="menu-button" />
+      </a>
     </header>
-  
+    
     <main>
-<<<<<<< HEAD:sub/testpaper/testGuide.html
-      <section>
-
-        <section class="section" onclick="location.href='testpage.html'">
-      <button>
-        문제 풀러가기
-      </button>
+      <div class="image-container">
+        <img src="thumbup.png" alt="Thumb up image" class="thumb-image" />
+        <img src="thumbdown.png" alt="Thumb down image" class="thumb-image" />
+      </div>
     </main>
+    <section>
+      <button>문제 풀러가기</button>
+    </section>
     <footer>
-      <a href="#faq">FAQ</a>
-      <a href="#news">소식</a>
-  </div>
-</body>
-=======
-      <div class="question">
-        <label for="q1">질문 1. 1+1은?</label>
-        <input type="radio" name="q1" value="1">1
-        <input type="radio" name="q1" value="2">2
-        <input type="radio" name="q1" value="3">3
-      </div>
+    <a href="#faq">FAQ</a>
+    <a href="#news">소식</a>
+    </footer>
+    <script>  
+    const thumbImages = document.querySelectorAll(".thumb-image");
+    thumbImages.forEach((image) => {
+    image.addEventListener("click", (e) => {
+    const altValue = e.target.getAttribute("alt");
+    window.location.href = "~~~url~~~";
+    const menuButton = document.querySelector(".menu-button");
+    const closeButton = document.querySelector(".close-button");
+    menuButton.style.display = "block";
+    closeButton.style.display = "block";
+  });
+});
+
+    const menuButton = document.querySelector(".menu-button");
+    const closeButton = document.querySelector(".close-button");
+
+    menuButton.addEventListener("click", () => {
+    
+    menuButton.style.display = "none";
+    closeButton.style.display = "block";
+});
+
+    closeButton.addEventListener("click", () => {
   
-      <div class="question">
-        <label for="q2">질문 2. 2+2는?</label>
-        <input type="radio" name="q2" value="4">4
-        <input type="radio" name="q2" value="5">5
-        <input type="radio" name="q2" value="6">6
-      </div>
-  
-      <div class="question">
-        <label for="q3">질문 3. 3+3은?</label>
-        <input type="radio" name="q3" value="6">6
-        <input type="radio" name="q3" value="7">7
-        <input type="radio" name="q3" value="8">8
-      </div>
-  
-      <div class="question">
-        <label for="q4">질문 4. 4+4는?</label>
-        <input type="radio" name="q4" value="8">8
-        <input type="radio" name="q4" value="9">9
-        <input type="radio" name="q4" value="10">10
-      </div>
-  
-      <div class="question">
-        <label for="q5">질문 5. 5+5는?</label>
-        <input type="radio" name="q5" value="10">10
-        <input type="radio" name="q5" value="11">11
-        <input type="radio" name="q5" value="12">12
-        </div>
-        <div class="question">
-          <label for="q6">질문 6. 6+6은?</label>
-          <input type="radio" name="q6" value="12">12
-          <input type="radio" name="q6" value="13">13
-          <input type="radio" name="q6" value="14">14
-        </div>
-      
-        <div class="question">
-          <label for="q7">질문 7. 7+7은?</label>
-          <input type="radio" name="q7" value="14">14
-          <input type="radio" name="q7" value="15">15
-          <input type="radio" name="q7" value="16">16
-        </div>
-      
-        <div class="question">
-          <label for="q8">질문 8. 8+8은?</label>
-          <input type="radio" name="q8" value="16">16
-          <input type="radio" name="q8" value="17">17
-          <input type="radio" name="q8" value="18">18
-        </div>
-      
-        <div class="question">
-          <label for="q9">질문 9. 9+9는?</label>
-          <input type="radio" name="q9" value="18">18
-          <input type="radio" name="q9" value="19">19
-          <input type="radio" name="q9" value="20">20
-        </div>
-      
-        <div class="question">
-          <label for="q10">질문 10. 10+10은?</label>
-          <input type="radio" name="q10" value="20">20
-          <input type="radio" name="q10" value="21">21
-          <input type="radio" name="q10" value="22">22
-        </div>
-      
-        <div id="total"></div>
-      </main>
-      
-      <footer>
-          <a href="#faq">FAQ</a>
-          <a href="#news">소식</a>
-      </footer>
-      
-      <script>
-        const answers = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
-        function checkAnswers() {
-          let total = 0;
-          const questions = document.querySelectorAll('.question');
-          questions.forEach((question, index) => {
-            const answer = parseInt(question.querySelector('input[type="radio"]:checked').value);
-            if (answer === answers[index]) {
-              total++;
-            }
-          });
-      
-          document.getElementById('total').textContent = `정답: ${total}개`;
-        }
-        const questions = document.querySelectorAll('.question');
-      
-        questions.forEach((question) => {
-          const inputs = question.querySelectorAll('input[type="radio"]');
-      
-          inputs.forEach((input) => {
-            input.addEventListener('click', checkAnswers);
-          });
-        });
-      </script>
+    closeButton.style.display = "none";
+    menuButton.style.display = "block";
+});
+
+    </script>
   </body>
->>>>>>> heeeun1207/issue3:sub/testpage.html
 </html>
