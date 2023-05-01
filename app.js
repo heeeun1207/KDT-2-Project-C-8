@@ -10,7 +10,7 @@ const routes = {
   '/login.html': { file: 'sub/Login/login.html', type: 'text/html; charset=utf-8' },
   //지킴이 테스트 첫화면 (안내 페이지)
   '/testGuide.html': { file: 'sub/testpaper/testGuide.html', type: 'text/html; charset=utf-8' },
-  '/testpage.html': { file: 'sub/testpaper/testpage.html', type: 'text/html; charset=utf-8' },
+  '/test.html': { file: 'sub/testpaper/test.html', type: 'text/html; charset=utf-8' },
   '/x-symbol.png': { file: 'sub/img/x-symbol.png', type: 'image/png' },
   //이벤트 & 소식페이지 
   '/eventprac.html': { file: 'sub/News/eventprac.html', type: 'text/html; charset=utf-8' },
@@ -48,6 +48,6 @@ const handleResponse = (req, res) => {
   }
 };
 const server = http.createServer(handleResponse);
-server.listen(3030, () => {
+server.listen(3080, () => {
   console.log('Server3000');
 });
