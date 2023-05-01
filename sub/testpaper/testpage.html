@@ -64,9 +64,19 @@ header img {
     justify-content: center;
     align-items: center;
 }
-  footer {
-    height: 10%;
-    border: 1px solid black;
+  
+footer {
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+      border-top: 1px solid black;
+      }
+
+      footer a {
+      text-decoration: none;
+      color: inherit;
       }
   button {
     width: 80%;
@@ -99,7 +109,10 @@ header img {
     <section>
       <button>점수 확인하러 가기</button>
     </section>
-    <footer></footer>
+    <footer>
+    <a href="#faq">FAQ</a>
+    <a href="#news">소식</a>
+    </footer>
     <script>  
     const thumbImages = document.querySelectorAll(".thumb-image");
     thumbImages.forEach((image) => {

@@ -50,27 +50,23 @@ section {
   align-items: flex-end; 
   padding: 10px;
 }
-
 footer {
-  height: 10vh;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
   border-top: 1px solid black;
-  padding: 0 10px;
-}
-
-.footer-left,
-.footer-center,
-.footer-right {
-  flex-grow: 1;
-  text-align: center;
-}
-
-.footer-left a,
-.footer-center a,
-.footer-right a {
-  color: black;
+  }
+  
+  footer a {
   text-decoration: none;
-}
+  color: inherit;
+  }
+  
+  
+
+
+
+
+
 
