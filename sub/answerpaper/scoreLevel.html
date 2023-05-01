@@ -29,22 +29,23 @@
   <body>
     <div class="result">
       <script>
-        const answercount = 19; 
+        const answercount = 10; 
         //맞은 개수를 받아와서 -> 정답 개수에 맞는 멘트 말하기 
         let message;
-        if (answercount >= 0 && answercount <= 5) {
+        if (answercount >= 0 && answercount <= 1) {
           message = "이번 테스트에서는 아쉬운 결과네요. 다음번에는 더 열심히 준비해보세요 ‘환경 지킴이’가 되어 보아요!";
-        } else if (answercount >= 6 && answercount <= 10) {
+        } else if (answercount >= 2 && answercount <= 4) {
           message = "노력은 느껴졌지만 아쉽게도 결과는 그렇게 좋지 않네요. 조금 더 노력해보세요!";
-        } else if (answercount >= 11 && answercount <= 14) {
+        } else if (answercount >= 4 && answercount <= 6) {
           message = "거의 다 와가요! 하지만 , 아직 개선할 부분이 있을 것 같아요. 조금 더 노력해보세요!";
-        } else if (answercount >= 15 && answercount <= 19) {
+        } else if (answercount >= 7 && answercount <= 9) {
           message = "훌륭한 결과네요! 지금까지의 노력이 드러났어요. 계속해서 성장해보세요 더 깨끗한 지구를 만들어보세요!";
-        } else if (answercount === 20) {
+        } else if (answercount === 10) {
           message = "와! 대단해요! 완벽한 점수네요. 이 정도면 완전한‘환경 지킴이’입니다!";
         } else {
           message = "ERROR";
         }
+
         console.log(message);
         document.write(message);
       </script>
