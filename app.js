@@ -9,6 +9,7 @@ const routes = {
   '/login.html': { file: 'sub/Login/login.html', type: 'text/html; charset=utf-8' },
   //지킴이 테스트 첫화면 (안내 페이지)
   '/testGuide.html': { file: 'sub/testpaper/testGuide.html', type: 'text/html; charset=utf-8' },
+  '/testpage.html': { file: 'sub/testpaper/testpage.html', type: 'text/html; charset=utf-8' },
   //이벤트 & 소식페이지 
   '/eventprac.html': { file: 'sub/News/eventprac.html', type: 'text/html; charset=utf-8' },
   //친환경 라이프페이지 
