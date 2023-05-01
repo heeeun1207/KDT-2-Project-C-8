@@ -43,6 +43,6 @@ const handleResponse = (req, res) => {
 
 const server = http.createServer(handleResponse);
 
-server.listen(3040, () => {
-  console.log('Server3040');
+server.listen(3000, () => {
+  console.log('Server3000');
 });
