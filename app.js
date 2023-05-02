@@ -6,6 +6,7 @@ const routes = {
   '/': { file: 'index.html', type: 'text/html; charset=utf-8' },
   '/profile.png': { file: 'sub/img/profile.png', type: 'image/png' },
   '/homegreen.png': { file: 'sub/img/homegreen.png', type: 'image/png' },
+  '/us.png': { file: 'sub/img/us.png', type: 'image/png' },
   //로그인 화면 
   '/login.html': { file: 'sub/Login/login.html', type: 'text/html; charset=utf-8' },
   //마이페이지 
