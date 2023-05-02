@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,26 +18,25 @@
     }
 
     header {
-Height :10%;
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 0 1rem;
-border-bottom: 1px solid black;
-}
+      Height :10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+      border-bottom: 1px solid black;
+    }
 
-header img {
-width: 30px;
-height: 30px;
-}
-
+    header img {
+      width: 30px;
+      height: 30px;
+    }
 
     main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
 
     section {
       height: 10vh;
@@ -62,49 +60,58 @@ height: 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      }
+    }
 
-      .footer-link {
+    .footer-link {
       text-decoration: none;
       color: inherit;
       margin-left: 10px;
-      }
-      
-      footer a {
+    }
+
+    footer a {
       margin: 0 10px;
       text-decoration: none;
-      }
-      
-      .footer-link, footer a {
-      color: black; 
-      }
+    }
 
+    .footer-link,
+    footer a {
+      color: black;
+    }
   </style>
 </head>
-
 <body>
   <header>
     <a href="/">
-      <img src="homegreen.png" alt="hamburger" class="hamburger-image" onclick="location.       href='index.html'">
+      <img src="homegreen.png" alt="homegreen" class="homegreen-image" onclick="location.href='index.html'">
     </a>
     <p></p>
-    <img src="profile.png" alt="Profile Image" class="profile-image" onclick="location.       href='login.html'">
+    <img src="profile.png" alt="Profile Image" class="profile-image" onclick="location.href='login.html'">
   </header>
+
   <main>
     <input type="file" id="image-input" accept="image/*">
     <div id="image-preview"></div>
   </main>
-  
+
   <section>
-    <img src="thumbup.png" alt="Thumb Up">
-    <img src="thumbdown.png" alt="Thumb Down">
+    <img src="thumbup.png" alt="Thumb Up" onclick="incrementCounter()">
+    <p>누적값: <span id="counter">0</span></p>
   </section>
+
   <footer>
     <a href="#" onclick="location.href='FAQpage.html'">FAQ</a>
     <a href="#" onclick="location.href='Noticepage.html'">소식</a>
   </footer>
+
   <script>
-    const imageInput = document.querySelector('#image-input');
+    let counter = 0;
+    let clicked = false;
+    function incrementCounter() {
+      if (!clicked) { 
+        counter++; 
+        document.getElementById("counter").innerText = counter; 
+      }};
+      const imageInput = document.querySelector('#image-input');
     const imagePreview = document.querySelector('#image-preview');
   
     imageInput.addEventListener('change', () => {
@@ -119,9 +126,8 @@ height: 30px;
           const imageWidth = image.width;
           const imageHeight = image.height;
           const aspectRatio = imageWidth / imageHeight;
-          const maxWidth = window.innerWidth * 0.8;
-          const maxHeight = window.innerHeight * 0.8;
-  
+          const maxWidth = window.innerWidth * 0.5;
+          const maxHeight = window.innerHeight * 0.5;
           let width = maxWidth;
           let height = maxHeight / aspectRatio;
   
@@ -140,5 +146,5 @@ height: 30px;
       reader.readAsDataURL(file);
     });
   </script>
-</body>
-</html>
+  </body>
+  </html>
