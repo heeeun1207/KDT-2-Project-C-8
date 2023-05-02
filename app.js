@@ -4,6 +4,7 @@ const path = require('path');
 
 const routes = {
   '/': { file: 'index.html', type: 'text/html; charset=utf-8' },
+  // '/': { file: 'index.html/script.js', type: 'text/javascript' }, 
   '/profile.png': { file: 'sub/img/profile.png', type: 'image/png' },
   '/homegreen.png': { file: 'sub/img/homegreen.png', type: 'image/png' },
   '/us.png': { file: 'sub/img/us.png', type: 'image/png' },
