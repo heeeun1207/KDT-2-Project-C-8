@@ -15,7 +15,7 @@ const routes = {
   '/test.html': { file: 'sub/testpaper/test.html', type: 'text/html; charset=utf-8' },
   '/x-symbol.png': { file: 'sub/img/x-symbol.png', type: 'image/png' },
   //이벤트 & 소식페이지 
-  '/eventprac.html': { file: 'sub/News/eventprac.html', type: 'text/html; charset=utf-8' },
+  '/eventpage.html': { file: 'sub/News/eventpage.html', type: 'text/html; charset=utf-8' },
   //친환경 라이프페이지 
   '/ecoLife.html': { file: 'sub/ecoLifePage/ecoLife.html', type: 'text/html; charset=utf-8' },
   '/ecoscript.js': { file: 'sub/ecoLifePage/ecoscript.js', type: 'text/javascript; charset=utf-8' },
