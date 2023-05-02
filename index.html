@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* 전체 페이지 */
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    header {
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+      border-bottom: 1px solid black;
+    }
+
+    header img {
+      width: 30px;
+      height: 30px;
+    }
+
+    main {
+      height: 55%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      border-bottom: 1px solid #000;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .section {
+      width: 90%;
+      height: 90%;
+      border: 1px solid #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+
+    .section h1 {
+      margin-top: 80%;
+      text-align: center;
+    }
+
+    aside {
+      background-color: #d9d9d9;
+      height: 25%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+    aside div {
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      border: 1px solid #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    aside div img{
+      height: 100%;
+      width: 100%;
+    }
+    footer {
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+      border-top: 1px solid black;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <a href="/">
+    <img src="homegreen.png" alt="hamburger" class="hamburger-image" onclick="location.href='index.html'">
+  </a>
+  <p>환경 지킴이</p>
+  <img src="profile.png" alt="Profile Image" class="profile-image" onclick="location.href='login.html'">
+</header>
+<main>
+  <section class="section" onclick="location.href='ecoLife.html'">
+    <h1>친환경<br>라이프</h1>
+  </section>
+  <section class="section" onclick="location.href='testGuide.html'">
+    <h1>지킴이<br>지식테스트</h1>
+  </section>
+  <section class="section" onclick="location.href='eventpage.html'">
+    <h1>이벤트</h1>
+  </section>
+  <section class="section" onclick="location.href='tellerpage.html'">
+    <h1>신고하는<br>지킴이</h1>
+  </section>
+</main>
+<aside>
+  <div onclick="location.href='eventpage.html'">
+    <img src="us.png" alt ="us Image" class="us-image" onclick="location.href='login.html'">
+  </div>
+</aside>
+<footer>
+    <a href="#" onclick="location.href='FAQpage.html'">FAQ</a>
+    <a href="#" onclick="location.href='Noticepage.html'">소식</a>
+</footer>
+<script>
+let images = ['us.png', 'thumbup.png', 'profile.png'];
+let currentImgIndex = 0;
+let asideImg = document.querySelector('.us-image');
+
+function changeAsideImg() {
+  currentImgIndex++;
+  if (currentImgIndex > images.length - 1) {
+    currentImgIndex = 0;
+  }
+  asideImg.src = images[currentImgIndex];
+}
+setInterval(changeAsideImg, 3000);
+</script>
+</body>
+</html>
