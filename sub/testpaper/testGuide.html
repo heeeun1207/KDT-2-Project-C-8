@@ -15,12 +15,17 @@
   }
 
   header {
+<<<<<<< HEAD
   Height :10%;
+=======
+  height: 10%;
+>>>>>>> heeeun1207/issue3
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
   border-bottom: 1px solid black;
+<<<<<<< HEAD
   }
   
   header img {
@@ -41,6 +46,22 @@ header img {
     display: block; /* 메뉴 버튼만 보이게 */
 }
 
+=======
+}
+  header img {
+    width: 30px;
+    height: 30px;
+    margin-left: 380px;
+    cursor: pointer;
+}
+
+  .close-button {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+>>>>>>> heeeun1207/issue3
   main {
     height: 70%;
     border: 1px solid black;
@@ -49,7 +70,11 @@ header img {
     align-items: center;
 }
 
+<<<<<<< HEAD
 .image-container {
+=======
+  .image-container {
+>>>>>>> heeeun1207/issue3
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -72,7 +97,11 @@ header img {
     align-items: center;
 }
   
+<<<<<<< HEAD
 footer {
+=======
+  footer {
+>>>>>>> heeeun1207/issue3
       height: 10%;
       display: flex;
       align-items: center;
@@ -99,6 +128,7 @@ footer {
   </head>
   <body>
     <header>
+<<<<<<< HEAD
       <a href="/">
         <img src="hamburger.png" alt="hamburger" class="hamburger-image" onclick="location.       href='index.html'">
       </a>
@@ -106,6 +136,12 @@ footer {
         <img src="x-symbol.png"g" alt="Menu button" class="menu-button" />
       </a>
     </header>
+=======
+        <a href="#">
+          <img src="x-symbol.png" alt="Close button" class="close-button" />
+        </a>
+      </header>
+>>>>>>> heeeun1207/issue3
     
     <main>
       <div class="image-container">
@@ -126,6 +162,7 @@ footer {
     image.addEventListener("click", (e) => {
     const altValue = e.target.getAttribute("alt");
     window.location.href = "~~~url~~~";
+<<<<<<< HEAD
     const menuButton = document.querySelector(".menu-button");
     const closeButton = document.querySelector(".close-button");
     menuButton.style.display = "block";
@@ -147,6 +184,15 @@ footer {
     closeButton.style.display = "none";
     menuButton.style.display = "block";
 });
+=======
+      });
+    });
+    const closeButton = document.querySelector(".close-button");
+    closeButton.addEventListener("click", () => {
+      window.location.href = "index.html";
+    });
+
+>>>>>>> heeeun1207/issue3
 
     </script>
   </body>
