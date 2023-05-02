@@ -31,7 +31,18 @@
     height: 10%;
     width: 100%;
     background-color: rgb(235, 243, 196);
-}
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    border-top: 1px solid black;
+    }
+
+    footer a {
+    text-decoration: none;
+    color: inherit;
+    }
+
 
 /* footer {
 display: flex;
@@ -66,10 +77,11 @@ color: inherit;
 </section>
 <footer>
 	<a href="#" onclick="location.href='FAQpage.html'">FAQ</a>
-  <a href="#" onclick="location.href='Noticepage.html'">공지사항</a>
+  <a href="#" onclick="location.href='Noticepage.html'">소식</a>
+</footer>
 <script>
 document.querySelector('footer').textContent = '';
 </script>
-</footer>
+
 </body>
 </html> 
