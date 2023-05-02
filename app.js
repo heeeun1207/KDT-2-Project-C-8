@@ -8,6 +8,8 @@ const routes = {
   '/homegreen.png': { file: 'sub/img/homegreen.png', type: 'image/png' },
   //로그인 화면 
   '/login.html': { file: 'sub/Login/login.html', type: 'text/html; charset=utf-8' },
+  //마이페이지 
+  '/mypage.html': { file: 'sub/mypage/mypage.html', type: 'text/html; charset=utf-8' },
   //지킴이 테스트 첫화면 (안내 페이지)
   '/testGuide.html': { file: 'sub/testpaper/testGuide.html', type: 'text/html; charset=utf-8' },
   '/test.html': { file: 'sub/testpaper/test.html', type: 'text/html; charset=utf-8' },
