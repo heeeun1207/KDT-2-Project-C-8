@@ -15,38 +15,12 @@
   }
 
   header {
-<<<<<<< HEAD
-  Height :10%;
-=======
   height: 10%;
->>>>>>> heeeun1207/issue3
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
   border-bottom: 1px solid black;
-<<<<<<< HEAD
-  }
-  
-  header img {
-  width: 30px;
-  height: 30px;
-  }
-
-
-header img {
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-    cursor: pointer;
-    display: none; /* 초기에는 보이지 않게 */
-}
-
-.menu-button {
-    display: block; /* 메뉴 버튼만 보이게 */
-}
-
-=======
 }
   header img {
     width: 30px;
@@ -61,7 +35,6 @@ header img {
     margin-right: 10px;
     cursor: pointer;
 }
->>>>>>> heeeun1207/issue3
   main {
     height: 70%;
     border: 1px solid black;
@@ -70,11 +43,7 @@ header img {
     align-items: center;
 }
 
-<<<<<<< HEAD
-.image-container {
-=======
   .image-container {
->>>>>>> heeeun1207/issue3
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -97,11 +66,7 @@ header img {
     align-items: center;
 }
   
-<<<<<<< HEAD
-footer {
-=======
   footer {
->>>>>>> heeeun1207/issue3
       height: 10%;
       display: flex;
       align-items: center;
@@ -128,20 +93,10 @@ footer {
   </head>
   <body>
     <header>
-<<<<<<< HEAD
-      <a href="/">
-        <img src="hamburger.png" alt="hamburger" class="hamburger-image" onclick="location.       href='index.html'">
-      </a>
-      <a href="#">
-        <img src="x-symbol.png"g" alt="Menu button" class="menu-button" />
-      </a>
-    </header>
-=======
         <a href="#">
           <img src="x-symbol.png" alt="Close button" class="close-button" />
         </a>
       </header>
->>>>>>> heeeun1207/issue3
     
     <main>
       <div class="image-container">
@@ -162,29 +117,6 @@ footer {
     image.addEventListener("click", (e) => {
     const altValue = e.target.getAttribute("alt");
     window.location.href = "~~~url~~~";
-<<<<<<< HEAD
-    const menuButton = document.querySelector(".menu-button");
-    const closeButton = document.querySelector(".close-button");
-    menuButton.style.display = "block";
-    closeButton.style.display = "block";
-  });
-});
-
-    const menuButton = document.querySelector(".menu-button");
-    const closeButton = document.querySelector(".close-button");
-
-    menuButton.addEventListener("click", () => {
-    
-    menuButton.style.display = "none";
-    closeButton.style.display = "block";
-});
-
-    closeButton.addEventListener("click", () => {
-  
-    closeButton.style.display = "none";
-    menuButton.style.display = "block";
-});
-=======
       });
     });
     const closeButton = document.querySelector(".close-button");
@@ -192,7 +124,6 @@ footer {
       window.location.href = "index.html";
     });
 
->>>>>>> heeeun1207/issue3
 
     </script>
   </body>
