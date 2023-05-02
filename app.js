@@ -5,7 +5,7 @@ const path = require('path');
 const routes = {
   '/': { file: 'index.html', type: 'text/html; charset=utf-8' },
   '/profile.png': { file: 'sub/img/profile.png', type: 'image/png' },
-  '/hamburger.png': { file: 'sub/img/hamburger.png', type: 'image/png' },
+  '/homegreen.png': { file: 'sub/img/homegreen.png', type: 'image/png' },
   //로그인 화면 
   '/login.html': { file: 'sub/Login/login.html', type: 'text/html; charset=utf-8' },
   //지킴이 테스트 첫화면 (안내 페이지)
