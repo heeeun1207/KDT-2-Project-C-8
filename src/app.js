@@ -29,6 +29,7 @@ const routes = {
   '/x-symbol.png': { file: 'assets/images/x-symbol.png', type: 'image/png' },
   //이벤트 & 소식페이지 
   '/eventpage.html': { file: 'assets/css/News/eventpage.html', type: 'text/html; charset=utf-8' },
+  '/eventpage.css': { file: 'assets/css/News/eventpage.css', type: 'text/css; charset=utf-8' },
   //친환경 라이프페이지 
   '/ecoLife.html': { file: 'assets/css/ecoLifePage/ecoLife.html', type: 'text/html; charset=utf-8' },
   '/ecostyle.css': { file: 'assets/css/ecoLifePage/ecostyle.css', type: 'text/css; charset=utf-8' },
@@ -44,7 +45,7 @@ const routes = {
   '/FAQpage.css': { file: 'assets/css/FAQ/FAQpage.css', type: 'text/css; charset=utf-8' },
   '/FAQpage.js': { file: 'assets/js/FAQpage.js', type: 'text/jcssavascript; charset=utf-8' },
   //공지사항 페이지 
-  '/Noticepage.html': { file: 'assets/css/Notice/Noticepage.html', type: 'text/html; charset=utf-8' },
+  '/NoticePage.html': { file: 'assets/css/Notice/NoticePage.html', type: 'text/html; charset=utf-8' },
   '/NoticePage.css': { file: 'assets/css/Notice/NoticePage.css', type: 'text/css; charset=utf-8' },
 };
 
