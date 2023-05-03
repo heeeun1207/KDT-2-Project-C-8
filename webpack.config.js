@@ -5,7 +5,7 @@ const path = require('path');
 
 module.exports = {
   mode:'production', 
-  entry: './src/index.js',
+  entry: './src/assets/js/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'), // 상대경로를 절대경로로 변환
     filename: './index.bundle.js'
