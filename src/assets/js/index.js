@@ -1,4 +1,2 @@
-window.addEventListener('DOMContentLoaded', () => {
-  const bundlingTest = "i need bundling"
-  console.log(bundlingTest)
-})  //ok! 
+console.log('hello');
+const a = 1;
