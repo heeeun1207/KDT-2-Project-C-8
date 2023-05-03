@@ -7,32 +7,35 @@ const path = require('path');
 
 const routes = {
   '/': { file: 'index.html', type: 'text/html; charset=utf-8' },
-  // '/': { file: 'index.html/script.js', type: 'text/javascript' }, 
-  '/profile.png': { file: 'sub/img/profile.png', type: 'image/png' },
-  '/homegreen.png': { file: 'sub/img/homegreen.png', type: 'image/png' },
-  '/us.png': { file: 'sub/img/us.png', type: 'image/png' },
+  // '/': { file: 'index.html/index.js', type: 'text/javascript' }, 
+  // '/': { file: 'index.html/index.css', type: 'text/css' }, 
+  '/profile.png': { file: 'assets/images/profile.png', type: 'image/png' },
+  '/homegreen.png': { file: 'assets/images/homegreen.png', type: 'image/png' },
+  '/us.png': { file: 'assets/images/us.png', type: 'image/png' },
   //로그인 화면 
-  '/login.html': { file: 'sub/Login/login.html', type: 'text/html; charset=utf-8' },
+  '/login.html': { file: 'assets/css/Login/login.html', type: 'text/html; charset=utf-8' },
   //마이페이지 
-  '/mypage.html': { file: 'sub/mypage/mypage.html', type: 'text/html; charset=utf-8' },
+  '/mypage.html': { file: 'assets/css/mypage/mypage.html', type: 'text/html; charset=utf-8' },
   //지킴이 테스트 첫화면 (안내 페이지)
-  '/testGuide.html': { file: 'sub/testpaper/testGuide.html', type: 'text/html; charset=utf-8' },
-  '/test.html': { file: 'sub/testpaper/test.html', type: 'text/html; charset=utf-8' },
-  '/x-symbol.png': { file: 'sub/img/x-symbol.png', type: 'image/png' },
+  '/testGuide.html': { file: 'assets/css/testpaper/testGuide.html', type: 'text/html; charset=utf-8' },
+  '/test.html': { file: 'assets/css/testpaper/test.html', type: 'text/html; charset=utf-8' },
+  '/x-symbol.png': { file: 'assets/images/x-symbol.png', type: 'image/png' },
   //이벤트 & 소식페이지 
-  '/eventpage.html': { file: 'sub/News/eventpage.html', type: 'text/html; charset=utf-8' },
+  '/eventpage.html': { file: 'assets/css/News/eventpage.html', type: 'text/html; charset=utf-8' },
   //친환경 라이프페이지 
-  '/ecoLife.html': { file: 'sub/ecoLifePage/ecoLife.html', type: 'text/html; charset=utf-8' },
-  '/ecoscript.js': { file: 'sub/ecoLifePage/ecoscript.js', type: 'text/javascript; charset=utf-8' },
-  '/ecostyle.css': { file: 'sub/ecoLifePage/ecostyle.css', type: 'text/css; charset=utf-8' },
+  '/ecoLife.html': { file: 'assets/css/ecoLifePage/ecoLife.html', type: 'text/html; charset=utf-8' },
+  '/ecoscript.js': { file: 'assets/js/ecoLifePage/ecoscript.js', type: 'text/javascript; charset=utf-8' },
+  '/ecostyle.css': { file: 'assets/css/ecoLifePage/ecostyle.css', type: 'text/css; charset=utf-8' },
   //신고하는 지킴이페이지 
-  '/tellerpage.html': { file: 'sub/tellerpage/tellerpage.html', type: 'text/html; charset=utf-8' },
-  '/thumbup.png': { file: 'sub/img/thumbup.png', type: 'image/png' },
-  '/thumbdown.png': { file: 'sub/img/thumbdown.png', type: 'image/png' },
+  '/tellerpage.html': { file: 'assets/css/tellerpage/tellerpage.html', type: 'text/html; charset=utf-8' },
+  '/thumbup.png': { file: 'assets/images/thumbup.png', type: 'image/png' },
+  '/thumbdown.png': { file: 'assets/images/thumbdown.png', type: 'image/png' },
   //FAQ 페이지 
-  '/FAQpage.html': { file: 'sub/FAQ/FAQpage.html', type: 'text/html; charset=utf-8' },
+  '/FAQpage.html': { file: 'assets/css/FAQ/FAQpage.html', type: 'text/html; charset=utf-8' },
+  '/FAQpage.css': { file: 'assets/css/FAQ/FAQpage.css', type: 'text/css; charset=utf-8' },
+  '/FAQpage.js': { file: 'assets/js/FAQpage.js', type: 'text/jcssavascript; charset=utf-8' },
   //공지사항 페이지 
-  '/Noticepage.html': { file: 'sub/Notice/Noticepage.html', type: 'text/html; charset=utf-8' },
+  '/Noticepage.html': { file: 'assets/css/Notice/Noticepage.html', type: 'text/html; charset=utf-8' },
 };
 
 const handleResponse = (req, res) => {
