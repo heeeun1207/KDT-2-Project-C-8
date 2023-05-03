@@ -6,9 +6,9 @@ const fs = require('fs');
 const path = require('path');
 
 const routes = {
-  '/': { file: 'assets/css/index/index.html', type: 'text/html; charset=utf-8' },
-  '/': { file: 'assets/css/index/index.css', type: 'text/css; charset=utf-8' }, 
-  '/': { file: 'assets/js/index.js', type: 'text/javascript' }, 
+  '/': { file: '/index.html', type: 'text/html; charset=utf-8' },
+  // '/': { file: 'assets/css/index/index.css', type: 'text/css; charset=utf-8' }, 
+  // '/': { file: 'assets/js/index.js', type: 'text/javascript' }, 
   '/profile.png': { file: 'assets/images/profile.png', type: 'image/png' },
   '/homegreen.png': { file: 'assets/images/homegreen.png', type: 'image/png' },
   '/us.png': { file: 'assets/images/us.png', type: 'image/png' },
