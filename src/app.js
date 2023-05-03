@@ -6,9 +6,9 @@ const fs = require('fs');
 const path = require('path');
 
 const routes = {
-  '/': { file: 'index.html', type: 'text/html; charset=utf-8' },
-  // '/': { file: 'index.html/index.js', type: 'text/javascript' }, 
-  // '/': { file: 'index.html/index.css', type: 'text/css' }, 
+  '/': { file: 'assets/css/index/index.html', type: 'text/html; charset=utf-8' },
+  '/': { file: 'assets/css/index/index.css', type: 'text/css; charset=utf-8' }, 
+  '/': { file: 'assets/js/index.js', type: 'text/javascript' }, 
   '/profile.png': { file: 'assets/images/profile.png', type: 'image/png' },
   '/homegreen.png': { file: 'assets/images/homegreen.png', type: 'image/png' },
   '/us.png': { file: 'assets/images/us.png', type: 'image/png' },
@@ -21,7 +21,7 @@ const routes = {
   //지킴이 테스트 첫화면 (안내 페이지)
   '/testGuide.html': { file: 'assets/css/testpaper/testGuide.html', type: 'text/html; charset=utf-8' },
   '/testGuide.css': { file: 'assets/css/testpaper/testGuide.css', type: 'text/css; charset=utf-8' },
-  '/testGuide.js': { file: 'assets/js/testGuide.js', type: 'text/js ; charset=utf-8' },
+  '/testGuide.js': { file: 'assets/js/testGuide.js', type: 'text/javascript ; charset=utf-8' },
   //테스트 시험지 페이지 
   '/test.html': { file: 'assets/css/testpaper/test.html', type: 'text/html; charset=utf-8' },
   '/test.css': { file: 'assets/css/testpaper/test.css', type: 'text/css; charset=utf-8' },
