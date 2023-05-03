@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FAQ</title>
+  <style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+  border: 1px solid black;
+}
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 1rem;
+border-bottom: 1px solid black;
+}
+
+header img {
+width: 30px;
+height: 30px;
+}
+
+main {
+display: grid;
+grid-template-rows: repeat(6, 10%);
+gap: 1rem;
+padding: 1rem;
+}
+
+section {
+border: 1px solid black;
+text-align: center;
+position: relative;
+}
+
+section::after {
+/* content: '\25B6'; */
+font-size: 1.5rem;
+position: absolute;
+right: 0.5rem;
+top: 50%;
+transform: translateY(-50%);
+cursor: pointer;
+}
+
+footer {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 1rem;
+border-top: 1px solid black;
+}
+
+footer a {
+text-decoration: none;
+color: inherit;
+}
+
+.modal {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 9999;
+}
+
+.modal-content {
+background-color: #fff;
+max-width: 400px;
+margin: auto;
+margin-top: 20vh;
+padding: 1rem;
+text-align: center;
+}
+
+.modal-button {
+margin-top: 1rem;
+cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <header> 
+      <a href="/">
+        <img src="homegreen.png" alt="homegreen" class="homegreen-image" onclick="location.       href='index.html'">
+        </a>
+  <p></p>
+  <img src="profile.png" alt="Profile Image" class="profile-image" onclick="location.       href='login.html'">
+    </header>
+    <main>
+      <section>
+        <p>닭뼈는 일반 쓰레기인가요?</p>
+      </section>
+      <section>
+        <p>빨대는 플라스틱으로 분리수거하나요?</p>
+      </section>
+      <section>
+        <p>귤 껍질은 음식물 쓰레기인가요?</p>
+      </section>
+    </main>
+    <footer>
+      <a href="#" onclick="location.href='FAQpage.html'">FAQ</a>
+      <a href="#" onclick="location.href='Noticepage.html'">소식</a>
+    </footer>
+  </div>
+  <div class="modal">
+    <div class="modal-content">
+      <p>모달창만들기.</p>
+      <!-- <button class="modal-button">닫기</button> -->
+    </div>
+  </div>
+  <button class="modal-button" id="openModalButton">열기</button>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var modal = document.querySelector('.modal');
+      var modalButton = document.querySelector('.modal-button');
+      var modalContent = document.querySelector('.modal-content');
+      var sections = document.querySelectorAll('section');
+
+      sections.forEach(function(section) { 
+        section.addEventListener('click', function() { 
+          modal.style.display = 'block';
+        });
+      });
+
+      modal.addEventListener('click', function(event) {
+        if (event.target === modal || event.target === modalContent) {
+          modal.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+  
