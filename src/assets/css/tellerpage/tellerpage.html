@@ -5,79 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Dynamic Page</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
+  <link rel="stylesheet" type="text/css" href="tellerpage.css">
 
-    body {
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    header {
-      Height :10%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 1rem;
-      border-bottom: 1px solid black;
-    }
-
-    header img {
-      width: 30px;
-      height: 30px;
-    }
-
-    main {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    section {
-      height: 10vh;
-      padding: 1vh 1vw;
-      border: 1px solid black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    section img {
-      width: 50px;
-      height: 50px;
-      margin-right: 10px;
-    }
-
-    footer {
-      height: 10%;
-      padding: 1vh 1vw;
-      border: 1px solid black;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .footer-link {
-      text-decoration: none;
-      color: inherit;
-      margin-left: 10px;
-    }
-
-    footer a {
-      margin: 0 10px;
-      text-decoration: none;
-    }
-
-    .footer-link,
-    footer a {
-      color: black;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -102,49 +31,6 @@
     <a href="#" onclick="location.href='FAQpage.html'">FAQ</a>
     <a href="#" onclick="location.href='Noticepage.html'">소식</a>
   </footer>
-
-  <script>
-    let counter = 0;
-    let clicked = false;
-    function incrementCounter() {
-      if (!clicked) { 
-        counter++; 
-        document.getElementById("counter").innerText = counter; 
-      }};
-      const imageInput = document.querySelector('#image-input');
-    const imagePreview = document.querySelector('#image-preview');
-  
-    imageInput.addEventListener('change', () => {
-      const file = imageInput.files[0];
-      const reader = new FileReader();
-  
-      reader.onload = () => {
-        const image = new Image();
-        image.src = reader.result;
-  
-        image.onload = () => {
-          const imageWidth = image.width;
-          const imageHeight = image.height;
-          const aspectRatio = imageWidth / imageHeight;
-          const maxWidth = window.innerWidth * 0.5;
-          const maxHeight = window.innerHeight * 0.5;
-          let width = maxWidth;
-          let height = maxHeight / aspectRatio;
-  
-          if (height > maxHeight) {
-            height = maxHeight;
-            width = height * aspectRatio;
-          }
-          imagePreview.innerHTML = '';
-          imagePreview.appendChild(image);
-          image.style.width = `${width}px`;
-          image.style.height = `${height}px`;
-          image.style.display = 'block';
-          image.style.margin = 'auto';
-        };
-      };
-      reader.readAsDataURL(file);
-    });
-  </script>
+<script src="tellerpage.js"></script>
   </body>
   </html>

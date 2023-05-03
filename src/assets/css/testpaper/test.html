@@ -4,70 +4,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> 문제지  </title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-      }
-  
-      body {
-        width: 390px;
-        height: 844px;
-        border: 1px solid black;
-      }
-  
-      header {
-      Height :10%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 1rem;
-      border-bottom: 1px solid black;
-      }
-
-      header img {
-      width: 30px;
-      height: 30px;
-      }
-  
-      main {
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-      }
-  
-      .question {
-        margin-bottom: 10px;
-      }
-  
-      .question label {
-        display: block;
-        margin-bottom: 5px;
-      }
-  
-      .question input[type="radio"] {
-        margin-right: 5px;
-      }
-  
-      footer {
-      height: 10%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 1rem;
-      border-top: 1px solid black;
-      }
-
-      footer a {
-      text-decoration: none;
-      color: inherit;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="testGuide.css">
   </head>
   <body>
     <header>
@@ -154,30 +91,6 @@
         <a href="#" onclick="location.href='FAQpage.html'">FAQ</a>
         <a href="#" onclick="location.href='Noticepage.html'">소식</a>
       </footer>
-      
-      <script>
-        const answers = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
-        function checkAnswers() {
-          let total = 0;
-          const questions = document.querySelectorAll('.question');
-          questions.forEach((question, index) => {
-            const answer = parseInt(question.querySelector('input[type="radio"]:checked').value);
-            if (answer === answers[index]) {
-              total++;
-            }
-          });
-      
-          document.getElementById('total').textContent = `정답: ${total}개`;
-        }
-        const questions = document.querySelectorAll('.question');
-      
-        questions.forEach((question) => {
-          const inputs = question.querySelectorAll('input[type="radio"]');
-      
-          inputs.forEach((input) => {
-            input.addEventListener('click', checkAnswers);
-          });
-        });
-      </script>
+      <script src="test.js"></script>
   </body>
 </html> 

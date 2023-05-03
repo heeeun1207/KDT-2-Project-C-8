@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>테스트 시작 페이지 </title>
+    <link rel="stylesheet" type="text/css" href="ecostyle.css">
     <style>
       * {
         box-sizing: border-box;
@@ -101,18 +102,7 @@
       <a href="#" onclick="location.href='FAQpage.html'">FAQ</a>
       <a href="#" onclick="location.href='Noticepage.html'">소식</a>
     </footer>
-    <script>
-      const thumbImages = document.querySelectorAll(".thumb-image");
-      thumbImages.forEach((image) => {
-        image.addEventListener("click", (e) => {
-          const altValue = e.target.getAttribute("alt");
-          window.location.href = "~~~url~~~";
-        });
-      });
-      const closeButton = document.querySelector(".close-button");
-      closeButton.addEventListener("click", () => {
-        window.location.href = "/";
-      });
+  <script src ="testGuide.js"></script>
     </script>
   </body>
 </html>
