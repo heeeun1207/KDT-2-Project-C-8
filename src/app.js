@@ -12,6 +12,10 @@ const routes = {
   '/profile.png': { file: 'assets/images/profile.png', type: 'image/png' },
   '/homegreen.png': { file: 'assets/images/homegreen.png', type: 'image/png' },
   '/us.png': { file: 'assets/images/us.png', type: 'image/png' },
+  '/ecoLife.png': { file: 'assets/images/main/ecoLife.png', type: 'image/png' },
+  '/noticeboard.png': { file: 'assets/images/main/noticeboard.png', type: 'image/png' },
+  '/test.png': { file: 'assets/images/main/test.png', type: 'image/png' },
+  '/user.png': { file: 'assets/images/main/user.png', type: 'image/png' },
   //로그인 화면 
   '/login.html': { file: 'assets/css/Login/login.html', type: 'text/html; charset=utf-8' },
   '/Login.css': { file: 'assets/css/Login/Login.css', type: 'text/css; charset=utf-8' },
@@ -69,6 +73,6 @@ const handleResponse = (req, res) => {
   }
 };
 const server = http.createServer(handleResponse);
-server.listen(3000, () => {
-  console.log('Server3000');
+server.listen(3080, () => {
+  console.log('Server3080');
 });
