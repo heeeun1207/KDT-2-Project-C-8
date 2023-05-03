@@ -4,32 +4,24 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-  // module: {
-  //   rules: [
-  //     {
-  //       test: /\.html$/,
-  //       use: ['html-loader']
-  //     }
-  //   ]
-  // },
-  mode:'production', 
-  entry: '/src/index.html',
+  mode: 'production',
+  entry: './src/assets/index.html',
   output: {
-    path: path.resolve(__dirname, 'dist'), // 상대경로를 절대경로로 변환
-    filename: './index.bundle.js'
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'test.html'
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "index.html",
-      filename:"test.html"
+      template: './src/index.html',
+      filename: 'index.html'
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { 
+        {
           from: './src/assets',
           to: './assets'
         }
       ]
     })
-  ],
-}
+  ]
+};
