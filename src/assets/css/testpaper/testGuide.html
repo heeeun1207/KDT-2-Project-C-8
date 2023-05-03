@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>테스트 시작 페이지 </title>
+    <link rel="stylesheet" type="text/css" href="ecostyle.css">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+        border-bottom: 1px solid black;
+      }
+      header img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      .close-button {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+      }
+      main {
+        height: 70%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .image-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      .thumb-image {
+        height: 50%;
+        width: auto;
+        cursor: pointer;
+        margin-bottom: 20px;
+      }
+      section {
+        height: 10%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      footer {
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+        border-top: 1px solid black;
+      }
+      footer a {
+        text-decoration: none;
+        color: inherit;
+      }
+      button {
+        width: 80%;
+        height: 100%;
+        background-color: #62b6e7;
+        color: #fff;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="x-symbol.png" alt="Close button" class="close-button" />
+    </header>
+
+    <main>
+      <div class="image-container">
+        <img src="thumbup.png" alt="Thumb up image" class="thumb-image" />
+        <img src="thumbdown.png" alt="Thumb down image" class="thumb-image" />
+      </div>
+    </main>
+    <section>
+      <button onclick="window.location.href='test.html'">문제 풀러가기</button>
+    </section>
+    <footer>
+      <a href="#" onclick="location.href='FAQpage.html'">FAQ</a>
+      <a href="#" onclick="location.href='Noticepage.html'">소식</a>
+    </footer>
+  <script src ="testGuide.js"></script>
+    </script>
+  </body>
+</html>
+
