@@ -11,6 +11,9 @@ const routes = {
   // '/': { file: 'assets/js/index.js', type: 'text/javascript' }, 
   '/profile.png': { file: 'assets/images/profile.png', type: 'image/png' },
   '/homegreen.png': { file: 'assets/images/homegreen.png', type: 'image/png' },
+  '/home.png': { file: 'assets/images/home.png', type: 'image/png' },
+  '/milk-carton.png': { file: 'assets/images/EcoLife/milk-carton.png', type: 'image/png' },
+  '/pot.png': { file: 'assets/images/EcoLife/pot.png', type: 'image/png' },
   //에코라이프 아이콘 
   '/therm.png': { file: 'assets/images/EcoLife/therm.png', type: 'image/png' },
   '/bath-scrubber.png': { file: 'assets/images/EcoLife/bath-scrubber.png', type: 'image/png' },
