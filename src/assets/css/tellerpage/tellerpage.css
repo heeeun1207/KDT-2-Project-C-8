@@ -25,10 +25,16 @@ header img {
 }
 
 main {
+  height: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+main div{
+  height: 100%;
+  width: 90%;
+
 }
 
 section {
