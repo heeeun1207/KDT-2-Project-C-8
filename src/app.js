@@ -3,13 +3,11 @@ const fs = require('fs');
 const path = require('path');
 const mysql = require('mysql');
 
-
-
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: 'password',
-  database: 'mydb',
+  database: 'LoginDB',
 });
 connection.connect((error) => {
   if (error) {
