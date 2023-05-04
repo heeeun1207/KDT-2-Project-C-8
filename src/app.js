@@ -40,7 +40,7 @@ const routes = {
   '/ecoscript.js': { file: 'assets/js/ecoscript.js', type: 'text/javascript; charset=utf-8' },
   //신고하는 지킴이페이지 
   '/tellerpage.html': { file: 'assets/css/tellerpage/tellerpage.html', type: 'text/html; charset=utf-8' },
-  '/tellerpage.css': { file: 'assets/css/tellerpage/tellerpage.css', type: 'text/html; charset=utf-8' },
+  '/tellerpage.css': { file: 'assets/css/tellerpage/tellerpage.css', type: 'text/css; charset=utf-8' },
   '/tellerpage.js': { file: 'assets/js/tellerpage.js', type: 'text/javascript; charset=utf-8' },
   '/thumbup.png': { file: 'assets/images/thumbup.png', type: 'image/png' },
   '/thumbdown.png': { file: 'assets/images/thumbdown.png', type: 'image/png' },
