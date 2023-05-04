@@ -50,6 +50,11 @@ section {
   align-items: flex-end; 
   padding: 10px;
 }
+section img{
+  width: 50%;
+  height: 50%;
+  margin-bottom: 30%;
+}
 footer {
   display: flex;
   align-items: center;

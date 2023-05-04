@@ -11,6 +11,14 @@ const routes = {
   // '/': { file: 'assets/js/index.js', type: 'text/javascript' }, 
   '/profile.png': { file: 'assets/images/profile.png', type: 'image/png' },
   '/homegreen.png': { file: 'assets/images/homegreen.png', type: 'image/png' },
+  //에코라이프 아이콘 
+  '/therm.png': { file: 'assets/images/EcoLife/therm.png', type: 'image/png' },
+  '/bath-scrubber.png': { file: 'assets/images/EcoLife/bath-scrubber.png', type: 'image/png' },
+  '/plastic-recycling.png': { file: 'assets/images/EcoLife/plastic-recycling.png', type: 'image/png' },
+  '/shopping-bag.png': { file: 'assets/images/EcoLife/shopping-bag.png', type: 'image/png' },
+  '/box.png': { file: 'assets/images/EcoLife/box.png', type: 'image/png' },
+  '/service.png': { file: 'assets/images/EcoLife/service.png', type: 'image/png' },
+  //
   '/us.png': { file: 'assets/images/us.png', type: 'image/png' },
   '/ecoLife.png': { file: 'assets/images/main/ecoLife.png', type: 'image/png' },
   '/noticeboard.png': { file: 'assets/images/main/noticeboard.png', type: 'image/png' },
