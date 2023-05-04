@@ -1,9 +1,97 @@
-//entry point of the application 
-//src 디렉토리에서 작업 & 연산되는 모든 작업은 app.js에서 관리한다. 
-
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const mysql = require('mysql');
+
+
+
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: 'password',
+  database: 'mydb',
+});
+connection.connect((error) => {
+  if (error) {
+    console.error('Database connection failed: ' + error.stack);
+    return;
+  }
+  console.log('Connected to database.');
+});
+
+  const url = request.url;
+  const method = request.method;
+
+  if (url === '/') {
+    response.write('<html>');
+    response.write('<head><title>Enter Message</title></head>');
+    response.write(
+      '<body><form action="/message" method="POST"><input type="text" name="message"><button type="submit">Send</button></form></body>'
+    );
+    response.write('</html>');
+    return response.end();
+  }
+
+  if (url === '/message' && method === 'POST') {
+    const body = [];
+    request.on('data', (chunk) => {
+      console.log(chunk);
+      body.push(chunk);
+    });
+    request.on('end', () => {
+      const parsedBody = Buffer.concat(body).toString();
+      const message = parsedBody.split('=')[1];
+      connection.query(
+        'INSERT INTO messages (message) VALUES (?)',
+        [message],
+        (error, result) => {
+          if (error) {
+            console.error(error.stack);
+            response.statusCode = 500;
+            response.setHeader('Content-Type', 'text/plain');
+            response.write('Error: ' + error.stack);
+            return response.end();
+          }
+          console.log('Message saved to database: ' + message);
+          response.statusCode = 302;
+          response.setHeader('Location', '/');
+          return response.end();
+        }
+      );
+    });
+  }
+
+  if (url === '/messages' && method === 'GET') {
+    connection.query('SELECT * FROM messages', (error, results) => {
+      if (error) {
+        console.error(error.stack);
+        response.statusCode = 500;
+        response.setHeader('Content-Type', 'text/plain');
+        response.write('Error: ' + error.stack);
+        return response.end();
+      }
+      response.statusCode = 200;
+      response.setHeader('Content-Type', 'text/html');
+      response.write('<html>');
+      response.write('<head><title>Messages</title></head>');
+      response.write('<body><ul>');
+      results.forEach((result) => {
+        response.write('<li>' + result.message + '</li>');
+      });
+      response.write('</ul></body>');
+      response.write('</html>');
+      return response.end();
+    });
+  }
+
+  response.setHeader('Content-Type', 'text/html');
+  response.write('<html>');
+  response.write('<head><title>My First Page</title></head>');
+  response.write('<body><h1>Hello, World!</h1></body>');
+  response.write('</html>');
+  response.end();
+
+
 
 const routes = {
   '/': { file: '/index.html', type: 'text/html; charset=utf-8' },
@@ -12,9 +100,9 @@ const routes = {
   '/profile.png': { file: 'assets/images/profile.png', type: 'image/png' },
   '/homegreen.png': { file: 'assets/images/homegreen.png', type: 'image/png' },
   '/home.png': { file: 'assets/images/home.png', type: 'image/png' },
+   //에코라이프 아이콘 
   '/milk-carton.png': { file: 'assets/images/EcoLife/milk-carton.png', type: 'image/png' },
   '/pot.png': { file: 'assets/images/EcoLife/pot.png', type: 'image/png' },
-  //에코라이프 아이콘 
   '/therm.png': { file: 'assets/images/EcoLife/therm.png', type: 'image/png' },
   '/bath-scrubber.png': { file: 'assets/images/EcoLife/bath-scrubber.png', type: 'image/png' },
   '/plastic-recycling.png': { file: 'assets/images/EcoLife/plastic-recycling.png', type: 'image/png' },
