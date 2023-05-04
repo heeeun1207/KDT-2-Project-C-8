@@ -72,7 +72,7 @@ const routes = {
   '/FAQpage.css': { file: 'assets/css/FAQ/FAQpage.css', type: 'text/css; charset=utf-8' },
   '/FAQpage.js': { file: 'assets/js/FAQpage.js', type: 'text/jcssavascript; charset=utf-8' },
   //공지사항 페이지 
-  '/Noticepage.html': { file: 'assets/css/Notice/NoticePage.html', type: 'text/html; charset=utf-8' },
+  '/NoticePage.html': { file: 'assets/css/Notice/NoticePage.html', type: 'text/html; charset=utf-8' },
   '/NoticePage.css': { file: 'assets/css/Notice/NoticePage.css', type: 'text/css; charset=utf-8' },
 };
 
