@@ -58,7 +58,7 @@ const routes = {
   //친환경 라이프페이지 
   '/ecoLife.html': { file: 'views/ecoLife.html', type: 'text/html; charset=utf-8' },
   '/ecostyle.css': { file: 'assets/css/ecoLifePage/ecostyle.css', type: 'text/css; charset=utf-8' },
-  '/ecoscript.js': { file: 'assets/js/ecoscript.js', type: 'text/javascript; charset=utf-8' },
+  '/ecoscript.js': { file: 'assets/js/ecoscript.js', type: 'text/jcssavascript; charset=utf-8' },
   //신고하는 지킴이페이지 
   '/tellerpage.html': { file: 'views/tellerpage.html', type: 'text/html; charset=utf-8' },
   '/tellerpage.css': { file: 'assets/css/tellerpage/tellerpage.css', type: 'text/css; charset=utf-8' },
@@ -68,10 +68,11 @@ const routes = {
   //FAQ 페이지 
   '/FAQpage.html': { file: 'views/FAQpage.html', type: 'text/html; charset=utf-8' },
   '/FAQpage.css': { file: 'assets/css/FAQ/FAQpage.css', type: 'text/css; charset=utf-8' },
-  '/FAQpage.js': { file: 'assets/js/FAQpage.js', type: 'text/jcssavascript; charset=utf-8' },
+  '/FAQpage.js': { file: 'assets/js/FAQpage.js', type: 'text/javascript; charset=utf-8' },
   //공지사항 페이지 
   '/NoticePage.html': { file: 'views/NoticePage.html', type: 'text/html; charset=utf-8' },
   '/NoticePage.css': { file: 'assets/css/Notice/NoticePage.css', type: 'text/css; charset=utf-8' },
+  '/NoticePage.js': { file: 'assets/js/NoticePage.js', type: 'text/javascript; charset=utf-8' },
 };
 
 const handleResponse = (request, response) => {
