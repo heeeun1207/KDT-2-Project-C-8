@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <style>
+
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 0 10px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.header-right img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+  </style>
+<head>
+  <title>친환경 라이프</title>
+  <link rel="stylesheet" type="text/css" href="ecostyle.css">
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <a href="/">
+        <img src="homegreen.png" alt="homegreen" class="homegreen-image" onclick="location.       href='index.html'">
+        </a>    
+      <span>친환경 라이프</span>
+    </div>
+    <div class="header-right">
+      <img src="profile.png" alt="Profile Image" class="profile-image" onclick="location.       href='login.html'">
+    </div>
+  </header>
+  <main>
+    <section> <img src="therm.png" alt="therm Image">
+      텀블러 사용</section>
+    <section><img src="bath-scrubber.png" alt="therm Image">천연수세미</section>
+    <section><img src="plastic-recycling.png" alt="therm Image">PET 라벨 떼기</section>
+    <section><img src="shopping-bag.png" alt="therm Image">장바구니</section>
+    <section><img src="box.png" alt="therm Image">박스는 깨끗히</section>
+    <section><img src="service.png" alt="therm Image">온도 조절하기</section>
+  </main>
+  <footer>
+    <a href="#" onclick="location.href='FAQpage.html'">FAQ</a>
+    <a href="#" onclick="location.href='Noticepage.html'">소식</a>
+  </footer>
+  <script src="ecoscript.js"></script>
+</body>
+</html>
