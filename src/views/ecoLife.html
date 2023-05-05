@@ -1,63 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <style>
-
-header {
-  height: 10vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid black;
-  padding: 0 10px;
-}
-
-.header-left {
-  display: flex;
-  align-items: center;
-}
-
-.header-left img {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.header-right img {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-  </style>
-<head>
-  <title>친환경 라이프</title>
-  <link rel="stylesheet" type="text/css" href="ecostyle.css">
-</head>
-<body>
-  <header>
-    <div class="header-left">
-      <a href="/">
-        <img src="homegreen.png" alt="homegreen" class="homegreen-image" onclick="location.       href='index.html'">
+  <head>
+    <title>친환경 라이프</title>
+    <link rel="stylesheet" type="text/css" href="ecostyle.css">
+  </head>
+  <body>
+    <header>
+     
+      <div class="header-left">
+        <a href="/">
+          <img src="homegreen.png" alt="homegreen" class="homegreen-image" onclick="location.href='index.html'">
         </a>    
-      <span>친환경 라이프</span>
+        <span>친환경 라이프</span>
+      </div>
+      <div class="header-right">
+        <img src="profile.png" alt="profile" class="profile-image" onclick="location.href='mypage.html'">
+      </div>
+    </header>
+    <main>
+      <section id="section1" onclick="showModal('modal1')">
+        <img src="therm.png" alt="therm Image">
+        텀블러 사용
+      </section>
+      <section id="section2" onclick="showModal('modal2')">
+        <img src="bath-scrubber.png" alt="therm Image">천연수세미
+      </section>
+      <section id="section3" onclick="showModal('modal3')">
+        <img src="plastic-recycling.png" alt="therm Image">PET 라벨 떼기
+      </section>
+      <section id="section4" onclick="showModal('modal4')">
+        <img src="shopping-bag.png" alt="therm Image">장바구니
+      </section>
+      <section id="section5" onclick="showModal('modal5')">
+        <img src="box.png" alt="therm Image">박스는 깨끗히
+      </section>
+      <section id="section6" onclick="showModal('modal6')">
+        <img src="service.png" alt="therm Image">온도 조절하기
+      </section>
+    </main>
+    
+    <!-- 모달창 -->
+    <div id="modal1" class="modal" onclick="closeModal('modal1')">
+      <h2>텀블러 사용</h2>
+      <p>텀블러를 사용하면 일회용 컵을 사용하지 않아 자원을 보호할 수 있습니다.</p>
     </div>
-    <div class="header-right">
-      <img src="profile.png" alt="Profile Image" class="profile-image" onclick="location.       href='login.html'">
+    
+    <div id="modal2" class="modal" onclick="closeModal('modal2')">
+      <h2>천연수세미</h2>
+      <p>천연수세미를 사용하면 환경을 위해 도움이 됩니다.</p>
     </div>
-  </header>
-  <main>
-    <section> <img src="therm.png" alt="therm Image">
-      텀블러 사용</section>
-    <section><img src="bath-scrubber.png" alt="therm Image">천연수세미</section>
-    <section><img src="plastic-recycling.png" alt="therm Image">PET 라벨 떼기</section>
-    <section><img src="shopping-bag.png" alt="therm Image">장바구니</section>
-    <section><img src="box.png" alt="therm Image">박스는 깨끗히</section>
-    <section><img src="service.png" alt="therm Image">온도 조절하기</section>
-  </main>
-  <footer>
-    <a href="#" onclick="location.href='FAQpage.html'">FAQ</a>
-    <a href="#" onclick="location.href='NoticePage.html'">소식</a>
-  </footer>
-  <script src="ecoscript.js"></script>
-</body>
+    
+    <div id="modal3" class="modal" onclick="closeModal('modal3')">
+      <h2>PET 라벨 떼기</h2>
+      <p>PET 라벨을 떼어내면 플라스틱 분리수거를 용이하게 할 수 있습니다.</p>
+    </div>
+    
+    <div id="modal4" class="modal" onclick="closeModal('modal4')">
+      <h2>장바구니</h2>
+      <p>PET 라벨을 떼어내면 플라스틱 분리수거를 용이하게 할 수 있습니다.</p>
+    </div>
+
+    <div id="modal5" class="modal" onclick="closeModal('modal5')">
+      <h2>박스는 깨끗히</h2>
+      <p>PET 라벨을 떼어내면 플라스틱 분리수거를 용이하게 할 수 있습니다.</p>
+    </div>
+
+    <div id="modal6" class="modal" onclick="closeModal('modal6')">
+      <h2>온도 조절하기</h2>
+      <p>PET 라벨을 떼어내면 플라스틱 분리수거를 용이하게 할 수 있습니다.</p>
+    </div>
+    <script sec="ecoscript.js" defer></script>
+  </body>
 </html>
