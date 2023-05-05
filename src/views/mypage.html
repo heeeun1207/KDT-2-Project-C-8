@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Dynamic Page</title>
+  <link rel="stylesheet" type="text/css" href="mypage.css">
+
+</head>
+<body>
+  <header>
+    <a href="/">
+      <img src="homegreen.png" alt="homegreen" class="homegreen-image" onclick="location.       href='index.html'">
+      </a>  
+    <p></p>
+    <img src="profile.png" alt="Profile Image" class="profile-image" onclick="location.       href='login.html'">
+  </header>
+  <main>
+  <p>희은</p>
+  </main>
+  <section>
+    <input type="file" id="image-input" accept="image/*">
+    <div id="image-preview"></div>
+  </section>
+  <footer>
+    <a href="#" onclick="location.href='FAQpage.html'">FAQ</a>
+    <a href="#" onclick="location.href='NoticePage.html'">소식</a>
+  </footer>
+  <script>
+    const imageInput = document.querySelector('#image-input');
+    const imagePreview = document.querySelector('#image-preview');
+  
+    imageInput.addEventListener('change', () => {
+      const file = imageInput.files[0];
+      const reader = new FileReader();
+  
+      reader.onload = () => {
+        const image = new Image();
+        image.src = reader.result;
+  
+        image.onload = () => {
+          const imageWidth = image.width;
+          const imageHeight = image.height;
+          const aspectRatio = imageWidth / imageHeight;
+          const maxWidth = window.innerWidth * 0.8;
+          const maxHeight = window.innerHeight * 0.8;
+  
+          let width = maxWidth;
+          let height = maxHeight / aspectRatio;
+  
+          if (height > maxHeight) {
+            height = maxHeight;
+            width = height * aspectRatio;
+          }
+          imagePreview.innerHTML = '';
+          imagePreview.appendChild(image);
+          image.style.width = `${width}px`;
+          image.style.height = `${height}px`;
+          image.style.display = 'block';
+          image.style.margin = 'auto';
+        };
+      };
+      reader.readAsDataURL(file);
+    });
+  </script>
+</body>
+</html>
