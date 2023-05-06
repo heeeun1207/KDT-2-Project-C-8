@@ -2,40 +2,28 @@
   box-sizing: border-box;
 }
 body {
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
 }
 
 header {
-  height: 10vh;
+  height: 10%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
+  padding: 0 1rem;
   border-bottom: 1px solid black;
-  padding: 0 10px;
-}
-
-.header-left {
-  display: flex;
-  align-items: center;
-}
-
-.header-left img {
+  }
+  
+  header img {
   width: 30px;
   height: 30px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.header-right img {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-
+  }
 main {
-  height: 80vh;
+  height: 80%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -56,6 +44,7 @@ section img{
   margin-bottom: 30%;
 }
 footer {
+  height: 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
