@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <link rel="shortcut icon" href="#"> -->
+  <!-- favicon.ico 404 갑자기 사라짐 .. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/index/index.css"> -->
+  <style>
+    /* 전체 페이지 */
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: linear-gradient(to bottom, #d8f1d9, #f5f6f5);
+    }
+
+    header {
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+    }
+
+    header img {
+      width: 30px;
+      height: 30px;
+    }
+
+    main {
+      height: 55%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .section {
+      width: 80%;
+      height: 70%;
+      border: 1px solid #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      margin-top: 10px;
+      margin-bottom :10px;
+      cursor: pointer;
+      border-radius: 40px;
+    }
+
+    .section img {
+      height: 90px;
+      width: 90px;
+    }
+
+    .section p {
+      margin-top: 80%;
+      text-align: center;
+    }
+
+    aside {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: #9bec87;
+      height: 25%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+    aside div {
+      width: 100%;
+      height: 100%;
+      background-color: #9bec87;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    aside div img{
+      height: 90%;
+      width: 90%;
+    }
+
+    footer {
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+      border-top: 1px solid black;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: inherit;
+    }
+    </style>
+</head>
+<body>
+<header>
+  <a href="/">
+    <img src="home.png" alt="home" class="home-image" onclick="location.href='index.html'">
+  </a>
+  <p>환경 지킴이</p>
+  <img src="profile.png" alt="Profile Image" class="profile-image" onclick="location.href='login.html'">
+</header>
+<main>
+  <section class="section" onclick="location.href='ecoLife.html'">
+    <img src="ecoLife.png" alt ="ecoLife.png" ">
+    <p>친환경<br>라이프</p>
+  </section>
+  <section class="section" onclick="location.href='testGuide.html'">
+    <img src="test.png" alt ="test.png" ">
+    <p>지킴이<br>테스트</p>
+  </section>
+  <section class="section" onclick="location.href='eventpage.html'">
+    <img src="noticeboard.png" alt ="noticeboard.png" ">
+    <p>이벤트</p>
+  </section>
+  <section class="section" onclick="location.href='tellerpage.html'">
+    <img src="user.png" alt ="user.png" ">
+    <p>신고<br>지킴이</p>
+  </section>
+</main>
+<aside>
+  <div onclick="location.href='eventpage.html'">
+    <img src="us.png" alt ="us Image" class="us-image" onclick="location.href='login.html'">
+  </div>
+</aside>
+<footer>
+    <a href="#" onclick="location.href='FAQpage.html'">FAQ</a>
+    <a href="#" onclick="location.href='NoticePage.html'">소식</a>
+</footer>
+<!-- <script src="assets/js/index.js"></script> -->
+<script>
+let images = ['us.png', 'milk-carton.png', 'pot.png'];
+let currentImgIndex = 0;
+let asideImg = document.querySelector('.us-image');
+
+function changeAsideImg() {
+  currentImgIndex++;
+  if (currentImgIndex > images.length - 1) {
+    currentImgIndex = 0;
+  }
+  asideImg.src = images[currentImgIndex];
+}
+setInterval(changeAsideImg, 3000);
+</script>
+</body>
+</html>
