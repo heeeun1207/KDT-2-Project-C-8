@@ -1,16 +1,12 @@
-const fs = require('fs');
-const data = fs.readFileSync('./database.json');
-const conf = JSON.parse(data);
-const mysql = require('mysql');
+const connection = require('./db.config')
 
-const connection = mysql.createConnection({
-  host: conf.host,
-  user: conf.user,
-  password: conf.password,
-  port: conf.port,
-  database: conf.database
-});
-
-connection.connect();
-
-module.exports = connection; 
+const LoginCtrl ={
+  getLogin : async (req,res) => {
+    connection.query('SELECT * FROM loginTest.Login', (error, rows) => {
+      if(error) throw error;
+      res.send(rows);
+      
+    })
+  }
+}
+module.exports = LoginCtrl
