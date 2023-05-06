@@ -152,6 +152,7 @@ cursor: pointer;
         <img src="service.png" alt="therm Image">온도 조절하기
       </section>
     </main>
+    
     <footer>
       <a href="#" onclick="location.href='FAQpage.html'">FAQ</a>
       <a href="#" onclick="location.href='NoticePage.html'">소식</a>
@@ -159,29 +160,53 @@ cursor: pointer;
   </div>
   <div class="modal">
     <div class="modal-content">
-      <p>모달창만들기.dkdkdkdkdkdkkdkd모달창만들기모달창만들기모달창만들기모달창만들기모달창만들기모달창만들기모달창만들기모달창만들기모달창만들기모달창만들기모달창만들기모달창만들기</p>
       <!-- <button class="modal-button">닫기</button> -->
     </div>
   </div>
   <!-- <button class="modal-button" id="openModalButton">열기</button> -->
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var modal = document.querySelector('.modal');
-  var modalButton = document.querySelector('.modal-button');
-  var modalContent = document.querySelector('.modal-content');
-  var sections = document.querySelectorAll('section');
 
-  sections.forEach(function(section) { 
-    section.addEventListener('click', function() { 
-      modal.style.display = 'block';
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var sections = document.querySelectorAll('section');
+    var modal = document.querySelector('.modal');
+    var modalContent = document.querySelector('.modal-content');
+    
+    sections.forEach(function(section) {
+      section.addEventListener('click', function() {
+        var modalText;
+        var sectionId = section.getAttribute('id');
+        switch (sectionId) {
+          case 'section1':
+            modalText = '텀블러 사용 설명입니다.';
+            break;
+          case 'section2':
+            modalText = '천연수세미 사용 설명입니다.';
+            break;
+          case 'section3':
+            modalText = 'PET 라벨 떼기 방법입니다.';
+            break;
+          case 'section4':
+            modalText = '장바구니 사용 방법입니다.';
+            break;
+          case 'section5':
+            modalText = '박스 사용 방법입니다.';
+            break;
+          case 'section6':
+            modalText = '온도 조절 방법입니다.';
+            break;
+          default:
+            modalText = '모달 내용이 없습니다.';
+        }
+        
+        modalContent.innerHTML = modalText;
+        modal.style.display = 'block';
+      });
+    });
+    
+    modal.addEventListener('click', function() {
+      modal.style.display = 'none';
     });
   });
-
-  modal.addEventListener('click', function(event) {
-    if (event.target === modal || event.target === modalContent) {
-      modal.style.display = 'none';
-    }
-  });
-});
 </script>
+
