@@ -1,5 +1,4 @@
 const fs = require('fs');
-
 const data = fs.readFileSync('./database.json');
 const conf = JSON.parse(data);
 const mysql = require('mysql');
@@ -14,5 +13,4 @@ const connection = mysql.createConnection({
 
 connection.connect();
 
-module.exports = connection;
-
+module.exports = connection; 
