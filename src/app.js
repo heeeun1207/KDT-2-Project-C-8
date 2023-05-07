@@ -25,7 +25,6 @@ const routes = {
   '/homegreen.png': { file: 'assets/images/homegreen.png', type: 'image/png' },
   '/home.png': { file: 'assets/images/home.png', type: 'image/png' },
    //에코라이프 아이콘
-
   '/milk-carton.png': { file: 'assets/images/EcoLife/milk-carton.png', type: 'image/png' },
   '/pot.png': { file: 'assets/images/EcoLife/pot.png', type: 'image/png' },
   '/therm.png': { file: 'assets/images/EcoLife/therm.png', type: 'image/png' },
@@ -34,7 +33,12 @@ const routes = {
   '/shopping-bag.png': { file: 'assets/images/EcoLife/shopping-bag.png', type: 'image/png' },
   '/box.png': { file: 'assets/images/EcoLife/box.png', type: 'image/png' },
   '/service.png': { file: 'assets/images/EcoLife/service.png', type: 'image/png' },
-  //mainpage
+  //mainpage 
+  '/nature.png': { file: 'assets/images/nature.png', type: 'image/png' },
+  '/earthdaynote.png': { file: 'assets/images/earthdaynote.png', type: 'image/png' },
+  '/earthday1.png': { file: 'assets/images/earthday1.png', type: 'image/png' },
+  '/earthday.png': { file: 'assets/images/main/earthday.png', type: 'image/png' },
+  '/plogging.png': { file: 'assets/images/main/plogging.png', type: 'image/png' },
   '/contamination.png': { file: 'assets/images/main/contamination.png', type: 'image/png' },
   '/question.png': { file: 'assets/images/main/question.png', type: 'image/png' },
   '/sakura.png': { file: 'assets/images/main/sakura.png', type: 'image/png' },
