@@ -18,11 +18,14 @@ connection.connect((error) => {
 });
 
 const routes = {
+  
   '/': { file: '/index.html', type: 'text/html; charset=utf-8' },
+  '/us.png': { file: 'assets/images/us.png', type: 'image/png' },
   '/profile.png': { file: 'assets/images/profile.png', type: 'image/png' },
   '/homegreen.png': { file: 'assets/images/homegreen.png', type: 'image/png' },
   '/home.png': { file: 'assets/images/home.png', type: 'image/png' },
-   //에코라이프 아이콘 
+   //에코라이프 아이콘
+
   '/milk-carton.png': { file: 'assets/images/EcoLife/milk-carton.png', type: 'image/png' },
   '/pot.png': { file: 'assets/images/EcoLife/pot.png', type: 'image/png' },
   '/therm.png': { file: 'assets/images/EcoLife/therm.png', type: 'image/png' },
@@ -31,8 +34,13 @@ const routes = {
   '/shopping-bag.png': { file: 'assets/images/EcoLife/shopping-bag.png', type: 'image/png' },
   '/box.png': { file: 'assets/images/EcoLife/box.png', type: 'image/png' },
   '/service.png': { file: 'assets/images/EcoLife/service.png', type: 'image/png' },
-  //
-  '/us.png': { file: 'assets/images/us.png', type: 'image/png' },
+  //mainpage
+  '/contamination.png': { file: 'assets/images/main/contamination.png', type: 'image/png' },
+  '/question.png': { file: 'assets/images/main/question.png', type: 'image/png' },
+  '/sakura.png': { file: 'assets/images/main/sakura.png', type: 'image/png' },
+  '/sakura2.png': { file: 'assets/images/main/sakura2.png', type: 'image/png' },
+  '/treeview.png': { file: 'assets/images/main/treeview.png', type: 'image/png' },
+  '/tree3.png': { file: 'assets/images/main/tree3.png', type: 'image/png' },
   '/ecoLife.png': { file: 'assets/images/main/ecoLife.png', type: 'image/png' },
   '/noticeboard.png': { file: 'assets/images/main/noticeboard.png', type: 'image/png' },
   '/test.png': { file: 'assets/images/main/test.png', type: 'image/png' },
