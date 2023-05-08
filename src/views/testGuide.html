@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>테스트 시작 페이지 </title>
+    <!-- <link rel="stylesheet" type="text/css" href="ecostyle.css"> -->
+    <style>
+      html, body {
+      height: 100%;
+      margin: 0;
+      background: linear-gradient(to bottom, #33D9B2, #f9f9f8 50%);
+    }
+
+    header {
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+    }
+    header p {
+    font-size: 50px;
+    }
+
+    .homegreen-image {
+    width: 100px;
+    height: 100px;
+    }
+
+    .profile-image {
+    width: 100px;
+    height: 100px;
+    }
+/*      
+      .close-button {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+      } */
+      article{
+        height: 5%;
+      }
+      article p{
+        text-align: center;
+        font-size: 40px;
+      }
+
+      main {
+        height: 65%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      main div {
+        width: 70%;
+        height: 50%;
+        background-color: white;
+        border: 3px solid #33D9B2;
+        border-radius: 60px; 
+      }
+      .image-container {
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        justify-content: center;
+        align-items: center;
+      }
+      .thumb-image {
+        height: 50%;
+        width: auto;
+        cursor: pointer;
+        margin-bottom: 20px;
+      }
+      section {
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      footer {
+      background-color: white;
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+      border-top: 1px solid #33D9B2;
+    }
+
+    footer a {
+      /* size: 300px; */
+      text-decoration: none;
+      color: inherit;
+    }
+
+      button {
+        width: 70%;
+        height: 90%;
+        border-radius: 100px;
+        background-color: #33D9B2;
+        color: #fff;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 200px;
+        font-size: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="/">
+        <img src="homegreen.png" alt="homegreen" class="homegreen-image" onclick="location.href='index.html'">
+      </a>
+      <p>지킴이 테스트</p>
+      <img src="profile.png" alt="Profile Image" class="profile-image" onclick="location.href='login.html'">
+    </header>
+<article>
+  <p>테스트를 바탕으로 올바른 환경보호를<br>
+  했는지 문제를 풀어보고 등급을 확인하세요 ! </p>
+</article>
+    <main>
+  
+      <div class="image-container">
+        <img src="test.png" alt="test-image" class="test-image" />
+      </div>
+    </main>
+    <section>
+      <button onclick="window.location.href='test.html'"><h1>문제 풀러가기</h1></button>
+    </section>
+    <footer>
+      <a href="#" onclick="location.href='FAQpage.html'"><h1>FAQ</h1></a>
+      <a href="#" onclick="location.href='NoticePage.html'"><h1>소식</h1></a>
+    </footer>
+  <script src ="testGuide.js"></script>
+    </script>
+  </body>
+</html>
+
