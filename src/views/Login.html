@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="Login.css">
+</head>
+<body>
+  <header>
+    <a href="/">
+      <img src="homegreen.png" alt="homegreen" class="homegreen-image" onclick="location.href='index.html'">
+    </a>
+    <p>환경 지킴이</p>
+    <img src="profile.png" alt="profile Image" class="profile-image" onclick="location.href='login.html'">
+  </header>
+  <main>
+    <img src="earthday1.png" alt="프로필 이미지">
+  </main>
+  <section class="section1">
+    <div id="Login">
+      <div id="IdSection">
+        <label for="id">아이디</label>
+        <input type="text" id="id" name="id" required>
+      </div>
+      <div id="PasswordSection">
+        <label for="password">비밀번호</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button onclick="login()">로그인 하기</button>
+    </div>
+  </section>
+  
+  
+  </section>
+  
+  <section class="section2">
+    <div id="LinkContainer">
+      <a href="#">회원가입 하러가기</a>
+      <a href="#">아이디 / 비밀번호 찾기</a>
+    </div>
+  </section>
+  <footer>
+    <a href="#" onclick="location.href='FAQpage.html'">FAQ</a>
+    <a href="#" onclick="location.href='NoticePage.html'">소식</a>
+  </footer>
+
+  <script>
+    function login() {
+      const id = document.getElementById("id").value;
+      const password = document.getElementById("password").value;
+      // TODO: mysql 연결 및 로그인 처리
+    }
+  </script>
+</body>
+</html>
+
