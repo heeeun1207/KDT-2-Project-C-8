@@ -25,10 +25,11 @@
         <label for="password">비밀번호</label>
         <input type="password" id="password" name="password" required>
       </div>
-      <button onclick="login()">로그인 하기</button>
+      <button onclick="loginOrRedirect()">로그인 하기</button>
+
     </div>
   </section>
-  
+
   
   </section>
   
@@ -44,11 +45,11 @@
   </footer>
 
   <script>
-    function login() {
-      const id = document.getElementById("id").value;
-      const password = document.getElementById("password").value;
-      // TODO: mysql 연결 및 로그인 처리
-    }
+    function loginOrRedirect() {
+  const id = document.getElementById("id").value;
+  const password = document.getElementById("password").value;
+  window.location.href = "Submypage.html";
+}
   </script>
 </body>
 </html>

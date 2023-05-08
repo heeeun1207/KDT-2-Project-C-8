@@ -33,6 +33,9 @@ const routes = {
   '/shopping-bag.png': { file: 'assets/images/EcoLife/shopping-bag.png', type: 'image/png' },
   '/box.png': { file: 'assets/images/EcoLife/box.png', type: 'image/png' },
   '/service.png': { file: 'assets/images/EcoLife/service.png', type: 'image/png' },
+  //기타 아이콘
+  '/treeview.png': { file: 'assets/images/treeview.png', type: 'image/png' },
+  '/work.png': { file: 'assets/images/work.png', type: 'image/png' },
   //mainpage 
   '/nature.png': { file: 'assets/images/nature.png', type: 'image/png' },
   '/earthdaynote.png': { file: 'assets/images/earthdaynote.png', type: 'image/png' },
@@ -55,6 +58,7 @@ const routes = {
   //마이페이지 
   '/Submypage.html': { file: 'views/Submypage.html', type: 'text/html; charset=utf-8' },
   '/mypage.css': { file: 'assets/css/mypage/mypage.css', type: 'text/css; charset=utf-8' },
+  '/mypage.js': { file: 'assets/js/mypage.js', type: 'text/javascript; charset=utf-8' },
   //지킴이 테스트 첫화면 (안내 페이지)
   '/SubtestGuide.html': { file: 'views/SubtestGuide.html', type: 'text/html; charset=utf-8' },
   '/SubtestGuide.css': { file: 'assets/css/testGuide/SubtestGuide.css', type: 'text/css; charset=utf-8' },
