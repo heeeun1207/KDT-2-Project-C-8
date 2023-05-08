@@ -33,7 +33,7 @@ imageInput.addEventListener('change', () => {
       imagePreview.appendChild(image);
       // image.style.width = `${width}px`;
       // image.style.height = `${height}px`;
-      image.style.width = `300px`;
+      image.style.width = `295px`;
       image.style.height = `300px`;
       image.style.display = 'block';
       image.style.margin = 'auto';
