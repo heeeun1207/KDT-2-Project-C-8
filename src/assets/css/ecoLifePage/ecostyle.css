@@ -18,12 +18,19 @@ header {
   padding: 0 1rem;
 }
 header p {
-font-size: 20px;
-}
-  header img {
-  width: 30px;
-  height: 30px;
+  font-size: 50px;
   }
+
+  .homegreen-image {
+  width: 90px;
+  height: 90px;
+  }
+
+  .profile-image {
+  width: 100px;
+  height: 100px;
+  }
+
 main {
   height: 80%;
   display: grid;
@@ -36,32 +43,44 @@ main {
 section {
   border: 10px solid #D4F6F3;
   display: flex;
-  justify-content: center;
-  align-items: flex-end; 
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   padding: 10px;
   border-radius: 40px;
-  width: 90%;
-  height: 90%;
-  margin-left: 20px;
+  width: 80%;
+  height: 80%;
+  margin-left: 40px;
 }
 section img{
-  width: 50%;
-  height: 50%;
-  margin-bottom: 30%;
+  width: 65%;
+  height: 65%;
+  margin-top: 15%;
+  display: block;
+  
 }
+section p{
+  font-size: 45px;
+}
+
 footer {
+  background-color: white;
   height: 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
-  border-top: 1px solid black;
-  }
-  
-  footer a {
+  border-top: 1px solid #33D9B2;
+}
+
+footer a {
   text-decoration: none;
   color: inherit;
-  }
+  font-size: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 
 
 
