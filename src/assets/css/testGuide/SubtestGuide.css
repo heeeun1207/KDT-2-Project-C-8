@@ -1,0 +1,100 @@
+html, body {
+height: 100%;
+margin: 0;
+background: linear-gradient(to bottom, #33D9B2, #f9f9f8 50%);
+}
+
+header {
+height: 10%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 1rem;
+}
+header p {
+font-size: 50px;
+}
+
+.homegreen-image {
+width: 100px;
+height: 100px;
+}
+
+.profile-image {
+width: 100px;
+height: 100px;
+}
+/*      
+.close-button {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+} */
+article{
+  height: 5%;
+}
+article p{
+  text-align: center;
+  font-size: 40px;
+}
+
+main {
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main div {
+  width: 70%;
+  height: 50%;
+  background-color: white;
+  border: 3px solid #33D9B2;
+  border-radius: 60px; 
+}
+.image-container {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+}
+.thumb-image {
+  height: 50%;
+  width: auto;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+section {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+background-color: white;
+height: 10%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 1rem;
+border-top: 1px solid #33D9B2;
+}
+
+footer a {
+/* size: 300px; */
+text-decoration: none;
+color: inherit;
+}
+
+button {
+  width: 70%;
+  height: 90%;
+  border-radius: 100px;
+  background-color: #33D9B2;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 200px;
+  font-size: 35px;
+}
