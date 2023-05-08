@@ -47,16 +47,13 @@ main {
   background-color: #FFFFFF;
   border-radius: 60px; 
 }
-/* #image-preview {
-  width: 40px;
-  height: 40px;
-} */
+
 article{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 25%;
+  height: 30%;
 }
 article img {
   height: 120px;
@@ -65,7 +62,6 @@ article img {
 }
 section {
   height: 10%;
-  padding: 1vh 1vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,7 +76,6 @@ section img {
 
 footer {
   height: 10%;
-  padding: 1vh 1vw;
   border-top: 1px solid #33D9B2;
   background-color: #FFFFFF;
   display: flex;
