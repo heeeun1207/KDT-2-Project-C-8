@@ -3,8 +3,8 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -18,21 +18,21 @@ body {
       padding: 0 1rem;
     }
 
-     header p {
+      header p {
       font-size: 50px;
       }
 
-     .homegreen-image {
+      .homegreen-image {
       width: 90px;
       height: 90px;
       }
 
-     .profile-image {
+      .profile-image {
       width: 100px;
       height: 100px;
       }
 
-     main {
+      main {
       height: 80%;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -40,7 +40,7 @@ body {
       gap: 10px;
       padding: 10px;
     }
-     section {
+      section {
       border: 10px solid #D4F6F3;
       display: flex;
       flex-direction: column;
@@ -50,26 +50,19 @@ body {
       border-radius: 40px;
       width: 80%;
       height: 80%;
+      margin-top: 80px;
       margin-left: 40px;
     }
 
-     section img{
+      section img{
       width: 65%;
       height: 65%;
       margin-top: 15%;
       display: block;
       
     }
-
-
-section {
-border: 1px solid black;
-text-align: center;
-position: relative;
-}
-
 section::after {
-/* content: '\25B6'; */
+/* content: '\25B6';  세모 */
 font-size: 1.5rem;
 position: absolute;
 right: 0.5rem;
@@ -82,8 +75,9 @@ section p{
   font-size: 45px;
 }
 footer {
+  margin-top: 10px;
   background-color: white;
-  height: 10%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -96,6 +90,7 @@ footer a {
   text-decoration: none;
   color: inherit;
   font-size: 40px;
+  margin-top: 70px;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -112,16 +107,23 @@ z-index: 9999;
 }
 
 .modal-content {
-width: 55%;
-height: 20%;
-background-color: #fff;
-margin: auto;
-margin-top: 20vh;
-padding: 1rem;
-text-align: center;
-font-size: 40px;
-border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 20%;
+  background-color: #fff;
+  border: 10px solid #D4F6F3;
+  opacity: 80%;
+  margin: auto;
+  margin-top: 70%;
+  padding: 1rem;
+  text-align: center;
+  font-size: 40px;
+  border-radius: 50px;
 }
+
 
 .modal-button {
 margin-top: 1rem;
