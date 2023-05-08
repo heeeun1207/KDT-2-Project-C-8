@@ -3,11 +3,15 @@
   padding: 0;
 }
 
-body {
+body,html {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-}
+  margin: 0;
+  background: linear-gradient(to bottom, #33D9B2, #f9f9f8 50%);
+    }
+  
+
 
 header {
   Height :10%;
@@ -15,35 +19,57 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem;
-  border-bottom: 1px solid black;
 }
+header p {
+  font-size: 20px;
+  }
 
-header img {
+.homegreen-image {
   width: 40px;
   height: 40px;
-}
+  }
+
+  .profile-image {
+  width: 45px;
+  height: 45px;
+  }
+
 
 main {
-  height: 70%;
+  height: 40%;
+  width:  90%;
+  display: flex;
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #33D9B2;
+  background-color: #FFFFFF;
+  border-radius: 60px; 
+}
+/* #image-preview {
+  width: 40px;
+  height: 40px;
+} */
+article{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 25%;
 }
-main div{
-  height: 100%;
-  width: 90%;
-
+article img {
+  height: 120px;
+  width: 120px;
+  
 }
-
 section {
-  height: 10vh;
+  height: 10%;
   padding: 1vh 1vw;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 section img {
@@ -55,7 +81,8 @@ section img {
 footer {
   height: 10%;
   padding: 1vh 1vw;
-  border: 1px solid black;
+  border-top: 1px solid #33D9B2;
+  background-color: #FFFFFF;
   display: flex;
   justify-content: space-between;
   align-items: center;
