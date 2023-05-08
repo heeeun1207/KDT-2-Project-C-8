@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      .result {
+        border: 1px solid black;
+        padding: 20px;
+        text-align: center;
+        width: 390px;
+        height: 844px;
+      }
+
+      header {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 0 10px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.header-right img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+      footer {
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+      border-top: 1px solid black;
+      }
+
+      footer a {
+      text-decoration: none;
+      color: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header-left">
+      <img src="hamburger.png" alt="Hamburger Menu">
+      <span>친환경 라이프</span>
+    </div>
+    <div class="header-right">
+      <img src="profile.png" alt="Profile Image" class="profile-image" onclick="location.       href='login.html'">
+    </div>
+
+
+    <div class="result">
+      <script>
+        const answercount = 10; 
+        //맞은 개수를 받아와서 -> 정답 개수에 맞는 멘트 말하기 
+        let message;
+        if (answercount >= 0 && answercount <= 1) {
+          message = "이번 테스트에서는 아쉬운 결과네요. 다음번에는 더 열심히 준비해보세요 ‘환경 지킴이’가 되어 보아요!";
+        } else if (answercount >= 2 && answercount <= 4) {
+          message = "노력은 느껴졌지만 아쉽게도 결과는 그렇게 좋지 않네요. 조금 더 노력해보세요!";
+        } else if (answercount >= 4 && answercount <= 6) {
+          message = "거의 다 와가요! 하지만 , 아직 개선할 부분이 있을 것 같아요. 조금 더 노력해보세요!";
+        } else if (answercount >= 7 && answercount <= 9) {
+          message = "훌륭한 결과네요! 지금까지의 노력이 드러났어요. 계속해서 성장해보세요 더 깨끗한 지구를 만들어보세요!";
+        } else if (answercount === 10) {
+          message = "와! 대단해요! 완벽한 점수네요. 이 정도면 완전한‘환경 지킴이’입니다!";
+        } else {
+          message = "ERROR";
+        }
+
+        console.log(message);
+        document.write(message);
+      </script>
+    </div>
+    
+    <footer>
+      <a href="#" onclick="location.href='FAQpage.html'">FAQ</a>
+      <a href="#" onclick="location.href='Noticepage.html'">소식</a>
+    </footer>
+  </body>
+</html>
