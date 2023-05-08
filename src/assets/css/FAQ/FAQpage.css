@@ -11,8 +11,11 @@ html, body {
   width: 100%;
   height: 100%;
   display: grid;
+  flex-direction: column;
+  overflow: hidden;
   grid-template-rows: 10% 80% 10%;
 }
+
 
 header {
   /* height: 10%; */
@@ -27,22 +30,22 @@ header div{
     align-items: center;
     justify-content: center;
 }
-header h1{
-  margin-top:90px;
+header p{
+  margin-top:100px;
   font-size: 60px;
 }
-header p {
+header .p1 {
   margin-top:10px;
   font-size: 45px;
 }
 
 .homegreen-image {
-width: 90px;
-height: 90px;
+width: 100px;
+height: 100px;
 }
 .profile-image {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   }
 
 main {
@@ -52,6 +55,8 @@ display: grid;
 grid-template-rows: repeat(6, 20%);
 gap: 1rem;
 padding: 1rem;
+overflow-y: auto;
+flex: 1;
 }
 
 section {
