@@ -29,11 +29,11 @@ header div{
 }
 header h1{
   margin-top:90px;
-  font-size: 50px;
+  font-size: 60px;
 }
 header p {
   margin-top:10px;
-  font-size: 40px;
+  font-size: 45px;
 }
 
 .homegreen-image {
@@ -58,7 +58,7 @@ section {
 
 height: 60%;
 width: 90%;
-border: 1px solid #33D9B2;
+border: 3px solid #33D9B2;
 text-align: center;
 justify-content: center;
 position: relative;
