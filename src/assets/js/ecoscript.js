@@ -10,25 +10,42 @@ document.addEventListener('DOMContentLoaded', function() {
         var sectionId = section.getAttribute('id');
         switch (sectionId) {
           case 'section1':
-            modalText = "일회용 컵으로 인해 수많은 쓰레기가 지구에 쌓이고 있어요! 일회용 컵 사용을 줄여보세요 !지구를 지키고 미래를 위해, 텀블러 사용해요! 일회용 컵 대신 지구 친화적인 선택을 해보세요!";
+            modalText = 
+            `일회용 컵으로 인해 수많은 쓰레기가 지구에 쌓이고 있어요!
+            일회용 컵 사용을 줄여보세요 !지구를 지키고 미래를 위해, 텀블러 사용해요!
+            일회용 컵 대신 지구 친화적인 선택을 해보세요!`;
             break;
           case 'section2':
-            modalText = '천연수세미 사용 설명입니다.';
+            modalText = 
+            `인공세제를 사용하면, 물과 자연환경을 오염시킬 수 있어요!
+            물과 자원을 아껴주는 천연수세미 사용해 봅시다! 
+            우리 함께 지구를 지켜봅시다! `;
             break;
           case 'section3':
-            modalText = 'PET 라벨 떼기 방법입니다.';
+            modalText = 
+            `라벨을 제거하지 않았다면, 재활용이 불가능하게 될 수 있어요 아셨나요? 
+            작은 실처럼 시작해 더 나은 지구를 만들어요! 
+            PET 라벨을 떼고 분리수거 해봅시다`;
             break;
           case 'section4':
-            modalText = '장바구니 사용 방법입니다.';
+            modalText = 
+            `작은 노력이 모여 큰 변화를 만들어요! 
+            장바구니 사용으로 일회용 비닐봉지를 줄여봅시다!`
             break;
           case 'section5':
-            modalText = '박스 사용 방법입니다.';
+            modalText =
+            `박스의 스티커는 깨끗하게 정리해주세요 ! 
+            폐기물 처리가 어렵습니다 !            
+            박스를 깨끗하게 분리수거를 해서 새로운 가치를 만들어봅시다!`;
             break;
           case 'section6':
-            modalText = '온도 조절 방법입니다.';
+            modalText = 
+            `계속 작동시키고 있는 당신!  에너지 낭비와 환경오염에 기여하고 있답니다.
+            온도를 적절하게 조절해 모두 함께 에너지를 아껴보세요!             
+            작은 노력으로 지구 환경을 보호해봅시다!`;
             break;
           default:
-            modalText = '모달 내용이 없습니다.';
+            modalText = '내용이 곧 업데이트될 예정입니다 :)';
         }
         
         modalContent.innerHTML = modalText;
