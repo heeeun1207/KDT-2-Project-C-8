@@ -12,7 +12,6 @@ html, body {
   height: 100%;
   display: grid;
   grid-template-rows: 10% 80% 10%;
-  border: 1px solid black;
 }
 
 header {
@@ -21,14 +20,6 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
-  /* div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; 필요한 높이 값으로 변경하세요
-  }
-   */
 }
 header div{
     display: flex;
@@ -37,7 +28,7 @@ header div{
     justify-content: center;
 }
 header h1{
-  margin-top:50px;
+  margin-top:90px;
   font-size: 50px;
 }
 header p {
@@ -56,6 +47,7 @@ height: 90px;
 
 main {
 
+flex-direction: column;
 display: grid;
 grid-template-rows: repeat(6, 20%);
 gap: 1rem;
@@ -73,6 +65,10 @@ position: relative;
 font-size: 50px;
 margin-top: 200px;
 margin-left: 50px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
 
 section::after {
@@ -93,7 +89,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem;
+  padding: 0 2rem;
   border-top: 1px solid #33D9B2;
 }
 
