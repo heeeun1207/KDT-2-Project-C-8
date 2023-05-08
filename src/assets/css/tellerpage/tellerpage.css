@@ -43,25 +43,33 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid #33D9B2;
+  border: 3px solid #33D9B2;
   background-color: #FFFFFF;
   border-radius: 60px; 
 }
+/* 
+#image-preview {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+} */
 
 article{
+  height: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 30%;
+
 }
 article img {
-  height: 120px;
-  width: 120px;
+  height: 140px;
+  width: 140px;
   
 }
 section {
-  height: 10%;
+  height: 15%;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -20,8 +20,8 @@ imageInput.addEventListener('change', () => {
       const imageWidth = image.width;
       const imageHeight = image.height;
       const aspectRatio = imageWidth / imageHeight;
-      const maxWidth = window.innerWidth * 0.5;
-      const maxHeight = window.innerHeight * 0.5;
+      const maxWidth = window.innerWidth * 0.4;
+      const maxHeight = window.innerHeight * 0.4;
       let width = maxWidth;
       let height = maxHeight / aspectRatio;
 
@@ -31,8 +31,10 @@ imageInput.addEventListener('change', () => {
       }
       imagePreview.innerHTML = '';
       imagePreview.appendChild(image);
-      image.style.width = `${width}px`;
-      image.style.height = `${height}px`;
+      // image.style.width = `${width}px`;
+      // image.style.height = `${height}px`;
+      image.style.width = `300px`;
+      image.style.height = `300px`;
       image.style.display = 'block';
       image.style.margin = 'auto';
     };
