@@ -1,4 +1,3 @@
-    /* 전체 페이지 */
     html, body {
       height: 100%;
       margin: 0;
@@ -32,7 +31,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      align-items: center;
     }
     main img {
       margin-top: 30px;
@@ -40,7 +38,6 @@
       max-height: 90%;
 
     }
-    /* 섹션 */
     .section1 {
       width:100%;
       height:30%;  
@@ -87,14 +84,7 @@
       text-decoration: none;
       color: inherit;
 } 
-    /* 푸터  */
-    /* footer {
-      background-color: #a2a2a2; 
-      height: 10%; 
-      justify-content: center;
-      align-items: center;
-      display: flex; 
-    } */
+  
     footer div {
       width: 90%; 
       height: 90%; 
@@ -103,7 +93,7 @@
       justify-content: center; 
       align-items: center; 
     } 
-    /* 로그인 섹션 */
+
     #Login {
   width: 100%;
   height: 100%;
@@ -114,6 +104,13 @@
   margin: auto;
 }
 #IdSection label, #PasswordSection label{
+  display: block;
+  font-size: 18px;
+}
+
+#IdSection input[type="text"],
+#PasswordSection input[type="password"] {
+
   width: 100%;
   height: 30%;
   border: 1px solid #33D9B2;
@@ -123,18 +120,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column; 
-  margin-top:  20px;
   font-size: 18px;
-}
-
-#IdSection input[type="text"],
-#PasswordSection input[type="password"] {
-  border: none;
-  border-radius: 30px;
-  padding: 10px;
-  width: 100%;
-  box-sizing: border-box;
-  margin-right: 20px;
 }
 button{
 width: 40%;
@@ -146,6 +132,7 @@ background-color: #33D9B2;
 color: white;
 padding: 10px 20px;
 border-radius: 30px;
+margin-top: 20px;
 }
 
 
