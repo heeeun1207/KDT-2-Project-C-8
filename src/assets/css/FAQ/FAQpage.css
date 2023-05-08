@@ -59,6 +59,7 @@ section {
 height: 60%;
 width: 90%;
 border: 3px solid #33D9B2;
+border-radius: 30px;
 text-align: center;
 justify-content: center;
 /* position: relative; -> 스크롤 필요할듯?  */
