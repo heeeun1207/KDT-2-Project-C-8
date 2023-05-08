@@ -3,43 +3,76 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  /* width: 100vw;
-  height: 100vh; */
-  font-family: Arial, sans-serif;
+html, body {
+  height: 100%;
+  margin: 0;
 }
 .container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-template-rows: 10% 80% 10%;
   border: 1px solid black;
 }
+
 header {
-height: 10%;
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 0 1rem;
-border-bottom: 1px solid black;
+  /* height: 10%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  /* div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 필요한 높이 값으로 변경하세요
+  }
+   */
+}
+header div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header h1{
+  margin-top:50px;
+  font-size: 50px;
+}
+header p {
+  margin-top:10px;
+  font-size: 40px;
 }
 
-header img {
-width: 30px;
-height: 30px;
+.homegreen-image {
+width: 90px;
+height: 90px;
 }
+.profile-image {
+  width: 100px;
+  height: 100px;
+  }
 
 main {
+
 display: grid;
-grid-template-rows: repeat(6, 10%);
+grid-template-rows: repeat(6, 20%);
 gap: 1rem;
 padding: 1rem;
 }
 
 section {
-border: 1px solid black;
+
+height: 60%;
+width: 90%;
+border: 1px solid #33D9B2;
 text-align: center;
+justify-content: center;
 position: relative;
+font-size: 50px;
+margin-top: 200px;
+margin-left: 50px;
 }
 
 section::after {
@@ -52,20 +85,22 @@ transform: translateY(-50%);
 cursor: pointer;
 }
 
+
 footer {
-height: 10%;
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 0 1rem;
-border-top: 1px solid black;
+  background-color: white;
+  /* height: 10%; */
+  font-size: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  border-top: 1px solid #33D9B2;
 }
 
 footer a {
-text-decoration: none;
-color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
-
 .modal {
 display: none;
 position: fixed;
