@@ -1,32 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
   <link rel="stylesheet" type="text/css" href="NoticePage.css">
-</head>
-<body>
-  
-  <header>
-    <a href="/">
-      <img src="homegreen.png" alt="homegreen" class="homegreen-image" onclick="location.href='index.html'">
-    </a>
-    <p></p>
-    <img src="profile.png" alt="Profile Image" class="profile-image" onclick="location.href='login.html'">
-  </header>
-
-  <main id="main">
-    <section onclick="createNewPage(1)">Section 1</section>
-    <section onclick="createNewPage(2)">Section 2</section>
-    <section onclick="createNewPage(3)">Section 3</section>
-    <section onclick="createNewPage(4)">Section 4</section>
-    <section onclick="createNewPage(5)">Section 5</section>
-    <section onclick="createNewPage(6)">Section 6</section>
-    <section onclick="createNewPage(7)">Section 7</section>
-    <section onclick="createNewPage(8)">Section 8</section>
-  </main>
+  <div class="container">
+    <header> 
+      <a href="/">
+        <img src="homegreen.png" alt="homegreen" class="homegreen-image" onclick="location.       href='index.html'">
+        </a>
+  <p>공지사항</p>
+  <img src="profile.png" alt="Profile Image" class="profile-image" onclick="location.       href='login.html'">
+    </header>
+    <main>
+      <section id="section1">
+        <h1> 공지 ► 무분별한 추천은 적극 지양해주세요.</h1>
+      </section>
+      <section id="section2">
+        <h1> 공지 ► 진행중인 이벤트 일정은 변동될 수 있습니다.</h1>
+      </section>
+      <section id="section3">
+        <h1> 공지 ► 환경지킴이 분리배출 안내</h1><
+      </section>
+      <section id="section4">
+        <h1> 공지 ► 우리 모두와의 약속 </h1></section>
+      </section>
+      <section id="section5">
+        <h1> 공지 ► </h1>
+      </section>
+      <section id="section6">
+        <h1> 공지 ► </h1> 
+      </section>
+    </main>
+  </div>
+  <div class="modal">
+    <div class="modal-content">
+      <!-- <button class="modal-button">닫기</button> -->
+    </div>
+  </div>
+  <!-- <button class="modal-button" id="openModalButton">열기</button> -->
 
   <footer>
     <a href="/" onclick="location.href='FAQpage.html'">FAQ</a>
