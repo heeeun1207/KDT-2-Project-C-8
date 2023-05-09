@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Dynamic Page</title>
+  <link rel="stylesheet" type="text/css" href="tellerpage.css">
+
+</head>
+<body>
+  <header>
+    <a href="/">
+      <img src="homegreen.png" alt="homegreen" class="homegreen-image" onclick="location.href='index.html'">
+    </a>
+    <p>동네지킴이 신고</p>
+    <img src="profile.png" alt="Profile Image" class="profile-image" onclick="location.href='Sublogin.html'">
+  </header>
+<article>
+  <img src="trash.png" alt="trash Image" class="trash-image">
+</article>
+  <main>
+    <input type="file" id="image-input" accept="image/*">
+    <div id="image-preview"></div>
+  </main>
+
+  <section>
+    <img src="thumbup.png" alt="Thumb Up" onclick="incrementCounter()">
+    <p>좋아요 = <span id="counter">0</span></p>
+  </section>
+
+  <footer>
+    <a href="#" onclick="location.href='SubFAQpage.html'">FAQ</a>
+    <a href="#" onclick="location.href='SubNoticePage.html'">공지사항</a>
+  </footer>
+<script src="tellerpage.js"></script>
+  </body>
+  </html>
