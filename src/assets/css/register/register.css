@@ -38,6 +38,12 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+main img {
+  height: 100px;
+  width: 100px;
+}
+
 form {
   width: 90%;
   max-width: 500px;
