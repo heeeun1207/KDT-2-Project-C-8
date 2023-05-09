@@ -48,13 +48,10 @@ main {
   background-color: #FFFFFF;
   border-radius: 60px; 
 }
-/* 
-#image-preview {
-  width: 100px;
-  height: 100px;
-  background-size: cover;
-  background-position: center;
-} */
+.pet-image{
+  width: 250px;
+  height: 250px;
+}
 
 article{
   height: 22%;
