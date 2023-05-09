@@ -91,6 +91,9 @@ const routes = {
   '/SubNoticePage.html': { file: 'views/SubNoticePage.html', type: 'text/html; charset=utf-8' },
   '/NoticePage.css': { file: 'assets/css/Notice/NoticePage.css', type: 'text/css; charset=utf-8' },
   '/NoticePage.js': { file: 'assets/js/NoticePage.js', type: 'text/javascript; charset=utf-8' },
+  //알림마당 뉴스 페이지 
+  '/petfree.png': { file: 'assets/images/News/petfree.png', type: 'image/png' },
+  '/storereduce.png': { file: 'assets/images/News/storereduce.png', type: 'image/png' },
 };
 
 const handleResponse = (request, response) => {

@@ -5,17 +5,25 @@ body {
   font-family: Arial, sans-serif;
 }
 header {
-Height :10%;
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 0 1rem;
-border-bottom: 1px solid black;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+header p {
+margin-top: 20px;
+font-size: 20px;
 }
 
-header img {
-width: 30px;
-height: 30px;
+.homegreen-image {
+width: 40px;
+height: 40px;
+}
+
+.profile-image {
+width: 45px;
+height: 45px;
 }
 main {
   height: 80%;
@@ -25,25 +33,28 @@ main {
   align-items: center;
 }
 main img {
-  height: 10%;
-  margin-bottom: 1%;
+  height: 190px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 p {
   height: 3.3%;
   margin-top: 1%;
   text-align: center;
 }
-
 footer {
+  background-color: white;
   height: 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
-  border-top: 1px solid black;
-  }
-
-  footer a {
-  text-decoration: none;
-  color: inherit;
-  }
+  border-top: 1px solid #33D9B2;
+}
+footer a {
+  margin-top: 20px;
+	text-decoration: none;
+	color: inherit;
+	font-size: 15px;
+	}
