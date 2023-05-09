@@ -1,83 +1,68 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
-html, body {
-  height: 100%;
-  margin: 0;
-}
-.container {
+
+body {
   width: 100%;
   height: 100%;
-  display: grid;
-  flex-direction: column;
-  overflow: hidden;
-  grid-template-rows: 10% 80% 10%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
+      header {
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+    }
 
-header {
-  /* height: 10%; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1rem;
-}
-header div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-header p{
-  margin-top:100px;
-  font-size: 60px;
-}
-header .p1 {
-  margin-top:10px;
-  font-size: 45px;
-}
+      header p {
+      font-size: 50px;
+      }
 
-.homegreen-image {
-width: 100px;
-height: 100px;
-}
-.profile-image {
-  width: 110px;
-  height: 110px;
-  }
+      .homegreen-image {
+      width: 90px;
+      height: 90px;
+      }
 
-main {
+      .profile-image {
+      width: 100px;
+      height: 100px;
+      }
 
-flex-direction: column;
-display: grid;
-grid-template-rows: repeat(6, 20%);
-gap: 1rem;
-padding: 1rem;
-overflow-y: auto;
-flex: 1;
-}
-section {
+      main {
+      height: 80%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 10px;
+      padding: 10px;
+    }
+      section {
+      border: 10px solid #D4F6F3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+      border-radius: 40px;
+      width: 100%;
+      height: 80%;
+      margin-top: 80px;
+      margin-left: 40px;
+    }
 
-height: 60%;
-width: 90%;
-border: 3px solid #33D9B2;
-border-radius: 30px;
-text-align: center;
-justify-content: center;
-/* position: relative; -> 스크롤 필요할듯?  */
-font-size: 50px;
-margin-top: 150px;
-margin-left: 50px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-}
-
+      section img{
+      width: 65%;
+      height: 65%;
+      margin-top: 15%;
+      display: block;
+      
+    }
 section::after {
-/* content: '\25B6'; */
+/* content: '\25B6';  세모 */
 font-size: 1.5rem;
 position: absolute;
 right: 0.5rem;
@@ -86,22 +71,30 @@ transform: translateY(-50%);
 cursor: pointer;
 }
 
-
-footer {
-  background-color: white;
-  /* height: 10%; */
+section p{
   font-size: 45px;
+}
+footer {
+  margin-top: 10px;
+  background-color: white;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2rem;
+  padding: 0 1rem;
   border-top: 1px solid #33D9B2;
 }
+
 
 footer a {
   text-decoration: none;
   color: inherit;
+  font-size: 40px;
+  margin-top: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
+
 .modal {
 display: none;
 position: fixed;
@@ -114,15 +107,33 @@ z-index: 9999;
 }
 
 .modal-content {
-background-color: #fff;
-max-width: 400px;
-margin: auto;
-margin-top: 20vh;
-padding: 1rem;
-text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 20%;
+  background-color: #fff;
+  border: 10px solid #D4F6F3;
+  opacity: 80%;
+  margin: auto;
+  margin-top: 70%;
+  padding: 1rem;
+  text-align: center;
+  font-size: 40px;
+  border-radius: 50px;
 }
+
 
 .modal-button {
 margin-top: 1rem;
 cursor: pointer;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid red;
 }
