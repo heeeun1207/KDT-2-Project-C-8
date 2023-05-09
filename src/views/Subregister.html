@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>회원가입 페이지</title>
+    <link rel="stylesheet" type="text/css" href="register.css">
+
+  </head>
+  <body>
+    <header> 
+      <a href="/">
+        <img src="homegreen.png" alt="homegreen" class="homegreen-image" onclick="location.       href='index.html'">
+        </a>
+  <p>회원가입 페이지</p>
+  <img src="profile.png" alt="Profile Image" class="profile-image" onclick="location.       href='Sublogin.html'">
+    </header>
+    <main>
+      <img src="earthday1.png" alt="프로필 이미지">
+      <form>
+        <div class="input-container">
+          <label for="id">아이디:</label>
+          <input type="text" id="id" name="id" required>
+        </div>
+        <div class="input-container">
+          <label for="name">이름:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-container">
+          <label for="password">비밀번호:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="input-container">
+          <button type="button" onclick="register()">회원가입</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <a href="#" onclick="location.href='SubFAQpage.html'">FAQ</a>
+      <a href="#" onclick="location.href='SubNoticePage.html'">공지사항</a>
+<script src="resigter.js"></script>
+    </footer>
+  </body>
+</html>

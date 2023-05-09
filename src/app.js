@@ -68,8 +68,12 @@ const routes = {
   //로그인 화면 
   '/Sublogin.html': { file: 'views/Sublogin.html', type: 'text/html; charset=utf-8' },
   '/Login.css': { file: 'assets/css/Login/Login.css', type: 'text/css; charset=utf-8' },
+  //회원가입 페이지 
+  '/Subregister.html' : { file: 'views/Subregister.html', type: 'text/html; charset=utf-8' },
+  '/register.css': { file: 'assets/css/register/register.css', type: 'text/css; charset=utf-8' },
+  '/register.js': { file: 'assets/js/register.js', type: 'text/javascript; charset=utf-8'},
   //마이페이지 
-  '/Submypage.html': { file: 'views/Submypage.html', type: 'text/html; charset=utf-8' },
+  '/Submypage.html' : { file: 'views/Submypage.html', type: 'text/html; charset=utf-8' },
   '/mypage.css': { file: 'assets/css/mypage/mypage.css', type: 'text/css; charset=utf-8' },
   '/mypage.js': { file: 'assets/js/mypage.js', type: 'text/javascript; charset=utf-8' },
   //지킴이 테스트 첫화면 (안내 페이지)
