@@ -9,7 +9,17 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
 }
+.FAQtext {
+  display: flex;
+  flex-direction: column; 
+  justify-content:center;
+  align-items:center;
+  text-align: center;
 
+}
+article{
+  font-size: 40px;
+}
       header {
       height: 10%;
       display: flex;
@@ -34,32 +44,32 @@ body {
 
       main {
       height: 80%;
-      display: grid;
+      /* display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr); */
       gap: 10px;
       padding: 10px;
     }
       section {
-      border: 10px solid #D4F6F3;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 10px;
-      border-radius: 40px;
-      width: 100%;
-      height: 80%;
-      margin-top: 80px;
-      margin-left: 40px;
+        border: 10px solid #D4F6F3;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        border-radius: 40px;
+        width: 95%;
+        height: 80%;
+        margin-top: 60px;
+        margin-left: 20px;
     }
-
-      section img{
-      width: 65%;
-      height: 65%;
-      margin-top: 15%;
-      display: block;
-      
+    .triangle {
+      width: 0;
+      height: 0;
+      margin-left: 20px;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-top: 30px solid #33D9B2;
     }
 section::after {
 /* content: '\25B6';  세모 */
@@ -73,7 +83,9 @@ cursor: pointer;
 
 section p{
   font-size: 45px;
+
 }
+
 footer {
   margin-top: 10px;
   background-color: white;
@@ -102,7 +114,7 @@ top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-background-color: rgba(0, 0, 0, 0.5);
+background-color: rgba(102, 101, 101, 0.5);
 z-index: 9999;
 }
 
@@ -111,16 +123,15 @@ z-index: 9999;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 70%;
-  height: 20%;
+  width: 90%;
+  height: 30%;
   background-color: #fff;
-  border: 10px solid #D4F6F3;
-  opacity: 80%;
+  border: 20px solid #33D9B2;
   margin: auto;
   margin-top: 70%;
   padding: 1rem;
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   border-radius: 50px;
 }
 
@@ -130,10 +141,4 @@ margin-top: 1rem;
 cursor: pointer;
 }
 
-.triangle {
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid red;
-}
+
