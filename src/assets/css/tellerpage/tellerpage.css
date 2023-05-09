@@ -40,24 +40,30 @@ main {
   width:  90%;
   display: flex;
   margin-left: 20px;
+  margin-top: 20px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid #33D9B2;
+  border: 3px solid #33D9B2;
   background-color: #FFFFFF;
   border-radius: 60px; 
 }
+.pet-image{
+  width: 250px;
+  height: 250px;
+}
 
 article{
+  height: 22%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 30%;
+
 }
 article img {
-  height: 120px;
-  width: 120px;
+  height: 140px;
+  width: 140px;
   
 }
 section {
@@ -73,6 +79,12 @@ section img {
   height: 50px;
   margin-right: 10px;
 }
+
+nav{
+  height: 5%;
+  background-color: #ffffff;
+}
+
 
 footer {
   height: 10%;
