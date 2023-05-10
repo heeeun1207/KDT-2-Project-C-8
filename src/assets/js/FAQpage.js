@@ -24,8 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
           - 물병<br>
           - 우유용기`;
           break;
-        
-        
         case 'section2':
           modalText = 
           `일반쓰레기 X, 유리병류 X ,
@@ -65,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <br><br>
           ⇒ 플라스틱 물병 뚜껑은 재활용이 가능한 플라스틱 용기입니다. 
           따라서, 플라스틱 용기류로 분리배출해야 합니다.`;
+          break;
           case 'section7':
           modalText = 
           `일반쓰레기 X, 음식물쓰레기 O
@@ -72,7 +71,6 @@ document.addEventListener('DOMContentLoaded', function() {
           ⇒ 새우 껍데기는 음식물쓰레기로 분리배출해야 합니다. 
           그러나, 일부 지자체에서는 새우 껍데기를 개별적으로 수거하고, 
           음식물쓰레기와 분리해서 처리하는 경우도 있으니 해당 지역의 분리배출 규칙을 확인해보세요.`;
-          break;
           break;
         default:
           modalText = '내용이 곧 업데이트될 예정입니다 :)';
