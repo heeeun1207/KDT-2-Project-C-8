@@ -40,7 +40,7 @@ main {
   width:  90%;
   display: flex;
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 15px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -54,7 +54,7 @@ main {
 }
 
 article{
-  height: 22%;
+  height: 12%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,8 +62,9 @@ article{
 
 }
 article img {
-  height: 140px;
-  width: 140px;
+  margin-bottom: 20px;
+  height: 100px;
+  width: 100px;
   
 }
 section {
@@ -81,7 +82,12 @@ section img {
 }
 
 nav{
-  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 20%;
+  opacity: 80%;
   background-color: #ffffff;
 }
 
