@@ -1,4 +1,3 @@
-const sidoElement = document.getElementById('sido');
 let counter = 0;
 let clicked = false;
 function incrementCounter() {
@@ -43,35 +42,50 @@ imageInput.addEventListener('change', () => {
   reader.readAsDataURL(file);
 });
 
-const gugunList = {
-  '서울특별시': [],
-  '경기도': [],
-  '인천광역시': [],
-  '강원도': [],
-  '충청북도': [],
-  '충청남도': [],
-  '대전광역시': [],
-  '경상북도': [],
-  '경상남도': [],
-  '전라북도': [],
-  '전라남도': [],
-  '대구광역시': [],
-  '부산광역시': [],
-  '울산광역시': [],
-  '광주광역시': [],
-  '제주특별자치도': []
-};
+
+
+
 
 function changeSido() {
-  const selectedSido = sidoElement.value;
-  const gugunElement = document.getElementById('gugun');
-  gugunElement.innerHTML = '<option value="">시,도를 선택하세요</option>';
-  if (selectedSido) {
-    const guguns = gugunList[selectedSido];
-    for (let i = 0; i < guguns.length; i++) {
-      const gugun = guguns[i];
-      gugunElement.innerHTML += `<option value="${gugun}">${gugun}</option>`;
+  var sidoSelect = document.getElementById("sido");
+  var gunguSelect = document.getElementById("gungu");
+  var dongSelect = document.getElementById("dong");
 
-// 최종적으로 구/군 콤보박스를 화면에 표시
-document.querySelector('#gugun').appendChild(gugunElement);
-    }}};
+  gunguSelect.innerHTML = "<option value=''>선택 안 함</option>";
+  dongSelect.innerHTML = "<option value=''>선택 안 함</option>";
+  gunguSelect.disabled = true;
+  dongSelect.disabled = true;
+
+  if (sidoSelect.value) {
+    gunguSelect.disabled = false;
+
+    // 선택된 시/도에 해당하는 군/구 정보를 가져와서 콤보박스에 추가
+    // 예시 데이터: {"서울특별시": ["강남구", "서초구", ...], "경기도": ["수원시", "용인시", ...], ...}
+    var gunguList = getGunguList(sidoSelect.value);
+    gunguList.forEach(function (gungu) {
+      gunguSelect.innerHTML += "<option value='" + gungu + "'>" + gungu + "</option>";
+    });
+  }
+}
+
+function changeGungu() {
+  var sidoSelect = document.getElementById("sido");
+  var gunguSelect = document.getElementById("gungu");
+  var dongSelect = document.getElementById("dong");
+
+  dongSelect.innerHTML = "<option value=''>선택 안 함</option>";
+  dongSelect.disabled = true;
+
+  if (gunguSelect.value) {
+    dongSelect.disabled = false;
+
+    // 선택된 군/구에 해당하는 동 정보를 가져와서 콤보박스에 추가
+    // 예시 데이터: {"강남구": ["개포동", "논현동", ...], "서초구": ["반포동", "양재동", ...], ...}
+    var dongList = getDongList(sidoSelect.value, gunguSelect.value);
+    dongList.forEach(function (dong) {
+      dongSelect.innerHTML += "<option value='" + dong + "'>" + dong + "</option>";
+    });
+  }
+}
+
+

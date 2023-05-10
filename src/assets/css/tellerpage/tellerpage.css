@@ -67,7 +67,7 @@ article img {
   
 }
 section {
-  height: 10%;
+  height: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +81,7 @@ section img {
 }
 
 nav{
-  height: 5%;
+  height: 10%;
   background-color: #ffffff;
 }
 
