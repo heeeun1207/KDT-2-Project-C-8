@@ -43,8 +43,6 @@ imageInput.addEventListener('change', () => {
   reader.readAsDataURL(file);
 });
 
-
-
 const gugunList = {
   '서울특별시': [],
   '경기도': [],
