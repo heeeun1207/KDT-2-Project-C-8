@@ -7,6 +7,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
+  margin-top: 10px;
 }
 
   
@@ -32,7 +33,7 @@ height: 45px;
 }
 
 main {
-  height: 730px;
+  height: 720px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,6 +43,7 @@ main {
 main img {
   height: 100px;
   width: 100px;
+  margin-bottom: 10px;
 }
 
 form {
@@ -55,6 +57,7 @@ form {
 
 .input-container {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 label {
@@ -87,7 +90,7 @@ button {
 }
 
 footer {
-  height: 30px;
+  height: 10%;
   background-color: white;
   display: flex;
   align-items: center;
@@ -100,7 +103,8 @@ footer {
 footer a {
   text-decoration: none;
   color: inherit;
-  font-size: 20px;
+  font-size: 17px;
+  margin-top: 25px;
   margin-left: 10px;
   margin-right: 10px;
 }

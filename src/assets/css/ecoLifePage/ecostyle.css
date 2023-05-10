@@ -81,7 +81,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem;
+  padding: 0 2em;
   border-top: 1px solid #33D9B2;
 }
 
@@ -112,14 +112,14 @@ z-index: 9999;
   align-items: center;
   justify-content: center;
   width: 90%;
-  height: 30%;
+  height: 50%;
   background-color: #fff;
-  border: 30px solid #D4F6F3;
+  border: 20px solid #D4F6F3;
   margin: auto;
   margin-top: 70%;
   padding: 1rem;
   text-align: center;
-  font-size: 50px;
+  font-size: 52px;
   border-radius: 50px;
 }
 

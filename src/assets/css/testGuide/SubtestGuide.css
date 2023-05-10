@@ -39,7 +39,7 @@ article p{
 }
 
 main {
-  height: 65%;
+  height: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,11 +72,11 @@ section {
 }
 footer {
 background-color: white;
-height: 10%;
+height: 14%;
 display: flex;
 align-items: center;
 justify-content: space-between;
-padding: 0 1rem;
+padding: 0 2rem;
 border-top: 1px solid #33D9B2;
 font-size: 40px;
 }

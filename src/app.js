@@ -111,6 +111,9 @@ const routes = {
   //알림마당 뉴스 페이지 
   '/petfree.png': { file: 'assets/images/News/petfree.png', type: 'image/png' },
   '/storereduce.png': { file: 'assets/images/News/storereduce.png', type: 'image/png' },
+  //마이페이지 
+  '/contamination-earth.png': { file: 'assets/images/mypage/contamination-earth.png', type: 'image/png' },
+  '/upload.png': { file: 'assets/images/mypage/upload.png', type: 'image/png' },
 };
 
 const handleResponse = (request, response) => {
