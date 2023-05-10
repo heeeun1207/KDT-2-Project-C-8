@@ -73,6 +73,8 @@ const routes = {
   '/register.css': { file: 'assets/css/register/register.css', type: 'text/css; charset=utf-8' },
   '/register.js': { file: 'assets/js/register.js', type: 'text/javascript; charset=utf-8'},
   //마이페이지 
+  '/petclean.jpg': { file: 'assets/images/petclean.jpg', type: 'image/jpg' },
+  '/pepsi.jpg': { file: 'assets/images/pepsi.jpg', type: 'image/jpg' },
   '/Submypage.html' : { file: 'views/Submypage.html', type: 'text/html; charset=utf-8' },
   '/mypage.css': { file: 'assets/css/mypage/mypage.css', type: 'text/css; charset=utf-8' },
   '/mypage.js': { file: 'assets/js/mypage.js', type: 'text/javascript; charset=utf-8' },
