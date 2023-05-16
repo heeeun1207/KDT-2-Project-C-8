@@ -1,12 +1,12 @@
 const mysql = require('mysql');
-const dbconfig = require('./dbconfig.json');
+// const dbconfig = require('./dbconfig.json');
 
 // MySQL 연결 정보
 const connection = mysql.createConnection({
-  host: dbconfig.host,
-  user: dbconfig.user,
-  password: dbconfig.password,
-  database: dbconfig.database
+  host: "127.0.0.1",
+  user: "root",
+  password: "password",
+  database: "logintest2"
 });
 
 // MySQL 연결
