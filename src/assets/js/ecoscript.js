@@ -10,21 +10,27 @@ document.addEventListener('DOMContentLoaded', function() {
       switch (sectionId) {
         case 'section1':
           modalText = `
-            <img src="pettrash.jpg" style="width: 300px; height: 300px;">
-            <p style="color: red; font-size: 23px;">
-              일회용 컵으로 인해 수많은 쓰레기가 지구에 쌓이고 있어요!
+            <p style="color: black; font-size: 50px;">
+            텀블러 사용하기
             </p>
             <br>
-            <p style="color: green; font-size: 23px;">
-              일회용 컵 사용을 줄여보세요!
+            <img src="plasticcup.png" style="width: 800px; height: 500px;">
+            <p style="color: black; font-size: 50px;">
+            다 쓴 일회용 컵은 어디로 갈까요?
             </p>
             <br>
-            <p style="color: black; font-size: 14px;">
-              지구를 지키고 미래를 위해, 텀블러 사용해요!
+            <p style="color: black; font-size: 30px;">
+            소각하거나 매립 시 심각한 토양 오염의 요인이 돼요.
             </p>
             <br>
-            <p style="color: purple; font-size: 14px;">
-              일회용 컵 대신 지구 친화적인 선택을 해보세요!
+            <p style="color: black; font-size: 48px;">
+            그렇다면 재활용률은 얼마나 될까요?
+            </p>
+            <br>
+            <p style="color: black; font-size: 30px;">
+            일회용 플라스틱 컵의 재활용률은 약 5%, 
+            <br>
+            일회용 종이 컵의 재활용률은 약 1%에 불과해요.
             </p>`;
           break;
 

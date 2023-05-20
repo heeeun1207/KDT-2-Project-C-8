@@ -112,17 +112,22 @@ z-index: 9999;
   align-items: center;
   justify-content: center;
   width: 90%;
-  height: 50%;
+  height: 70%;
   background-color: #fff;
   border: 20px solid #D4F6F3;
   margin: auto;
-  margin-top: 70%;
+  margin-top: 40%;
   padding: 1rem;
   text-align: center;
-  font-size: 52px;
   border-radius: 50px;
 }
-
+.modal-content img {
+  margin-bottom: 50px;
+}
+.modal-content p {
+  margin: 10px;
+  margin-top: 40px;
+}
 
 .modal-button {
 margin-top: 1rem;

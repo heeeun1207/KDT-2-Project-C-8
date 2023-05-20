@@ -40,7 +40,7 @@ const routes = {
    //에코라이프 아이콘
   '/sponge.jpeg': { file: 'assets/images/EcoLife/sponge.jpeg', type: 'image/jpeg' },
   '/pet.jpg': { file: 'assets/images/EcoLife/pet.jpg', type: 'image/jpg' },
-  '/pettrash.jpg': { file: 'assets/images/EcoLife/pettrash.jpg', type: 'image/jpg' },
+  '/plasticcup.png': { file: 'assets/images/EcoLife/plasticcup.png', type: 'image/png' },
   '/nolabel.jpeg': { file: 'assets/images/EcoLife/nolabel.jpeg', type: 'image/jpeg' },
   '/plasticbag.jpeg': { file: 'assets/images/EcoLife/plasticbag.jpeg', type: 'image/jpeg' },
   '/dirtybox.jpeg': { file: 'assets/images/EcoLife/dirtybox.jpeg', type: 'image/jpeg' },
