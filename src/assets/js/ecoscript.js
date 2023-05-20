@@ -124,26 +124,30 @@ document.addEventListener('DOMContentLoaded', function() {
         case 'section5':
               modalText = `
               <p style="color: black; font-size: 50px;">
-              박스는 깨끗하게
+              '종이류' 제대로 알기
               </p>
               <br>
-              <img src="dirtybox.jpeg" style="width: 800px; height: 500px;">
+              <img src="boxtrash.jpeg" style="width: 800px; height: 500px;">
               <p style="color: black; font-size: 50px;">
-              다 쓴 일회용 컵은 어디로 갈까요?
+              “엄마, 학교에서 배웠는데 전단지 
+              <br>
+              종이는 재활용 안된데요.”
               </p>
               <br>
               <p style="color: black; font-size: 30px;">
-              소각하거나 매립 시 심각한 토양 오염의 요인이 돼요.
+              비닐코팅 된 종이는 쓰레기 종량제 봉투로 배출해요.
               </p>
               <br>
               <p style="color: black; font-size: 48px;">
-              그렇다면 재활용률은 얼마나 될까요?
+              배달로 자주 시켜먹는 치킨박스와 
+              <br>
+              피자박스는 어떨까요?
               </p>
               <br>
               <p style="color: black; font-size: 30px;">
-              일회용 플라스틱 컵의 재활용률은 약 5%, 
+              기름에 오염된 내부 종이는 종량제 봉투로 배출해요. 
               <br>
-              일회용 종이 컵의 재활용률은 약 1%에 불과해요.
+              나부터, 어른들부터 제대로 된 분리배출을 보여줘요 !
               </p>`;
               break;
 

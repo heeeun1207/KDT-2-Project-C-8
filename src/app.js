@@ -43,7 +43,7 @@ const routes = {
   '/plasticcup.png': { file: 'assets/images/EcoLife/plasticcup.png', type: 'image/png' },
   '/nolabel.jpeg': { file: 'assets/images/EcoLife/nolabel.jpeg', type: 'image/jpeg' },
   '/plasticbag.jpeg': { file: 'assets/images/EcoLife/plasticbag.jpeg', type: 'image/jpeg' },
-  '/dirtybox.jpeg': { file: 'assets/images/EcoLife/dirtybox.jpeg', type: 'image/jpeg' },
+  '/boxtrash.jpeg': { file: 'assets/images/EcoLife/boxtrash.jpeg', type: 'image/jpeg' },
   '/bear.jpeg': { file: 'assets/images/EcoLife/bear.jpeg', type: 'image/jpeg' },
   '/milkcarton.jpg': { file: 'assets/images/EcoLife/milkcarton.jpg', type: 'image/jpg' },
   '/bear.jpeg': { file: 'assets/images/EcoLife/bear.jpeg', type: 'image/jpeg' },
