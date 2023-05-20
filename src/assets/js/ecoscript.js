@@ -91,36 +91,40 @@ document.addEventListener('DOMContentLoaded', function() {
           </p>`;
           break;
 
-          case 'section4':
+        case 'section4':
             modalText = `
             <p style="color: black; font-size: 50px;">
-            텀블러 사용하기
+            비닐봉지 대신, 장바구니 사용
             </p>
             <br>
             <img src="plasticbag.jpeg" style="width: 800px; height: 500px;">
             <p style="color: black; font-size: 50px;">
-            다 쓴 일회용 컵은 어디로 갈까요?
+            환경오염의 대명사 1회용 비닐봉투
             </p>
             <br>
             <p style="color: black; font-size: 30px;">
-            소각하거나 매립 시 심각한 토양 오염의 요인이 돼요.
+            강력한 규제가 시작된 이유는 
+            <br>
+            심각해져가는 플라스틱 해양쓰레기 문제 때문이에요. 
             </p>
             <br>
-            <p style="color: black; font-size: 48px;">
-            그렇다면 재활용률은 얼마나 될까요?
+            <p style="color: black; font-size: 47px;">
+            2025년이 되면 플라스틱 쓰레기 개수가  
+            <br>
+            물고기의 3배가 이를것이라 전망
             </p>
             <br>
             <p style="color: black; font-size: 30px;">
-            일회용 플라스틱 컵의 재활용률은 약 5%, 
+            전 세계의 1년간 버려지는 바다쓰레기는 총 800만 톤이랍니다.
             <br>
-            일회용 종이 컵의 재활용률은 약 1%에 불과해요.
+            사회적 공감이 절실히 필요한 시기에요. 
             </p>`;
             break;
 
-            case 'section5':
+        case 'section5':
               modalText = `
               <p style="color: black; font-size: 50px;">
-              텀블러 사용하기
+              박스는 깨끗하게
               </p>
               <br>
               <img src="dirtybox.jpeg" style="width: 800px; height: 500px;">
