@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
       switch (sectionId) {
         case 'section1':
           modalText = `
-            <img src="home.png" style="width: 200px; height: 200px;">
-            <p style="color: blue; font-size: 18px;">
+            <img src="pettrash.jpg" style="width: 300px; height: 300px;">
+            <p style="color: red; font-size: 23px;">
               일회용 컵으로 인해 수많은 쓰레기가 지구에 쌓이고 있어요!
             </p>
             <br>
-            <p style="color: green; font-size: 16px;">
+            <p style="color: green; font-size: 23px;">
               일회용 컵 사용을 줄여보세요!
             </p>
             <br>
