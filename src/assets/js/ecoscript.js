@@ -154,26 +154,35 @@ document.addEventListener('DOMContentLoaded', function() {
               case 'section6':
                 modalText = `
                 <p style="color: black; font-size: 50px;">
-                텀블러 사용하기
+                에어컨 온도 조절하기
                 </p>
                 <br>
                 <img src="bear.jpeg" style="width: 800px; height: 500px;">
                 <p style="color: black; font-size: 50px;">
-                다 쓴 일회용 컵은 어디로 갈까요?
+                "기후위기는 모두에게 
+                <br>
+                공평하게 오지 않는다" 
                 </p>
                 <br>
                 <p style="color: black; font-size: 30px;">
-                소각하거나 매립 시 심각한 토양 오염의 요인이 돼요.
+                최대한 온난화를 늦추고 낮춰 우리의 안전을 확보해요. 
                 </p>
                 <br>
                 <p style="color: black; font-size: 48px;">
-                그렇다면 재활용률은 얼마나 될까요?
+                유럽은 2025년부터 지구온난화지수 
+                <br>
+                750 이상인 냉매 사용을 규제한다.
                 </p>
-                <br>
+              
                 <p style="color: black; font-size: 30px;">
-                일회용 플라스틱 컵의 재활용률은 약 5%, 
+                대기로 날아간 냉매는 수십년간 
                 <br>
-                일회용 종이 컵의 재활용률은 약 1%에 불과해요.
+                대기권에 머물며 오존층을 파괴해요.
+                <br>
+                <br>
+                장기적 안락과 인류,그리고 인류 외 다른 생명체를 희생시키며 
+                <br>
+                단기적 편안함을 사는건 아닌지 생각해봐요. 
                 </p>`;
                 break;
 
