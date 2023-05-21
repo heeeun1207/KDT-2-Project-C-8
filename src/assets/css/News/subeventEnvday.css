@@ -21,7 +21,7 @@ header p {
 }
 
 .homegreen-image {
-  margin-top: 5px;
+
   margin-left: 10px;
   width: 40px;
   height: 40px;
@@ -33,21 +33,42 @@ header p {
   height: 45px;
 }
 
-main {
-  background-color: #33D9B2;
-  overflow-y: scroll;
-  height: 80%;
+nav {
+  height: 200px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  background-color: #c9d6cb;
 }
 
-main img {
-  height: 250px;
+main {
+  height: 70%;
   width: 100%;
-  margin-top: 5%;
-  margin-bottom: 5px;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+}
+
+.section1 {
+  height: 30%;
+  background-color: hsl(117, 40%, 74%);
+}
+
+.section2 {
+  height: 70%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #b0b0b0;
+  margin: auto 5px;
 }
 
 p {

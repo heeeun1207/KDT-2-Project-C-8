@@ -111,14 +111,21 @@ const routes = {
   '/envday3.jpeg': { file: 'assets/images/event/envday3.jpeg', type: 'image/jpeg' },
   '/envday2.png': { file: 'assets/images/event/envday2.png', type: 'image/png' },
   //알림마당 이벤트 -> 세부사항 페이지 
-  '/subeventEarthday.html': { file: 'views/subeventEarthday.html', type: 'text/html; charset=utf-8' },
+  //지구의날 
+  '/SubeventEarthday.html': { file: 'views/SubeventEarthday.html', type: 'text/html; charset=utf-8' },
   '/subeventEarthday.css': { file: 'assets/css/News/subeventEarthday.css', type: 'text/css; charset=utf-8' },
-
-  '/subeventBeeday.html': { file: 'views/subeventBeeday.html', type: 'text/html; charset=utf-8' },
+  //벌꿀의 날 
+  '/SubeventBeeday.html': { file: 'views/SubeventBeeday.html', type: 'text/html; charset=utf-8' },
   '/subeventBeeday.css': { file: 'assets/css/News/subeventBeeday.css', type: 'text/css; charset=utf-8' },
-
-  '/subeventEnvday.html': { file: 'views/subeventEnvday.html', type: 'text/html; charset=utf-8' },
+  //환경의 날
+  '/SubeventEnvday.html': { file: 'views/SubeventEnvday.html', type: 'text/html; charset=utf-8' },
   '/subeventEnvday.css': { file: 'assets/css/News/subeventEnvday.css', type: 'text/css; charset=utf-8' },
+  //물의날 
+  '/SubeventWaterday.html': { file: 'views/SubeventWaterday.html', type: 'text/html; charset=utf-8' },
+  '/subeventWaterday.css': { file: 'assets/css/News/subeventWaterday.css', type: 'text/css; charset=utf-8' },
+  //식목일
+  '/SubeventArborday.html': { file: 'views/SubeventArborday.html', type: 'text/html; charset=utf-8' },
+  '/subeventArborday.css': { file: 'assets/css/News/subeventArborday.css', type: 'text/css; charset=utf-8' },
   //친환경 라이프 페이지 
   '/SubecoLife.html': { file: 'views/SubecoLife.html', type: 'text/html; charset=utf-8' },
   '/ecostyle.css': { file: 'assets/css/ecoLifePage/ecostyle.css', type: 'text/css; charset=utf-8' },
@@ -139,9 +146,6 @@ const routes = {
   '/SubNoticePage.html': { file: 'views/SubNoticePage.html', type: 'text/html; charset=utf-8' },
   '/NoticePage.css': { file: 'assets/css/Notice/NoticePage.css', type: 'text/css; charset=utf-8' },
   '/NoticePage.js': { file: 'assets/js/NoticePage.js', type: 'text/javascript; charset=utf-8' },
-  //알림마당 뉴스 페이지 
-  '/petfree.png': { file: 'assets/images/News/petfree.png', type: 'image/png' },
-  '/storereduce.png': { file: 'assets/images/News/storereduce.png', type: 'image/png' },
   //마이페이지 
   '/contamination-earth.png': { file: 'assets/images/mypage/contamination-earth.png', type: 'image/png' },
   '/upload.png': { file: 'assets/images/mypage/upload.png', type: 'image/png' },

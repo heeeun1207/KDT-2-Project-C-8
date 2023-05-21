@@ -21,7 +21,7 @@ header p {
 }
 
 .homegreen-image {
-  margin-top: 5px;
+
   margin-left: 10px;
   width: 40px;
   height: 40px;
@@ -31,6 +31,15 @@ header p {
   margin-right: 10px;
   width: 45px;
   height: 45px;
+}
+
+nav {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #c9d6cb;
 }
 
 main {
@@ -45,7 +54,7 @@ section {
 
 .section1 {
   height: 30%;
-  background-color: hsl(0, 44%, 71%);
+  background-color: hsl(117, 40%, 74%);
 }
 
 .section2 {
@@ -56,8 +65,8 @@ section {
 }
 
 .box {
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
   background-color: #b0b0b0;
   margin: auto 5px;
 }
