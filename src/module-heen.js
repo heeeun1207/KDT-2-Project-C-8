@@ -1,6 +1,6 @@
 const module_heen_1 = "module_heen_1";
 let currentImgIndex = 0;
-const images = ["plogging.png", "earthday.png", "storereduce.png"];
+const images = ["earthday.png", "plogging.png", "storereduce.png"];
 const asideImg = document.getElementById("aside-image");
 
 function changeAsideImg() {

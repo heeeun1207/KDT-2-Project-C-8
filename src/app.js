@@ -37,7 +37,7 @@ const routes = {
   '/profile.png': { file: 'assets/images/profile.png', type: 'image/png' },
   '/homegreen.png': { file: 'assets/images/homegreen.png', type: 'image/png' },
   '/home.png': { file: 'assets/images/home.png', type: 'image/png' },
-   //에코라이프 아이콘
+   //에코라이프 이미지
   '/sponge.jpeg': { file: 'assets/images/EcoLife/sponge.jpeg', type: 'image/jpeg' },
   '/pet.jpg': { file: 'assets/images/EcoLife/pet.jpg', type: 'image/jpg' },
   '/plasticcup.png': { file: 'assets/images/EcoLife/plasticcup.png', type: 'image/png' },
@@ -57,7 +57,12 @@ const routes = {
   '/shopping-bag.png': { file: 'assets/images/EcoLife/shopping-bag.png', type: 'image/png' },
   '/box.png': { file: 'assets/images/EcoLife/box.png', type: 'image/png' },
   '/service.png': { file: 'assets/images/EcoLife/service.png', type: 'image/png' },
-  //기타 아이콘
+  //알림마당 이미지
+  '/beeday1.jpeg': { file: 'assets/images/event/beeday1.jpeg', type: 'image/jpeg' },
+  '/envday1.jpeg': { file: 'assets/images/event/envday1.jpeg', type: 'image/jpeg' },
+  '/envday2.jpeg': { file: 'assets/images/event/envday2.jpeg', type: 'image/jpeg' },
+
+  //기타 이미지 
   '/treeview.png': { file: 'assets/images/treeview.png', type: 'image/png' },
   '/work.png': { file: 'assets/images/work.png', type: 'image/png' },
   //mainpage 
