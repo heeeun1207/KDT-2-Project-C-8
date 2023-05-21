@@ -1,0 +1,56 @@
+<html>
+<body>
+  <h1>음식물 쓰레기와 일반 쓰레기를 분류하는 문제입니다.</h1>
+  <div id="result"></div>
+  <!-- 입력 폼 -->
+  <form id="question-form">
+    <label for="answer">음식물 쓰레기와 일반 쓰레기 중 어떤 것이 더 많이 발생할까요? </label>
+    <input type="text" id="answer" name="answer">
+    <button type="submit">시작하기</button>
+  </form>
+
+  <script>
+    const resultDiv = document.getElementById('result');
+    const questionForm = document.getElementById('question-form');
+    
+    questionForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const answer = document.getElementById('answer').value;
+      if (answer === '음식물 쓰레기') {
+        resultDiv.innerHTML = '정답입니다. 음식물 쓰레기가 일반 쓰레기보다 더 많이 발생합니다.';
+        startGame(foodWasteQuestions);
+      } else {
+        resultDiv.innerHTML = '오답입니다. 음식물 쓰레기가 일반 쓰레기보다 더 많이 발생합니다.';
+        startGame(generalWasteQuestions);
+      }
+    });
+
+    // 게임을 진행하는 함수
+    function startGame(questionList) {
+      const shuffledQuestions = questionList.sort(() => Math.random() - 0.5);
+      let currentQuestionIndex = 0;
+      let score = 0;
+
+      function showQuestion() {
+        const questionObj = shuffledQuestions[currentQuestionIndex];
+        resultDiv.innerHTML = questionObj.question;
+        currentQuestionIndex++;
+        if (currentQuestionIndex === shuffledQuestions.length) {
+          showScore();
+        }
+      }
+
+      function showScore() {
+        resultDiv.innerHTML = '게임이 종료되었습니다. 총 점수는 ' + score + '점입니다.';
+      }
+
+      // 정답을 체크하고 결과를 출력하는 함수
+      if (answer.toUpperCase() === input.toUpperCase()) {
+        console.log('정답입니다!');
+        score++;
+      } else {
+        console.log('오답입니다!');
+      }}
+      </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+body {
+display: flex;
+flex-direction: column;
+}
+
+
+header {
+		height: 10%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 10px;
+		padding: 10px;
+	}
+	header p {
+	font-size: 50px;
+	margin-bottom: 20px;
+	}
+
+	.homegreen-image {
+	width: 90px;
+	height: 90px;
+	}
+
+	.profile-image {
+	width: 100px;
+	height: 100px;
+	}
+
+
+main {
+flex-grow: 1;
+height: 80% ;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+align-items: center;
+
+}
+
+section {
+width: 80%;
+height: 20%;
+display: flex;
+justify-content: left;
+align-items: center;
+border: 3px solid #33D9B2;
+border-radius: 30px;
+margin-top: 50px;
+
+}
+
+section h1{
+font-size: 45px;
+margin-left: 20px;
+}
+
+footer {
+	margin-top: 610px;
+	height: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 2rem;
+	border-top: 1px solid #33D9B2;
+	}
+
+	footer a {
+	text-decoration: none;
+	color: inherit;
+	font-size: 40px;
+	}
+
+
+	.modal {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(102, 101, 101, 0.5);
+		z-index: 9999;
+		}
+		
+		.modal-content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 70%;
+			height: 50%;
+			background-color: #fff;
+			border: 20px solid #33D9B2;
+			margin: auto;
+			margin-top: 50%;
+			padding: 1rem;
+			text-align: center;
+			font-size: 50px;
+			border-radius: 100px;
+		}		
+.modal-button {
+margin-top: 1rem;
+cursor: pointer;
+}
