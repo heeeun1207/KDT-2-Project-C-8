@@ -103,14 +103,18 @@ const routes = {
   '/test.css': { file: 'assets/css/testpaper/test.css', type: 'text/css; charset=utf-8' },
   '/test.js': { file: 'assets/js/test.js', type: 'text/javascript; charset=utf-8' },
   '/x-symbol.png': { file: 'assets/images/x-symbol.png', type: 'image/png' },
-  //이벤트 & 소식페이지 
+  //알림마당 이벤트 페이지 
   '/Subeventpage.html': { file: 'views/Subeventpage.html', type: 'text/html; charset=utf-8' },
   '/eventpage.css': { file: 'assets/css/News/eventpage.css', type: 'text/css; charset=utf-8' },
-  //친환경 라이프페이지 
+  //알림마당 이벤트 -> 세부사항 페이지 
+  '/subeventEarthday.html': { file: 'views/subeventEarthday.html', type: 'text/html; charset=utf-8' },
+  '/subeventBeeday.html': { file: 'views/subeventBeeday.html', type: 'text/html; charset=utf-8' },
+  '/subeventEnvday.html': { file: 'views/subeventEnvday.html', type: 'text/html; charset=utf-8' },
+  //친환경 라이프 페이지 
   '/SubecoLife.html': { file: 'views/SubecoLife.html', type: 'text/html; charset=utf-8' },
   '/ecostyle.css': { file: 'assets/css/ecoLifePage/ecostyle.css', type: 'text/css; charset=utf-8' },
   '/ecoscript.js': { file: 'assets/js/ecoscript.js', type: 'text/jcssavascript; charset=utf-8' },
-  //신고하는 지킴이페이지 
+  //신고하는 지킴이 페이지 
   '/pet.png': { file: 'assets/images/tellerpage/pet.png', type: 'image/png' },
   '/trash.png': { file: 'assets/images/trash.png', type: 'image/png' },
   '/Subtellerpage.html': { file: 'views/Subtellerpage.html', type: 'text/html; charset=utf-8' },
