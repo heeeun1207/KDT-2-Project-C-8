@@ -123,6 +123,9 @@ const routes = {
   //물의날 
   '/SubeventWaterday.html': { file: 'views/SubeventWaterday.html', type: 'text/html; charset=utf-8' },
   '/subeventWaterday.css': { file: 'assets/css/News/subeventWaterday.css', type: 'text/css; charset=utf-8' },
+  '/shower.png': { file: 'assets/images/event/shower.png', type: 'image/png' },
+  '/watertap.png': { file: 'assets/images/event/watertap.png', type: 'image/png' },
+  '/cleancar.png': { file: 'assets/images/event/cleancar.png', type: 'image/png' },
   //식목일
   '/SubeventArborday.html': { file: 'views/SubeventArborday.html', type: 'text/html; charset=utf-8' },
   '/subeventArborday.css': { file: 'assets/css/News/subeventArborday.css', type: 'text/css; charset=utf-8' },
