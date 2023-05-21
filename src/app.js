@@ -107,8 +107,8 @@ const routes = {
   '/waterday.png': { file: 'assets/images/event/waterday.png', type: 'image/png' },
   '/treeday.jpeg': { file: 'assets/images/event/treeday.jpeg', type: 'image/jpeg' },
   '/beeday1.jpeg': { file: 'assets/images/event/beeday1.jpeg', type: 'image/jpeg' },
-  '/envday1.jpeg': { file: 'assets/images/event/envday1.jpeg', type: 'image/jpeg' },
-  '/envday2.jpeg': { file: 'assets/images/event/envday2.jpeg', type: 'image/jpeg' },
+  '/envday3.jpeg': { file: 'assets/images/event/envday3.jpeg', type: 'image/jpeg' },
+  '/envday2.png': { file: 'assets/images/event/envday2.png', type: 'image/png' },
   //알림마당 이벤트 -> 세부사항 페이지 
   '/subeventEarthday.html': { file: 'views/subeventEarthday.html', type: 'text/html; charset=utf-8' },
   '/subeventEarthday.css': { file: 'assets/css/News/subeventEarthday.css', type: 'text/css; charset=utf-8' },
