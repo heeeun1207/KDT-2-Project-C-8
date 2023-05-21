@@ -104,6 +104,7 @@ const routes = {
   '/Subeventpage.html': { file: 'views/Subeventpage.html', type: 'text/html; charset=utf-8' },
   '/eventpage.css': { file: 'assets/css/News/eventpage.css', type: 'text/css; charset=utf-8' },
    //알림마당 이미지
+  '/back.png': { file: 'assets/images/event/back.png', type: 'image/png' },
   '/waterday.png': { file: 'assets/images/event/waterday.png', type: 'image/png' },
   '/treeday.jpeg': { file: 'assets/images/event/treeday.jpeg', type: 'image/jpeg' },
   '/beeday1.jpeg': { file: 'assets/images/event/beeday1.jpeg', type: 'image/jpeg' },
