@@ -1,13 +1,24 @@
 
-// ‘추천 표시’ 유효성 검사 처리 (한번만 기능하도록 제어)
-let counter = 0;
-let clicked = false;
+// ‘좋아요 표시’ 한번만 기능하도록 제어하기. 
+// 싫어요 기능 추가하고 한번만 기능하도록 제어하기 .
+let likeCounter = 0;
+let dislikeCounter = 0;
+let likeClicked = false;
+let dislikeClicked = false;
 
 function incrementCounter() {
-  if (!clicked) {
-    counter++;
-    document.getElementById("counter").innerText = counter;
-    clicked = true;
+  if (!likeClicked) {
+    likeCounter++;
+    document.getElementById("like-counter").textContent = likeCounter;
+    likeClicked = true;
+  }
+}
+
+function incrementCounterMinus() {
+  if (!dislikeClicked) {
+    dislikeCounter++;
+    document.getElementById("dislike-counter").textContent = dislikeCounter;
+    dislikeClicked = true;
   }
 }
 
@@ -15,7 +26,7 @@ const imageInput = document.querySelector('#image-input');
 const imagePreview = document.querySelector('#image-preview');
 
 imageInput.addEventListener('change', () => {
-  if (!clicked) {
+  if (!likeClicked && !dislikeClicked) {
     const file = imageInput.files[0];
     const reader = new FileReader();
 
@@ -42,7 +53,8 @@ imageInput.addEventListener('change', () => {
         image.style.height = `260px`;
         image.style.display = 'block';
         image.style.margin = 'auto';
-        clicked = true;
+        likeClicked = true;
+        dislikeClicked = true;
       };
     };
     reader.readAsDataURL(file);
