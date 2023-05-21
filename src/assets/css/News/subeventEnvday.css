@@ -4,58 +4,75 @@ body {
   height: 100%;
   font-family: Arial, sans-serif;
 }
+
 header {
+  position: fixed;
   height: 10%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem;
+  background-color: #ffffff;
 }
+
 header p {
-margin-top: 20px;
-font-size: 20px;
+  margin-top: 20px;
+  font-size: 20px;
 }
 
 .homegreen-image {
-margin-top: 5px;
-width: 40px;
-height: 40px;
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
 }
 
 .profile-image {
-width: 45px;
-height: 45px;
+  margin-right: 10px;
+  width: 45px;
+  height: 45px;
 }
+
 main {
+  background-color: #33D9B2;
+  overflow-y: scroll;
   height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 main img {
-  height: 190px;
+  height: 250px;
   width: 100%;
-  margin-top: 5px;
+  margin-top: 5%;
   margin-bottom: 5px;
 }
+
 p {
   height: 3.3%;
   margin-top: 0.1%;
   text-align: center;
 }
+
 footer {
-  background-color: white;
+  position: fixed;
   height: 10%;
+  width: 100%;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem;
+  background-color: #ffffff;
   border-top: 1px solid #33D9B2;
+  margin-top: 30px;
+  
 }
 footer a {
-  margin-top: 20px;
-	text-decoration: none;
-	color: inherit;
-	font-size: 15px;
-	}
+  text-decoration: none;
+  color: inherit;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
