@@ -132,6 +132,9 @@ const routes = {
   //식목일
   '/SubeventArborday.html': { file: 'views/SubeventArborday.html', type: 'text/html; charset=utf-8' },
   '/subeventArborday.css': { file: 'assets/css/News/subeventArborday.css', type: 'text/css; charset=utf-8' },
+  '/drought.png': { file: 'assets/images/event/drought.png', type: 'image/png' },
+  '/forest.png': { file: 'assets/images/event/forest.png', type: 'image/png' },
+  '/photosynthesis.png': { file: 'assets/images/event/photosynthesis.png', type: 'image/png' },
   //친환경 라이프 페이지 
   '/SubecoLife.html': { file: 'views/SubecoLife.html', type: 'text/html; charset=utf-8' },
   '/ecostyle.css': { file: 'assets/css/ecoLifePage/ecostyle.css', type: 'text/css; charset=utf-8' },
