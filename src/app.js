@@ -120,6 +120,10 @@ const routes = {
   //벌꿀의 날 
   '/SubeventBeeday.html': { file: 'views/SubeventBeeday.html', type: 'text/html; charset=utf-8' },
   '/subeventBeeday.css': { file: 'assets/css/News/subeventBeeday.css', type: 'text/css; charset=utf-8' },
+  '/bees.png': { file: 'assets/images/event/bees.png', type: 'image/png' },
+  '/dropwater.png': { file: 'assets/images/event/dropwater.png', type: 'image/png' },
+  '/pesticide.png': { file: 'assets/images/event/pesticide.png', type: 'image/png' },
+
   //환경의 날
   '/SubeventEnvday.html': { file: 'views/SubeventEnvday.html', type: 'text/html; charset=utf-8' },
   '/subeventEnvday.css': { file: 'assets/css/News/subeventEnvday.css', type: 'text/css; charset=utf-8' },
