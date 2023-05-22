@@ -127,6 +127,10 @@ const routes = {
   //환경의 날
   '/SubeventEnvday.html': { file: 'views/SubeventEnvday.html', type: 'text/html; charset=utf-8' },
   '/subeventEnvday.css': { file: 'assets/css/News/subeventEnvday.css', type: 'text/css; charset=utf-8' },
+  '/flood.png': { file: 'assets/images/event/flood.png', type: 'image/png' },
+  '/space.png': { file: 'assets/images/event/space.png', type: 'image/png' },
+  '/globalwarming.png': { file: 'assets/images/event/globalwarming.png', type: 'image/png' },
+
   //물의날 
   '/SubeventWaterday.html': { file: 'views/SubeventWaterday.html', type: 'text/html; charset=utf-8' },
   '/subeventWaterday.css': { file: 'assets/css/News/subeventWaterday.css', type: 'text/css; charset=utf-8' },
