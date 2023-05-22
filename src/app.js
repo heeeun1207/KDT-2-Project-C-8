@@ -114,6 +114,9 @@ const routes = {
   //지구의날 
   '/SubeventEarthday.html': { file: 'views/SubeventEarthday.html', type: 'text/html; charset=utf-8' },
   '/subeventEarthday.css': { file: 'assets/css/News/subeventEarthday.css', type: 'text/css; charset=utf-8' },
+  '/co2.png': { file: 'assets/images/event/co2.png', type: 'image/png' },
+  '/earth-day.png': { file: 'assets/images/event/earth-day.png', type: 'image/png' },
+  '/earthhour.png': { file: 'assets/images/event/earthhour.png', type: 'image/png' },
   //벌꿀의 날 
   '/SubeventBeeday.html': { file: 'views/SubeventBeeday.html', type: 'text/html; charset=utf-8' },
   '/subeventBeeday.css': { file: 'assets/css/News/subeventBeeday.css', type: 'text/css; charset=utf-8' },
