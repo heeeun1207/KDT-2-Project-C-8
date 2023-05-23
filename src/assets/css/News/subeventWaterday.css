@@ -39,36 +39,53 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #c9d6cb;
+  background-color: #d1fbf1;
 }
 
 main {
   height: 70%;
   width: 100%;
 }
-
+.date {
+  border: 3px solid #33D9B2;
+}
+.notice {
+  border: 3px solid #33D9B2;
+}
 section {
   height: 100%;
   width: 100%;
 }
-
+.tip{
+  border: 3px solid #33D9B2;
+}
 .section1 {
   height: 30%;
-  background-color: hsl(117, 40%, 74%);
+  background-color: #86dac6
 }
 
-.section2 {
+.tipimg {
   height: 70%;
   background-color: #f0f0f0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .box {
   width: 100px;
   height: 100px;
-  background-color: #b0b0b0;
-  margin: auto 5px;
+  background-color: white;
+  border: 3px solid #33D9B2;
+  margin: auto;
+}
+.simpletip{
+  border: 3px solid #33D9B2;
+}
+.subtitle{
+  border: 3px solid #33D9B2;
+}
+.info{
+  border: 3px solid #33D9B2;
 }
 
 p {
