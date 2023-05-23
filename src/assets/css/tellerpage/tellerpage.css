@@ -82,6 +82,11 @@ section img {
   margin-right: 10px;
 }
 
+a.download-button {
+  color: inherit;
+  text-decoration: none;
+}
+
 nav{
   display: flex;
   justify-content: center;
@@ -91,6 +96,8 @@ nav{
   opacity: 80%;
   background-color: #ffffff;
 }
+
+
 
 
 footer {

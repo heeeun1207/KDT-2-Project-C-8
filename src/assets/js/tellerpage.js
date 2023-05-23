@@ -49,17 +49,29 @@ imageInput.addEventListener('change', () => {
         }
         imagePreview.innerHTML = '';
         imagePreview.appendChild(image);
-        image.style.width = `250px`;
-        image.style.height = `260px`;
+        // image.style.width = `${width}px`;
+        // image.style.height = `${height}px`;
+        image.style.width = `300px`;
+        image.style.height = `300px`;
         image.style.display = 'block';
         image.style.margin = 'auto';
+        image.style.borderRadius = '30px';
         likeClicked = true;
         dislikeClicked = true;
+
+        //다운로드 
+        const downloadButton = document.createElement('a');
+        downloadButton.href = reader.result;
+        downloadButton.download = 'image.png';
+        downloadButton.textContent = '"사진 다운로드하기"';
+        downloadButton.classList.add('download-button');
+        imagePreview.appendChild(downloadButton);
       };
     };
     reader.readAsDataURL(file);
   }
 });
+
 
 
 
