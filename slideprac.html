@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Slider</title>
+  <style>
+    .slider-container {
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slide {
+      width: 100%;
+      height: 100%;
+      display: none;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #prev-button,
+    #next-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    #prev-button {
+      left: 10px;
+    }
+
+    #next-button {
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <input type="file" id="image-input" accept="image/*">
+  <div class="slider-container">
+    <div class="slide"></div>
+  </div>
+  <button id="prev-button">Previous</button>
+  <button id="next-button">Next</button>
+
+  <script>
+    const sliderContainer = document.querySelector('.slider-container');
+    const slides = document.querySelectorAll('.slide');
+    const prevButton = document.querySelector('#prev-button');
+    const nextButton = document.querySelector('#next-button');
+    let currentSlideIndex = 0;
+
+    prevButton.addEventListener('click', () => {
+      currentSlideIndex--;
+      if (currentSlideIndex < 0) {
+        currentSlideIndex = slides.length - 1;
+      }
+      updateSlider();
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentSlideIndex++;
+      if (currentSlideIndex >= slides.length) {
+        currentSlideIndex = 0;
+      }
+      updateSlider();
+    });
+
+    function updateSlider() {
+      sliderContainer.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
+    }
+
+    const imageInput = document.querySelector('#image-input');
+
+    imageInput.addEventListener('change', () => {
+      const file = imageInput.files[0];
+      const reader = new FileReader();
+
+      reader.onload = () => {
+        const image = new Image();
+        image.src = reader.result;
+
+        image.onload = () => {
+          const slide = document.createElement('div');
+          slide.classList.add('slide');
+          slide.appendChild(image);
+
+          sliderContainer.appendChild(slide);
+          slides[currentSlideIndex].style.display = 'block';
+        };
+      };
+
+      reader.readAsDataURL(file);
+    });
+  </script>
+</body>
+</html>
