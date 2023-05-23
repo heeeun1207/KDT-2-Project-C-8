@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="Login.css">
+</head>
+<body>
+  <header>
+    <a href="/">
+      <img src="homegreen.png" alt="homegreen" class="homegreen-image" onclick="location.href='index.html'">
+    </a>
+    <p>환경 지킴이</p>
+    <img src="back.png" alt="back Image" class="back-image" onclick="location.href='/'">
+  </header>
+  <main>
+    <img src="earthday1.png" alt="프로필 이미지">
+  </main>
+  <section class="section1">
+    <div id="Login">
+      <div id="IdSection">
+        <label for="id">아이디</label>
+        <input type="text" id="id" name="id" required>
+      </div>
+      <div id="PasswordSection">
+        <label for="password">비밀번호</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button onclick="loginOrRedirect()">로그인 하기</button>
+
+    </div>
+  </section>
+
+  
+  </section>
+  
+  <section class="section2">
+    <div id="LinkContainer">
+      <a href="#" onclick="location.href='Subregister.html'">회원가입 하러가기!</a>
+      <a href="#">아이디 / 비밀번호 찾기</a>
+    </div>
+  </section>
+  <footer>
+    <a href="#" onclick="location.href='SubFAQpage.html'">FAQ</a>
+    <a href="#" onclick="location.href='SubNoticePage.html'">공지사항</a>
+  </footer>
+
+  <script>
+    function loginOrRedirect() {
+  const id = document.getElementById("id").value;
+  const password = document.getElementById("password").value;
+  window.location.href = "Submypage.html";
+}
+  </script>
+</body>
+</html>
+

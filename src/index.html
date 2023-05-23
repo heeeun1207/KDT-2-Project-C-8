@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- favicon.ico 404 갑자기 사라짐 .. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/index/index.css"> -->
+  <style>
+    /* 390 x 844 맞추는 중인데 가로스크롤 ..생김 */
+    /* 전체 페이지 */
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: linear-gradient(to bottom, #D4F6F3, #F5F0BB 50%, #FFFFFF);
+    }
+
+    header {
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+    }
+    header p {
+    font-size: 20px;
+    }
+
+    .home-image {
+    width: 30px;
+    height: 30px;
+    }
+
+    .profile-image {
+    width: 40px;
+    height: 40px;
+    }
+
+    main {
+      height: 52%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .section {
+      width: 150px;
+      height: 180px;
+      background-color: #FFFFFF;
+      border: 1px solid #33D9B2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 10px;
+      margin-bottom :10px;
+      cursor: pointer;
+      border-radius: 40px;
+    }
+
+    .section img {
+      margin-top: 20px;
+      height: 80px;
+      width: 80px;
+    
+    }
+
+    .section p {
+      text-align: center;
+    }
+
+    aside {
+      width: 100%;
+      height: 25%;
+      margin-bottom: 20px;
+      /* margin-left: 10px;
+      margin-right: 10px; */
+      background-color: #33D9B2;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+    aside div {
+      width: 100%;
+      height: 100%;
+      background-color: #33D9B2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    aside div img{
+      height: 90%;
+      width: 90%;
+    }
+
+    footer {
+      background-color: white;
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+      border-top: 1px solid #33D9B2;
+      margin-top: 30px;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: inherit;
+    }
+    </style>
+</head>
+<body>
+<header>
+  <a href="/">
+    <img src="home.png" alt="home" class="home-image" onclick="location.href='index.html'">
+  </a>
+  <p>환경 지킴이</p>
+  <img src="profile.png" alt="Profile Image" class="profile-image" onclick="location.href='Sublogin.html'">
+</header>
+<main>
+  <section class="section" onclick="location.href='SubecoLife.html'">
+    <img src="sakura.png" alt ="sakura.png" ">
+    <p>친환경<br>라이프</p>
+  </section>
+  <section class="section" onclick="location.href='SubtestGuide.html'">
+    <img src="contamination.png" alt ="test.png" ">
+    <p>지킴이<br>테스트</p>
+  </section>
+  <section class="section" onclick="location.href='SubFAQpage.html'">
+    <img src="question.png" alt ="question.png"">
+    <p>알쓸분잡</p>
+  </section>
+  <section class="section" onclick="location.href='Subtellerpage.html'">
+    <img src="tree3.png" alt ="tree3.png" ">
+    <p>신고하고<br>지키고</p>
+  </section>
+</main>
+<aside>
+  <div onclick="location.href='Subeventpage.html'">
+    <img src="earthday.png" alt ="earthday Image" class="earthday" onclick="location.href='Sublogin.html'">
+  </div>
+</aside>
+<footer>
+    <a href="#" onclick="location.href='SubFAQpage.html'">FAQ</a>
+    <a href="#" onclick="location.href='SubNoticePage.html'">공지사항</a>
+</footer>
+<!-- <script src="assets/js/index.js"></script> -->
+<script>
+let images = ['earthday.png','treeday.jpeg','plogging.png', 'beeday1.jpeg','waterday.png','envday2.png'];
+let currentImgIndex = 0;
+let asideImg = document.querySelector('.earthday');
+
+// var module_heen_1 = require("./module-heen");
+function changeAsideImg() {
+  currentImgIndex++;
+  if (currentImgIndex > images.length - 1) {
+    currentImgIndex = 0;
+  }
+  asideImg.src = images[currentImgIndex];
+}
+setInterval(changeAsideImg, 3000);
+</script>
+</body>
+</html>
