@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subtellerpage</title>
+  <link rel="stylesheet" type="text/css" href="tellerpage.css">
+
+</head>
+<body>
+  <header>
+    <a href="/">
+      <img src="homegreen.png" alt="homegreen" class="homegreen-image" onclick="location.href='index.html'">
+    </a>
+    <p>신고하고 & 지키고</p>
+    <img src="back.png" alt="back Image" class="back-image" onclick="location.href='/'">
+  </header>
+<article>
+  <img src="trash.png" alt="trash Image" class="trash-image">
+</article>
+<nav>
+  <label for="sido">지역을 선택해주세요 :</label>
+  <select id="sido" onchange="changeSido()">
+    <option value="">선택 안 함</option>
+    <option value="서울특별시">서울특별시</option>
+    <option value="경기도">경기도</option>
+    <option value="인천광역시">인천광역시</option>
+    <option value="강원도">강원도</option>
+    <option value="충청북도">충청북도</option>
+    <option value="충청남도">충청남도</option>
+    <option value="대전광역시">대전광역시</option>
+    <option value="경상북도">경상북도</option>
+    <option value="경상남도">경상남도</option>
+    <option value="전라북도">전라북도</option>
+    <option value="전라남도">전라남도</option>
+    <option value="대구광역시">대구광역시</option>
+    <option value="부산광역시">부산광역시</option>
+    <option value="울산광역시">울산광역시</option>
+    <option value="광주광역시">광주광역시</option>
+    <option value="제주특별자치도">제주특별자치도</option>
+  </select>
+  <label for="gungu">군/구를 선택해주세요 :</label>
+  <select id="gungu" onchange="changeGungu()" disabled>
+    <option value="">선택 안 함</option>
+    <option value="강동구">강동구</option>
+  <option value="강서구">강서구</option>
+  <option value="강남구">강남구</option>
+  </select>
+
+  <label for="dong">동네를 선택해주세요 :</label>
+  <select id="dong" onchange="changeDong()" disabled>
+    <option value="">선택 안 함</option>
+  </select>
+
+</nav>
+
+  <main>
+    <input type="file" id="image-input" accept="image/*">
+    <div id="image-preview"></div>
+    <!-- <h2>쓰레기 장소가 된 <br>우리 동네를 신고합니다! </h2> -->
+    <!-- <img src="pet.png" alt="pet Image" class="pet-image"> -->
+  </main>
+
+  <section>
+    <img src="thumbup.png" alt="Thumb Up" onclick="incrementCounter()">
+    <p>좋아요 : <span id="like-counter">0</span></p>
+      
+    <img src="thumbdown.png" alt="Thumb Down" onclick="incrementCounterMinus()">
+    <p>싫어요 : <span id="dislike-counter">0</span></p>
+  </section>
+  
+ 
+  <footer>
+    <a href="#" onclick="location.href='SubFAQpage.html'">FAQ</a>
+    <a href="#" onclick="location.href='SubNoticePage.html'">공지사항</a>
+  </footer>
+<script src="tellerpage.js"></script>
+  </body>
+  </html>
