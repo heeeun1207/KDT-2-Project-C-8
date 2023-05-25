@@ -1,4 +1,5 @@
 body {
+  text-align: center;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -21,7 +22,6 @@ header p {
 }
 
 .homegreen-image {
-
   margin-left: 10px;
   width: 40px;
   height: 40px;
@@ -39,43 +39,73 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #c9d6cb;
+  background-color: #e8fcf7;
+}
+
+nav p {
+  margin-top: 26%;
 }
 
 main {
   height: 70%;
   width: 100%;
 }
+.date{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #40f3c9;
+  width: 180px;
+  margin-left: 20px;
+}
+.notice {
+
+
+}
 
 section {
   height: 100%;
   width: 100%;
 }
+.tip{
 
+}
 .section1 {
   height: 30%;
-  background-color: hsl(117, 40%, 74%);
+  background-color: #86dac6
+  
 }
 
-.section2 {
+.tipimg {
   height: 70%;
-  background-color: #f0f0f0;
+  background-color: white;
   display: flex;
-  justify-content: center;
-}
+  justify-content: space-between;
 
+}
+img{
+  border-radius: 30%;
+  padding: 0.5rem;
+}
 .box {
   width: 100px;
   height: 100px;
-  background-color: #b0b0b0;
-  margin: auto 5px;
+  background-color: white;
+  border: 1px solid #33D9B2;
+  margin: auto;
 }
 
-p {
-  height: 3.3%;
-  margin-top: 0.1%;
-  text-align: center;
+.simpletip li{
+  margin-top: 10px;
 }
+.subtitle{
+
+}
+.info{
+  margin-bottom: 30%;
+}
+
+
 
 footer {
   position: fixed;

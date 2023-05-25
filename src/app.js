@@ -111,35 +111,33 @@ const routes = {
   '/envday3.jpeg': { file: 'assets/images/event/envday3.jpeg', type: 'image/jpeg' },
   '/envday2.png': { file: 'assets/images/event/envday2.png', type: 'image/png' },
   //알림마당 이벤트 -> 세부사항 페이지 
+
+  // 세부사항 페이지 공통 css
+  '/subevent.css': { file: 'assets/css/News/subevent.css', type: 'text/css; charset=utf-8' },
   //지구의날 
   '/SubeventEarthday.html': { file: 'views/SubeventEarthday.html', type: 'text/html; charset=utf-8' },
-  '/subeventEarthday.css': { file: 'assets/css/News/subeventEarthday.css', type: 'text/css; charset=utf-8' },
   '/co2.png': { file: 'assets/images/event/co2.png', type: 'image/png' },
   '/earth-day.png': { file: 'assets/images/event/earth-day.png', type: 'image/png' },
   '/earthhour.png': { file: 'assets/images/event/earthhour.png', type: 'image/png' },
   //벌꿀의 날 
   '/SubeventBeeday.html': { file: 'views/SubeventBeeday.html', type: 'text/html; charset=utf-8' },
-  '/subeventBeeday.css': { file: 'assets/css/News/subeventBeeday.css', type: 'text/css; charset=utf-8' },
   '/bees.png': { file: 'assets/images/event/bees.png', type: 'image/png' },
   '/dropwater.png': { file: 'assets/images/event/dropwater.png', type: 'image/png' },
   '/pesticide.png': { file: 'assets/images/event/pesticide.png', type: 'image/png' },
 
   //환경의 날
   '/SubeventEnvday.html': { file: 'views/SubeventEnvday.html', type: 'text/html; charset=utf-8' },
-  '/subeventEnvday.css': { file: 'assets/css/News/subeventEnvday.css', type: 'text/css; charset=utf-8' },
   '/flood.png': { file: 'assets/images/event/flood.png', type: 'image/png' },
   '/space.png': { file: 'assets/images/event/space.png', type: 'image/png' },
   '/globalwarming.png': { file: 'assets/images/event/globalwarming.png', type: 'image/png' },
 
   //물의날 
   '/SubeventWaterday.html': { file: 'views/SubeventWaterday.html', type: 'text/html; charset=utf-8' },
-  '/subeventWaterday.css': { file: 'assets/css/News/subeventWaterday.css', type: 'text/css; charset=utf-8' },
   '/shower.png': { file: 'assets/images/event/shower.png', type: 'image/png' },
   '/watertap.png': { file: 'assets/images/event/watertap.png', type: 'image/png' },
   '/cleancar.png': { file: 'assets/images/event/cleancar.png', type: 'image/png' },
   //식목일
   '/SubeventArborday.html': { file: 'views/SubeventArborday.html', type: 'text/html; charset=utf-8' },
-  '/subeventArborday.css': { file: 'assets/css/News/subeventArborday.css', type: 'text/css; charset=utf-8' },
   '/drought.png': { file: 'assets/images/event/drought.png', type: 'image/png' },
   '/forest.png': { file: 'assets/images/event/forest.png', type: 'image/png' },
   '/photosynthesis.png': { file: 'assets/images/event/photosynthesis.png', type: 'image/png' },
