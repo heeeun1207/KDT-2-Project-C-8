@@ -6,28 +6,27 @@ let dislikeClicked = false;
 const imageInput = document.querySelector('#image-input');
 const imagePreview = document.querySelector('#image-preview');
 
-let slideIndex = 1;
+let slideIndex = 0;
 
 function showSlides(n) {
   const slides = document.getElementsByClassName("slide");
   
-  if (n > slides.length) {
-    slideIndex = 1;
-  } else if (n < 1) {
-    slideIndex = slides.length;
+  if (n >= slides.length) {
+    slideIndex = 0;
+  } else if (n < 0) {
+    slideIndex = slides.length - 1;
   }
   
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   
-  slides[slideIndex - 1].style.display = "block";
+  slides[slideIndex].style.display = "block";
 }
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
-
 
 function incrementCounter() {
   if (!likeClicked) {
@@ -68,14 +67,12 @@ imageInput.addEventListener('change', () => {
           width = height * aspectRatio;
         }
 
-        
         const slideElement = document.createElement('div');
         slideElement.classList.add('slide');
         slideElement.appendChild(image);
-        imagePreview.innerHTML = ''; // Clear previous slides
+        imagePreview.innerHTML = '';
         imagePreview.appendChild(slideElement);
 
-        //다음버튼 
         const prevButton = document.createElement('button');
         prevButton.textContent = '이전';
         prevButton.addEventListener('click', () => plusSlides(-1));
@@ -83,19 +80,14 @@ imageInput.addEventListener('change', () => {
         nextButton.textContent = '다음';
         nextButton.addEventListener('click', () => plusSlides(1));
 
-        
         imagePreview.appendChild(prevButton);
         imagePreview.appendChild(nextButton);
 
-        showSlides(slideIndex);
-
-        // 버튼 , 이미지 
         const container = document.createElement('div');
         container.classList.add('image-container');
         container.style.maxWidth = `${maxWidth}px`;
         container.style.margin = 'auto';
 
-        // 버튼 
         const likeButton = document.createElement('button');
         likeButton.textContent = '👍';
         likeButton.addEventListener('click', incrementCounter);
@@ -103,7 +95,6 @@ imageInput.addEventListener('change', () => {
         dislikeButton.textContent = '👎';
         dislikeButton.addEventListener('click', incrementCounterMinus);
 
-        // 추천 비추천
         const likeCounterElement = document.createElement('span');
         likeCounterElement.id = 'like-counter';
         likeCounterElement.textContent = likeCounter;
@@ -111,26 +102,55 @@ imageInput.addEventListener('change', () => {
         dislikeCounterElement.id = 'dislike-counter';
         dislikeCounterElement.textContent = dislikeCounter;
 
-        
         container.appendChild(likeButton);
         container.appendChild(likeCounterElement);
         container.appendChild(dislikeButton);
         container.appendChild(dislikeCounterElement);
 
-        
         imagePreview.appendChild(container);
 
-        // 다운로드하기
         const downloadButton = document.createElement('a');
         downloadButton.href = reader.result;
         downloadButton.download = 'image.png';
         downloadButton.textContent = '사진 다운로드하기';
         downloadButton.classList.add('download-button');
         imagePreview.appendChild(downloadButton);
-      };
-    };
-    reader.readAsDataURL(file);
-  }
+            // 이미지 슬라이드 동작
+    imagePreview.addEventListener('mousedown', startSlide);
+    imagePreview.addEventListener('touchstart', startSlide);
+    imagePreview.addEventListener('mouseup', endSlide);
+    imagePreview.addEventListener('touchend', endSlide);
+
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    function startSlide(event) {
+      if (event.type === 'mousedown') {
+        touchStartX = event.clientX;
+      } else if (event.type === 'touchstart') {
+        touchStartX = event.touches[0].clientX;
+      }
+    }
+
+    function endSlide(event) {
+      if (event.type === 'mouseup') {
+        touchEndX = event.clientX;
+      } else if (event.type === 'touchend') {
+        touchEndX = event.changedTouches[0].clientX;
+      }
+
+      const gestureDistance = touchEndX - touchStartX;
+
+      if (gestureDistance > 0) {
+        plusSlides(-1); // 이전 슬라이드
+      } else if (gestureDistance < 0) {
+        plusSlides(1); // 다음 슬라이드
+      }
+    }
+  };
+};
+reader.readAsDataURL(file);
+}
 });
 
 
