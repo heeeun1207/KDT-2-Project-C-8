@@ -1,7 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
-const mysql = require('mysql');
+// const mysql = require('mysql');
 
 //이미지 폴더 관리 
 const imagesDir = path.join(__dirname, 'assets', 'images');
